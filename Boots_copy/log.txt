@@ -1,0 +1,512 @@
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180814_20180813233731_20180813_233750.zip | file updated time is : 1534217961.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180814_RES_20180813233748_20180813_233819.zip | file updated time is : 1534217987.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180815_20180815001429_20180815_001502.zip | file updated time is : 1534306590.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180815_RES_20180815001445_20180815_001530.zip | file updated time is : 1534306619.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180816_20180815232609_20180815_232633.zip | file updated time is : 1534390081.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180816_RES_20180815232625_20180815_232700.zip | file updated time is : 1534390114.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180817_20180816233047_20180816_233116.zip | file updated time is : 1534476773.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180817_RES_20180816233103_20180816_233141.zip | file updated time is : 1534476791.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\DC_INV\BOOTUK_BOOTS_DC_INV_20180814_20180813230214_20180813_230226.zip | file updated time is : 1534215836.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\DC_INV\BOOTUK_BOOTS_DC_INV_20180815_20180814230315_20180814_230331.zip | file updated time is : 1534302301.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\DC_INV\BOOTUK_BOOTS_DC_INV_20180816_20180815225127_20180815_225146.zip | file updated time is : 1534387996.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\DC_INV\BOOTUK_BOOTS_DC_INV_20180817_20180816225411_20180816_225416.zip | file updated time is : 1534474550.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\INV\BOOTUK_BOOTS_INV_20180814_20180813230216_20180813_230854.zip | file updated time is : 1534216242.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\INV\BOOTUK_BOOTS_INV_20180815_20180814230318_20180814_231007.zip | file updated time is : 1534302720.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\INV\BOOTUK_BOOTS_INV_20180816_20180815225130_20180815_225816.zip | file updated time is : 1534388398.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\INV\BOOTUK_BOOTS_INV_20180817_20180816225415_20180816_230055.zip | file updated time is : 1534474962.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SUB_MASTER\BOOTUK_BOOTS_SUBS_MASTER_20180813_20180812234747_20180813_021830.zip | file updated time is : 1534141198.0
+2018-08-17 13:27:52.329516
+there is no file found in folder %s\\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1
+current max_updated_time is 1534481554.0the final max_updated_time is 1534481554.0
+
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\MDQ_PSC\BOOTUK_BOOTS_MDQ_PSC_20180814_20180813230850_20180813_233751.zip | file updated time is : 1534218600.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\MDQ_PSC\BOOTUK_BOOTS_MDQ_PSC_20180815_20180814230946_20180815_001437.zip | file updated time is : 1534307184.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\MDQ_PSC\BOOTUK_BOOTS_MDQ_PSC_20180816_20180815225815_20180815_232608.zip | file updated time is : 1534390714.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\MDQ_PSC\BOOTUK_BOOTS_MDQ_PSC_20180817_20180816230047_20180816_233047.zip | file updated time is : 1534477369.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PRMMST\BOOTUK_BOOTS_SKU_PRMMSTV2_20180813_20180813182615_20180813_182632.zip | file updated time is : 1534199282.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PRMMST\BOOTUK_BOOTS_SKU_PRMMSTV2_20180814_20180814182947_20180814_183005.zip | file updated time is : 1534285894.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PRMMST\BOOTUK_BOOTS_SKU_PRMMSTV2_20180815_20180815180446_20180815_180450.zip | file updated time is : 1534370776.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PRMMST\BOOTUK_BOOTS_SKU_PRMMSTV2_20180816_20180816180618_20180816_180626.zip | file updated time is : 1534457267.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\WHSE_ORDER\BOOTUK_BOOTS_WHSE_ORDER_20180814_20180813224723_20180813_224738.zip | file updated time is : 1534214941.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\WHSE_ORDER\BOOTUK_BOOTS_WHSE_ORDER_20180815_20180814224812_20180814_224856.zip | file updated time is : 1534301421.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\WHSE_ORDER\BOOTUK_BOOTS_WHSE_ORDER_20180816_20180815232642_20180815_232700.zip | file updated time is : 1534390107.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\WHSE_ORDER\BOOTUK_BOOTS_WHSE_ORDER_20180817_20180816233120_20180816_233141.zip | file updated time is : 1534476787.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PROMO\BOOTUK_BOOTS_SKU_PROMOV2_20180813_20180813182616_20180813_184343.zip | file updated time is : 1534200522.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PROMO\BOOTUK_BOOTS_SKU_PROMOV2_20180814_20180814182949_20180814_184545.zip | file updated time is : 1534287026.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PROMO\BOOTUK_BOOTS_SKU_PROMOV2_20180815_20180815180448_20180815_182234.zip | file updated time is : 1534372052.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PROMO\BOOTUK_BOOTS_SKU_PROMOV2_20180816_20180816182109_20180816_183825.zip | file updated time is : 1534459403.0
+2018-08-17 13:27:55.569875
+there is no file found in folder %s\\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2
+current max_updated_time is 1534481554.0the final max_updated_time is 1534481554.0
+
+2018-08-17 13:27:55.920474
+there is no file found in folder %s\\wal1wnnas1.colo.retailsolutions.com\FTP_EXTERNAL\DPSG\DPSG_MASTER_DATA\PROD\WM
+current max_updated_time is 1534481554.0the final max_updated_time is 1534481554.0
+
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD DC Inv Report (EOH+BOH)_2018-08-15_20180817_005052.txt | file updated time is : 1534481538.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Store Inv Report_p2of4_2018-08-14_res_20180817_005050.txt | file updated time is : 1534481552.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Store Inv Report_p3of4_2018-08-14_res_20180817_005049.txt | file updated time is : 1534481554.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Sales Report_p4of4_2018-08-14_res_20180817_005052.txt | file updated time is : 1534481539.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD DC Inv Report (Receipts)_2018-08-15_20180817_005053.txt | file updated time is : 1534481535.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGTL_5013 Target Lite_SVR_Report_201808WK1_res_20180813_232337.txt | file updated time is : 1534222287.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Sales Report_p2of4_2018-08-14_res_20180817_005051.txt | file updated time is : 1534481541.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Store Inv Report_p4of4_2018-08-14_res_20180817_005051.txt | file updated time is : 1534481552.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Store Inv Report_p1of4_2018-08-14_res_20180817_005050.txt | file updated time is : 1534481552.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Sales Report_p3of4_2018-08-14_res_20180817_005052.txt | file updated time is : 1534481540.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Sales Report_p1of4_2018-08-14_res_20180817_005053.txt | file updated time is : 1534481536.0
+2018-08-17 13:27:56.481043
+there is no file found in folder %s\\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET
+current max_updated_time is 1534481554.0the final max_updated_time is 1534481554.0
+
+2018-08-17 13:27:57.608039
+there is no file found in folder %s\\wal1wnnas1.colo.retailsolutions.com\projects\New Retailers\Boots\Adv Card Restatements
+current max_updated_time is 1534481554.0the final max_updated_time is 1534481554.0
+
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180814_20180813233731_20180813_233750.zip | file updated time is : 1534217961.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180814_RES_20180813233748_20180813_233819.zip | file updated time is : 1534217987.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180815_20180815001429_20180815_001502.zip | file updated time is : 1534306590.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180815_RES_20180815001445_20180815_001530.zip | file updated time is : 1534306619.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180816_20180815232609_20180815_232633.zip | file updated time is : 1534390081.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180816_RES_20180815232625_20180815_232700.zip | file updated time is : 1534390114.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180817_20180816233047_20180816_233116.zip | file updated time is : 1534476773.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180817_RES_20180816233103_20180816_233141.zip | file updated time is : 1534476791.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\DC_INV\BOOTUK_BOOTS_DC_INV_20180814_20180813230214_20180813_230226.zip | file updated time is : 1534215836.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\DC_INV\BOOTUK_BOOTS_DC_INV_20180815_20180814230315_20180814_230331.zip | file updated time is : 1534302301.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\DC_INV\BOOTUK_BOOTS_DC_INV_20180816_20180815225127_20180815_225146.zip | file updated time is : 1534387996.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\DC_INV\BOOTUK_BOOTS_DC_INV_20180817_20180816225411_20180816_225416.zip | file updated time is : 1534474550.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\INV\BOOTUK_BOOTS_INV_20180814_20180813230216_20180813_230854.zip | file updated time is : 1534216242.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\INV\BOOTUK_BOOTS_INV_20180815_20180814230318_20180814_231007.zip | file updated time is : 1534302720.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\INV\BOOTUK_BOOTS_INV_20180816_20180815225130_20180815_225816.zip | file updated time is : 1534388398.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\INV\BOOTUK_BOOTS_INV_20180817_20180816225415_20180816_230055.zip | file updated time is : 1534474962.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SUB_MASTER\BOOTUK_BOOTS_SUBS_MASTER_20180813_20180812234747_20180813_021830.zip | file updated time is : 1534141198.0
+2018-08-17 13:33:02.898082
+there is no file found in folder %s\\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1
+current max_updated_time is 1534481554.0the final max_updated_time is 1534481554.0
+
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\MDQ_PSC\BOOTUK_BOOTS_MDQ_PSC_20180814_20180813230850_20180813_233751.zip | file updated time is : 1534218600.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\MDQ_PSC\BOOTUK_BOOTS_MDQ_PSC_20180815_20180814230946_20180815_001437.zip | file updated time is : 1534307184.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\MDQ_PSC\BOOTUK_BOOTS_MDQ_PSC_20180816_20180815225815_20180815_232608.zip | file updated time is : 1534390714.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\MDQ_PSC\BOOTUK_BOOTS_MDQ_PSC_20180817_20180816230047_20180816_233047.zip | file updated time is : 1534477369.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PRMMST\BOOTUK_BOOTS_SKU_PRMMSTV2_20180813_20180813182615_20180813_182632.zip | file updated time is : 1534199282.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PRMMST\BOOTUK_BOOTS_SKU_PRMMSTV2_20180814_20180814182947_20180814_183005.zip | file updated time is : 1534285894.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PRMMST\BOOTUK_BOOTS_SKU_PRMMSTV2_20180815_20180815180446_20180815_180450.zip | file updated time is : 1534370776.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PRMMST\BOOTUK_BOOTS_SKU_PRMMSTV2_20180816_20180816180618_20180816_180626.zip | file updated time is : 1534457267.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\WHSE_ORDER\BOOTUK_BOOTS_WHSE_ORDER_20180814_20180813224723_20180813_224738.zip | file updated time is : 1534214941.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\WHSE_ORDER\BOOTUK_BOOTS_WHSE_ORDER_20180815_20180814224812_20180814_224856.zip | file updated time is : 1534301421.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\WHSE_ORDER\BOOTUK_BOOTS_WHSE_ORDER_20180816_20180815232642_20180815_232700.zip | file updated time is : 1534390107.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\WHSE_ORDER\BOOTUK_BOOTS_WHSE_ORDER_20180817_20180816233120_20180816_233141.zip | file updated time is : 1534476787.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PROMO\BOOTUK_BOOTS_SKU_PROMOV2_20180813_20180813182616_20180813_184343.zip | file updated time is : 1534200522.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PROMO\BOOTUK_BOOTS_SKU_PROMOV2_20180814_20180814182949_20180814_184545.zip | file updated time is : 1534287026.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PROMO\BOOTUK_BOOTS_SKU_PROMOV2_20180815_20180815180448_20180815_182234.zip | file updated time is : 1534372052.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PROMO\BOOTUK_BOOTS_SKU_PROMOV2_20180816_20180816182109_20180816_183825.zip | file updated time is : 1534459403.0
+2018-08-17 13:33:06.325948
+there is no file found in folder %s\\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2
+current max_updated_time is 1534481554.0the final max_updated_time is 1534481554.0
+
+2018-08-17 13:33:06.820108
+there is no file found in folder %s\\wal1wnnas1.colo.retailsolutions.com\FTP_EXTERNAL\DPSG\DPSG_MASTER_DATA\PROD\WM
+current max_updated_time is 1534481554.0the final max_updated_time is 1534481554.0
+
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD DC Inv Report (EOH+BOH)_2018-08-15_20180817_005052.txt | file updated time is : 1534481538.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Store Inv Report_p2of4_2018-08-14_res_20180817_005050.txt | file updated time is : 1534481552.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Store Inv Report_p3of4_2018-08-14_res_20180817_005049.txt | file updated time is : 1534481554.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Sales Report_p4of4_2018-08-14_res_20180817_005052.txt | file updated time is : 1534481539.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD DC Inv Report (Receipts)_2018-08-15_20180817_005053.txt | file updated time is : 1534481535.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGTL_5013 Target Lite_SVR_Report_201808WK1_res_20180813_232337.txt | file updated time is : 1534222287.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Sales Report_p2of4_2018-08-14_res_20180817_005051.txt | file updated time is : 1534481541.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Store Inv Report_p4of4_2018-08-14_res_20180817_005051.txt | file updated time is : 1534481552.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Store Inv Report_p1of4_2018-08-14_res_20180817_005050.txt | file updated time is : 1534481552.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Sales Report_p3of4_2018-08-14_res_20180817_005052.txt | file updated time is : 1534481540.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Sales Report_p1of4_2018-08-14_res_20180817_005053.txt | file updated time is : 1534481536.0
+2018-08-17 13:33:07.773269
+there is no file found in folder %s\\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET
+current max_updated_time is 1534481554.0the final max_updated_time is 1534481554.0
+
+2018-08-17 13:33:09.365127
+there is no file found in folder %s\\wal1wnnas1.colo.retailsolutions.com\projects\New Retailers\Boots\Adv Card Restatements
+current max_updated_time is 1534481554.0the final max_updated_time is 1534481554.0
+
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180814_20180813233731_20180813_233750.zip | file updated time is : 1534217961.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180814_RES_20180813233748_20180813_233819.zip | file updated time is : 1534217987.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180815_20180815001429_20180815_001502.zip | file updated time is : 1534306590.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180815_RES_20180815001445_20180815_001530.zip | file updated time is : 1534306619.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180816_20180815232609_20180815_232633.zip | file updated time is : 1534390081.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180816_RES_20180815232625_20180815_232700.zip | file updated time is : 1534390114.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180817_20180816233047_20180816_233116.zip | file updated time is : 1534476773.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180817_RES_20180816233103_20180816_233141.zip | file updated time is : 1534476791.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\DC_INV\BOOTUK_BOOTS_DC_INV_20180814_20180813230214_20180813_230226.zip | file updated time is : 1534215836.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\DC_INV\BOOTUK_BOOTS_DC_INV_20180815_20180814230315_20180814_230331.zip | file updated time is : 1534302301.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\DC_INV\BOOTUK_BOOTS_DC_INV_20180816_20180815225127_20180815_225146.zip | file updated time is : 1534387996.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\DC_INV\BOOTUK_BOOTS_DC_INV_20180817_20180816225411_20180816_225416.zip | file updated time is : 1534474550.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\INV\BOOTUK_BOOTS_INV_20180814_20180813230216_20180813_230854.zip | file updated time is : 1534216242.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\INV\BOOTUK_BOOTS_INV_20180815_20180814230318_20180814_231007.zip | file updated time is : 1534302720.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\INV\BOOTUK_BOOTS_INV_20180816_20180815225130_20180815_225816.zip | file updated time is : 1534388398.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\INV\BOOTUK_BOOTS_INV_20180817_20180816225415_20180816_230055.zip | file updated time is : 1534474962.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SUB_MASTER\BOOTUK_BOOTS_SUBS_MASTER_20180813_20180812234747_20180813_021830.zip | file updated time is : 1534141198.0
+2018-08-17 13:38:14.253788
+there is no file found in folder %s\\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1
+current max_updated_time is 1534481554.0the final max_updated_time is 1534481554.0
+
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\MDQ_PSC\BOOTUK_BOOTS_MDQ_PSC_20180814_20180813230850_20180813_233751.zip | file updated time is : 1534218600.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\MDQ_PSC\BOOTUK_BOOTS_MDQ_PSC_20180815_20180814230946_20180815_001437.zip | file updated time is : 1534307184.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\MDQ_PSC\BOOTUK_BOOTS_MDQ_PSC_20180816_20180815225815_20180815_232608.zip | file updated time is : 1534390714.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\MDQ_PSC\BOOTUK_BOOTS_MDQ_PSC_20180817_20180816230047_20180816_233047.zip | file updated time is : 1534477369.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PRMMST\BOOTUK_BOOTS_SKU_PRMMSTV2_20180813_20180813182615_20180813_182632.zip | file updated time is : 1534199282.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PRMMST\BOOTUK_BOOTS_SKU_PRMMSTV2_20180814_20180814182947_20180814_183005.zip | file updated time is : 1534285894.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PRMMST\BOOTUK_BOOTS_SKU_PRMMSTV2_20180815_20180815180446_20180815_180450.zip | file updated time is : 1534370776.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PRMMST\BOOTUK_BOOTS_SKU_PRMMSTV2_20180816_20180816180618_20180816_180626.zip | file updated time is : 1534457267.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\WHSE_ORDER\BOOTUK_BOOTS_WHSE_ORDER_20180814_20180813224723_20180813_224738.zip | file updated time is : 1534214941.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\WHSE_ORDER\BOOTUK_BOOTS_WHSE_ORDER_20180815_20180814224812_20180814_224856.zip | file updated time is : 1534301421.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\WHSE_ORDER\BOOTUK_BOOTS_WHSE_ORDER_20180816_20180815232642_20180815_232700.zip | file updated time is : 1534390107.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\WHSE_ORDER\BOOTUK_BOOTS_WHSE_ORDER_20180817_20180816233120_20180816_233141.zip | file updated time is : 1534476787.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PROMO\BOOTUK_BOOTS_SKU_PROMOV2_20180813_20180813182616_20180813_184343.zip | file updated time is : 1534200522.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PROMO\BOOTUK_BOOTS_SKU_PROMOV2_20180814_20180814182949_20180814_184545.zip | file updated time is : 1534287026.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PROMO\BOOTUK_BOOTS_SKU_PROMOV2_20180815_20180815180448_20180815_182234.zip | file updated time is : 1534372052.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PROMO\BOOTUK_BOOTS_SKU_PROMOV2_20180816_20180816182109_20180816_183825.zip | file updated time is : 1534459403.0
+2018-08-17 13:38:17.665051
+there is no file found in folder %s\\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2
+current max_updated_time is 1534481554.0the final max_updated_time is 1534481554.0
+
+2018-08-17 13:38:18.021510
+there is no file found in folder %s\\wal1wnnas1.colo.retailsolutions.com\FTP_EXTERNAL\DPSG\DPSG_MASTER_DATA\PROD\WM
+current max_updated_time is 1534481554.0the final max_updated_time is 1534481554.0
+
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD DC Inv Report (EOH+BOH)_2018-08-15_20180817_005052.txt | file updated time is : 1534481538.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Store Inv Report_p2of4_2018-08-14_res_20180817_005050.txt | file updated time is : 1534481552.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Store Inv Report_p3of4_2018-08-14_res_20180817_005049.txt | file updated time is : 1534481554.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Sales Report_p4of4_2018-08-14_res_20180817_005052.txt | file updated time is : 1534481539.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD DC Inv Report (Receipts)_2018-08-15_20180817_005053.txt | file updated time is : 1534481535.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGTL_5013 Target Lite_SVR_Report_201808WK1_res_20180813_232337.txt | file updated time is : 1534222287.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Sales Report_p2of4_2018-08-14_res_20180817_005051.txt | file updated time is : 1534481541.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Store Inv Report_p4of4_2018-08-14_res_20180817_005051.txt | file updated time is : 1534481552.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Store Inv Report_p1of4_2018-08-14_res_20180817_005050.txt | file updated time is : 1534481552.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Sales Report_p3of4_2018-08-14_res_20180817_005052.txt | file updated time is : 1534481540.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Sales Report_p1of4_2018-08-14_res_20180817_005053.txt | file updated time is : 1534481536.0
+2018-08-17 13:38:18.558640
+there is no file found in folder %s\\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET
+current max_updated_time is 1534481554.0the final max_updated_time is 1534481554.0
+
+2018-08-17 13:38:19.753022
+there is no file found in folder %s\\wal1wnnas1.colo.retailsolutions.com\projects\New Retailers\Boots\Adv Card Restatements
+current max_updated_time is 1534481554.0the final max_updated_time is 1534481554.0
+
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180814_20180813233731_20180813_233750.zip | file updated time is : 1534217961.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180814_RES_20180813233748_20180813_233819.zip | file updated time is : 1534217987.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180815_20180815001429_20180815_001502.zip | file updated time is : 1534306590.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180815_RES_20180815001445_20180815_001530.zip | file updated time is : 1534306619.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180816_20180815232609_20180815_232633.zip | file updated time is : 1534390081.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180816_RES_20180815232625_20180815_232700.zip | file updated time is : 1534390114.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180817_20180816233047_20180816_233116.zip | file updated time is : 1534476773.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180817_RES_20180816233103_20180816_233141.zip | file updated time is : 1534476791.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\DC_INV\BOOTUK_BOOTS_DC_INV_20180814_20180813230214_20180813_230226.zip | file updated time is : 1534215836.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\DC_INV\BOOTUK_BOOTS_DC_INV_20180815_20180814230315_20180814_230331.zip | file updated time is : 1534302301.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\DC_INV\BOOTUK_BOOTS_DC_INV_20180816_20180815225127_20180815_225146.zip | file updated time is : 1534387996.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\DC_INV\BOOTUK_BOOTS_DC_INV_20180817_20180816225411_20180816_225416.zip | file updated time is : 1534474550.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\INV\BOOTUK_BOOTS_INV_20180814_20180813230216_20180813_230854.zip | file updated time is : 1534216242.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\INV\BOOTUK_BOOTS_INV_20180815_20180814230318_20180814_231007.zip | file updated time is : 1534302720.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\INV\BOOTUK_BOOTS_INV_20180816_20180815225130_20180815_225816.zip | file updated time is : 1534388398.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\INV\BOOTUK_BOOTS_INV_20180817_20180816225415_20180816_230055.zip | file updated time is : 1534474962.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SUB_MASTER\BOOTUK_BOOTS_SUBS_MASTER_20180813_20180812234747_20180813_021830.zip | file updated time is : 1534141198.0
+2018-08-17 13:43:25.621212
+there is no file found in folder %s\\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1
+current max_updated_time is 1534481554.0the final max_updated_time is 1534481554.0
+
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\MDQ_PSC\BOOTUK_BOOTS_MDQ_PSC_20180814_20180813230850_20180813_233751.zip | file updated time is : 1534218600.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\MDQ_PSC\BOOTUK_BOOTS_MDQ_PSC_20180815_20180814230946_20180815_001437.zip | file updated time is : 1534307184.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\MDQ_PSC\BOOTUK_BOOTS_MDQ_PSC_20180816_20180815225815_20180815_232608.zip | file updated time is : 1534390714.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\MDQ_PSC\BOOTUK_BOOTS_MDQ_PSC_20180817_20180816230047_20180816_233047.zip | file updated time is : 1534477369.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PRMMST\BOOTUK_BOOTS_SKU_PRMMSTV2_20180813_20180813182615_20180813_182632.zip | file updated time is : 1534199282.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PRMMST\BOOTUK_BOOTS_SKU_PRMMSTV2_20180814_20180814182947_20180814_183005.zip | file updated time is : 1534285894.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PRMMST\BOOTUK_BOOTS_SKU_PRMMSTV2_20180815_20180815180446_20180815_180450.zip | file updated time is : 1534370776.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PRMMST\BOOTUK_BOOTS_SKU_PRMMSTV2_20180816_20180816180618_20180816_180626.zip | file updated time is : 1534457267.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\WHSE_ORDER\BOOTUK_BOOTS_WHSE_ORDER_20180814_20180813224723_20180813_224738.zip | file updated time is : 1534214941.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\WHSE_ORDER\BOOTUK_BOOTS_WHSE_ORDER_20180815_20180814224812_20180814_224856.zip | file updated time is : 1534301421.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\WHSE_ORDER\BOOTUK_BOOTS_WHSE_ORDER_20180816_20180815232642_20180815_232700.zip | file updated time is : 1534390107.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\WHSE_ORDER\BOOTUK_BOOTS_WHSE_ORDER_20180817_20180816233120_20180816_233141.zip | file updated time is : 1534476787.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PROMO\BOOTUK_BOOTS_SKU_PROMOV2_20180813_20180813182616_20180813_184343.zip | file updated time is : 1534200522.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PROMO\BOOTUK_BOOTS_SKU_PROMOV2_20180814_20180814182949_20180814_184545.zip | file updated time is : 1534287026.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PROMO\BOOTUK_BOOTS_SKU_PROMOV2_20180815_20180815180448_20180815_182234.zip | file updated time is : 1534372052.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PROMO\BOOTUK_BOOTS_SKU_PROMOV2_20180816_20180816182109_20180816_183825.zip | file updated time is : 1534459403.0
+2018-08-17 13:43:28.960208
+there is no file found in folder %s\\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2
+current max_updated_time is 1534481554.0the final max_updated_time is 1534481554.0
+
+2018-08-17 13:43:29.351824
+there is no file found in folder %s\\wal1wnnas1.colo.retailsolutions.com\FTP_EXTERNAL\DPSG\DPSG_MASTER_DATA\PROD\WM
+current max_updated_time is 1534481554.0the final max_updated_time is 1534481554.0
+
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD DC Inv Report (EOH+BOH)_2018-08-15_20180817_005052.txt | file updated time is : 1534481538.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Store Inv Report_p2of4_2018-08-14_res_20180817_005050.txt | file updated time is : 1534481552.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Store Inv Report_p3of4_2018-08-14_res_20180817_005049.txt | file updated time is : 1534481554.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Sales Report_p4of4_2018-08-14_res_20180817_005052.txt | file updated time is : 1534481539.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD DC Inv Report (Receipts)_2018-08-15_20180817_005053.txt | file updated time is : 1534481535.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGTL_5013 Target Lite_SVR_Report_201808WK1_res_20180813_232337.txt | file updated time is : 1534222287.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Sales Report_p2of4_2018-08-14_res_20180817_005051.txt | file updated time is : 1534481541.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Store Inv Report_p4of4_2018-08-14_res_20180817_005051.txt | file updated time is : 1534481552.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Store Inv Report_p1of4_2018-08-14_res_20180817_005050.txt | file updated time is : 1534481552.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Sales Report_p3of4_2018-08-14_res_20180817_005052.txt | file updated time is : 1534481540.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Sales Report_p1of4_2018-08-14_res_20180817_005053.txt | file updated time is : 1534481536.0
+2018-08-17 13:43:30.039351
+there is no file found in folder %s\\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET
+current max_updated_time is 1534481554.0the final max_updated_time is 1534481554.0
+
+2018-08-17 13:43:31.593121
+there is no file found in folder %s\\wal1wnnas1.colo.retailsolutions.com\projects\New Retailers\Boots\Adv Card Restatements
+current max_updated_time is 1534481554.0the final max_updated_time is 1534481554.0
+
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180814_20180813233731_20180813_233750.zip | file updated time is : 1534217961.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180814_RES_20180813233748_20180813_233819.zip | file updated time is : 1534217987.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180815_20180815001429_20180815_001502.zip | file updated time is : 1534306590.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180815_RES_20180815001445_20180815_001530.zip | file updated time is : 1534306619.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180816_20180815232609_20180815_232633.zip | file updated time is : 1534390081.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180816_RES_20180815232625_20180815_232700.zip | file updated time is : 1534390114.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180817_20180816233047_20180816_233116.zip | file updated time is : 1534476773.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180817_RES_20180816233103_20180816_233141.zip | file updated time is : 1534476791.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\DC_INV\BOOTUK_BOOTS_DC_INV_20180814_20180813230214_20180813_230226.zip | file updated time is : 1534215836.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\DC_INV\BOOTUK_BOOTS_DC_INV_20180815_20180814230315_20180814_230331.zip | file updated time is : 1534302301.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\DC_INV\BOOTUK_BOOTS_DC_INV_20180816_20180815225127_20180815_225146.zip | file updated time is : 1534387996.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\DC_INV\BOOTUK_BOOTS_DC_INV_20180817_20180816225411_20180816_225416.zip | file updated time is : 1534474550.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\INV\BOOTUK_BOOTS_INV_20180814_20180813230216_20180813_230854.zip | file updated time is : 1534216242.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\INV\BOOTUK_BOOTS_INV_20180815_20180814230318_20180814_231007.zip | file updated time is : 1534302720.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\INV\BOOTUK_BOOTS_INV_20180816_20180815225130_20180815_225816.zip | file updated time is : 1534388398.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\INV\BOOTUK_BOOTS_INV_20180817_20180816225415_20180816_230055.zip | file updated time is : 1534474962.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SUB_MASTER\BOOTUK_BOOTS_SUBS_MASTER_20180813_20180812234747_20180813_021830.zip | file updated time is : 1534141198.0
+2018-08-17 13:48:36.541354
+there is no file found in folder %s\\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1
+current max_updated_time is 1534481554.0the final max_updated_time is 1534481554.0
+
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\MDQ_PSC\BOOTUK_BOOTS_MDQ_PSC_20180814_20180813230850_20180813_233751.zip | file updated time is : 1534218600.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\MDQ_PSC\BOOTUK_BOOTS_MDQ_PSC_20180815_20180814230946_20180815_001437.zip | file updated time is : 1534307184.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\MDQ_PSC\BOOTUK_BOOTS_MDQ_PSC_20180816_20180815225815_20180815_232608.zip | file updated time is : 1534390714.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\MDQ_PSC\BOOTUK_BOOTS_MDQ_PSC_20180817_20180816230047_20180816_233047.zip | file updated time is : 1534477369.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PRMMST\BOOTUK_BOOTS_SKU_PRMMSTV2_20180813_20180813182615_20180813_182632.zip | file updated time is : 1534199282.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PRMMST\BOOTUK_BOOTS_SKU_PRMMSTV2_20180814_20180814182947_20180814_183005.zip | file updated time is : 1534285894.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PRMMST\BOOTUK_BOOTS_SKU_PRMMSTV2_20180815_20180815180446_20180815_180450.zip | file updated time is : 1534370776.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PRMMST\BOOTUK_BOOTS_SKU_PRMMSTV2_20180816_20180816180618_20180816_180626.zip | file updated time is : 1534457267.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\WHSE_ORDER\BOOTUK_BOOTS_WHSE_ORDER_20180814_20180813224723_20180813_224738.zip | file updated time is : 1534214941.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\WHSE_ORDER\BOOTUK_BOOTS_WHSE_ORDER_20180815_20180814224812_20180814_224856.zip | file updated time is : 1534301421.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\WHSE_ORDER\BOOTUK_BOOTS_WHSE_ORDER_20180816_20180815232642_20180815_232700.zip | file updated time is : 1534390107.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\WHSE_ORDER\BOOTUK_BOOTS_WHSE_ORDER_20180817_20180816233120_20180816_233141.zip | file updated time is : 1534476787.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PROMO\BOOTUK_BOOTS_SKU_PROMOV2_20180813_20180813182616_20180813_184343.zip | file updated time is : 1534200522.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PROMO\BOOTUK_BOOTS_SKU_PROMOV2_20180814_20180814182949_20180814_184545.zip | file updated time is : 1534287026.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PROMO\BOOTUK_BOOTS_SKU_PROMOV2_20180815_20180815180448_20180815_182234.zip | file updated time is : 1534372052.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PROMO\BOOTUK_BOOTS_SKU_PROMOV2_20180816_20180816182109_20180816_183825.zip | file updated time is : 1534459403.0
+2018-08-17 13:48:40.394041
+there is no file found in folder %s\\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2
+current max_updated_time is 1534481554.0the final max_updated_time is 1534481554.0
+
+2018-08-17 13:48:40.841324
+there is no file found in folder %s\\wal1wnnas1.colo.retailsolutions.com\FTP_EXTERNAL\DPSG\DPSG_MASTER_DATA\PROD\WM
+current max_updated_time is 1534481554.0the final max_updated_time is 1534481554.0
+
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD DC Inv Report (EOH+BOH)_2018-08-15_20180817_005052.txt | file updated time is : 1534481538.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Store Inv Report_p2of4_2018-08-14_res_20180817_005050.txt | file updated time is : 1534481552.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Store Inv Report_p3of4_2018-08-14_res_20180817_005049.txt | file updated time is : 1534481554.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Sales Report_p4of4_2018-08-14_res_20180817_005052.txt | file updated time is : 1534481539.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD DC Inv Report (Receipts)_2018-08-15_20180817_005053.txt | file updated time is : 1534481535.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGTL_5013 Target Lite_SVR_Report_201808WK1_res_20180813_232337.txt | file updated time is : 1534222287.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Sales Report_p2of4_2018-08-14_res_20180817_005051.txt | file updated time is : 1534481541.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Store Inv Report_p4of4_2018-08-14_res_20180817_005051.txt | file updated time is : 1534481552.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Store Inv Report_p1of4_2018-08-14_res_20180817_005050.txt | file updated time is : 1534481552.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Sales Report_p3of4_2018-08-14_res_20180817_005052.txt | file updated time is : 1534481540.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Sales Report_p1of4_2018-08-14_res_20180817_005053.txt | file updated time is : 1534481536.0
+2018-08-17 13:48:41.516155
+there is no file found in folder %s\\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET
+current max_updated_time is 1534481554.0the final max_updated_time is 1534481554.0
+
+2018-08-17 13:48:42.992774
+there is no file found in folder %s\\wal1wnnas1.colo.retailsolutions.com\projects\New Retailers\Boots\Adv Card Restatements
+current max_updated_time is 1534481554.0the final max_updated_time is 1534481554.0
+
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180814_20180813233731_20180813_233750.zip | file updated time is : 1534217961.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180814_RES_20180813233748_20180813_233819.zip | file updated time is : 1534217987.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180815_20180815001429_20180815_001502.zip | file updated time is : 1534306590.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180815_RES_20180815001445_20180815_001530.zip | file updated time is : 1534306619.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180816_20180815232609_20180815_232633.zip | file updated time is : 1534390081.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180816_RES_20180815232625_20180815_232700.zip | file updated time is : 1534390114.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180817_20180816233047_20180816_233116.zip | file updated time is : 1534476773.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180817_RES_20180816233103_20180816_233141.zip | file updated time is : 1534476791.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\DC_INV\BOOTUK_BOOTS_DC_INV_20180814_20180813230214_20180813_230226.zip | file updated time is : 1534215836.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\DC_INV\BOOTUK_BOOTS_DC_INV_20180815_20180814230315_20180814_230331.zip | file updated time is : 1534302301.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\DC_INV\BOOTUK_BOOTS_DC_INV_20180816_20180815225127_20180815_225146.zip | file updated time is : 1534387996.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\DC_INV\BOOTUK_BOOTS_DC_INV_20180817_20180816225411_20180816_225416.zip | file updated time is : 1534474550.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\INV\BOOTUK_BOOTS_INV_20180814_20180813230216_20180813_230854.zip | file updated time is : 1534216242.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\INV\BOOTUK_BOOTS_INV_20180815_20180814230318_20180814_231007.zip | file updated time is : 1534302720.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\INV\BOOTUK_BOOTS_INV_20180816_20180815225130_20180815_225816.zip | file updated time is : 1534388398.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\INV\BOOTUK_BOOTS_INV_20180817_20180816225415_20180816_230055.zip | file updated time is : 1534474962.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SUB_MASTER\BOOTUK_BOOTS_SUBS_MASTER_20180813_20180812234747_20180813_021830.zip | file updated time is : 1534141198.0
+2018-08-17 13:53:48.244730
+there is no file found in folder %s\\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1
+current max_updated_time is 1534481554.0the final max_updated_time is 1534481554.0
+
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\MDQ_PSC\BOOTUK_BOOTS_MDQ_PSC_20180814_20180813230850_20180813_233751.zip | file updated time is : 1534218600.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\MDQ_PSC\BOOTUK_BOOTS_MDQ_PSC_20180815_20180814230946_20180815_001437.zip | file updated time is : 1534307184.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\MDQ_PSC\BOOTUK_BOOTS_MDQ_PSC_20180816_20180815225815_20180815_232608.zip | file updated time is : 1534390714.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\MDQ_PSC\BOOTUK_BOOTS_MDQ_PSC_20180817_20180816230047_20180816_233047.zip | file updated time is : 1534477369.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PRMMST\BOOTUK_BOOTS_SKU_PRMMSTV2_20180813_20180813182615_20180813_182632.zip | file updated time is : 1534199282.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PRMMST\BOOTUK_BOOTS_SKU_PRMMSTV2_20180814_20180814182947_20180814_183005.zip | file updated time is : 1534285894.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PRMMST\BOOTUK_BOOTS_SKU_PRMMSTV2_20180815_20180815180446_20180815_180450.zip | file updated time is : 1534370776.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PRMMST\BOOTUK_BOOTS_SKU_PRMMSTV2_20180816_20180816180618_20180816_180626.zip | file updated time is : 1534457267.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\WHSE_ORDER\BOOTUK_BOOTS_WHSE_ORDER_20180814_20180813224723_20180813_224738.zip | file updated time is : 1534214941.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\WHSE_ORDER\BOOTUK_BOOTS_WHSE_ORDER_20180815_20180814224812_20180814_224856.zip | file updated time is : 1534301421.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\WHSE_ORDER\BOOTUK_BOOTS_WHSE_ORDER_20180816_20180815232642_20180815_232700.zip | file updated time is : 1534390107.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\WHSE_ORDER\BOOTUK_BOOTS_WHSE_ORDER_20180817_20180816233120_20180816_233141.zip | file updated time is : 1534476787.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PROMO\BOOTUK_BOOTS_SKU_PROMOV2_20180813_20180813182616_20180813_184343.zip | file updated time is : 1534200522.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PROMO\BOOTUK_BOOTS_SKU_PROMOV2_20180814_20180814182949_20180814_184545.zip | file updated time is : 1534287026.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PROMO\BOOTUK_BOOTS_SKU_PROMOV2_20180815_20180815180448_20180815_182234.zip | file updated time is : 1534372052.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PROMO\BOOTUK_BOOTS_SKU_PROMOV2_20180816_20180816182109_20180816_183825.zip | file updated time is : 1534459403.0
+2018-08-17 13:53:51.350318
+there is no file found in folder %s\\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2
+current max_updated_time is 1534481554.0the final max_updated_time is 1534481554.0
+
+2018-08-17 13:53:51.782951
+there is no file found in folder %s\\wal1wnnas1.colo.retailsolutions.com\FTP_EXTERNAL\DPSG\DPSG_MASTER_DATA\PROD\WM
+current max_updated_time is 1534481554.0the final max_updated_time is 1534481554.0
+
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD DC Inv Report (EOH+BOH)_2018-08-15_20180817_005052.txt | file updated time is : 1534481538.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Store Inv Report_p2of4_2018-08-14_res_20180817_005050.txt | file updated time is : 1534481552.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Store Inv Report_p3of4_2018-08-14_res_20180817_005049.txt | file updated time is : 1534481554.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Sales Report_p4of4_2018-08-14_res_20180817_005052.txt | file updated time is : 1534481539.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD DC Inv Report (Receipts)_2018-08-15_20180817_005053.txt | file updated time is : 1534481535.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGTL_5013 Target Lite_SVR_Report_201808WK1_res_20180813_232337.txt | file updated time is : 1534222287.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Sales Report_p2of4_2018-08-14_res_20180817_005051.txt | file updated time is : 1534481541.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Store Inv Report_p4of4_2018-08-14_res_20180817_005051.txt | file updated time is : 1534481552.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Store Inv Report_p1of4_2018-08-14_res_20180817_005050.txt | file updated time is : 1534481552.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Sales Report_p3of4_2018-08-14_res_20180817_005052.txt | file updated time is : 1534481540.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Sales Report_p1of4_2018-08-14_res_20180817_005053.txt | file updated time is : 1534481536.0
+2018-08-17 13:53:52.405046
+there is no file found in folder %s\\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET
+current max_updated_time is 1534481554.0the final max_updated_time is 1534481554.0
+
+2018-08-17 13:53:53.918776
+there is no file found in folder %s\\wal1wnnas1.colo.retailsolutions.com\projects\New Retailers\Boots\Adv Card Restatements
+current max_updated_time is 1534481554.0the final max_updated_time is 1534481554.0
+
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180814_20180813233731_20180813_233750.zip | file updated time is : 1534217961.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180814_RES_20180813233748_20180813_233819.zip | file updated time is : 1534217987.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180815_20180815001429_20180815_001502.zip | file updated time is : 1534306590.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180815_RES_20180815001445_20180815_001530.zip | file updated time is : 1534306619.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180816_20180815232609_20180815_232633.zip | file updated time is : 1534390081.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180816_RES_20180815232625_20180815_232700.zip | file updated time is : 1534390114.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180817_20180816233047_20180816_233116.zip | file updated time is : 1534476773.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180817_RES_20180816233103_20180816_233141.zip | file updated time is : 1534476791.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\DC_INV\BOOTUK_BOOTS_DC_INV_20180814_20180813230214_20180813_230226.zip | file updated time is : 1534215836.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\DC_INV\BOOTUK_BOOTS_DC_INV_20180815_20180814230315_20180814_230331.zip | file updated time is : 1534302301.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\DC_INV\BOOTUK_BOOTS_DC_INV_20180816_20180815225127_20180815_225146.zip | file updated time is : 1534387996.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\DC_INV\BOOTUK_BOOTS_DC_INV_20180817_20180816225411_20180816_225416.zip | file updated time is : 1534474550.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\INV\BOOTUK_BOOTS_INV_20180814_20180813230216_20180813_230854.zip | file updated time is : 1534216242.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\INV\BOOTUK_BOOTS_INV_20180815_20180814230318_20180814_231007.zip | file updated time is : 1534302720.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\INV\BOOTUK_BOOTS_INV_20180816_20180815225130_20180815_225816.zip | file updated time is : 1534388398.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\INV\BOOTUK_BOOTS_INV_20180817_20180816225415_20180816_230055.zip | file updated time is : 1534474962.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SUB_MASTER\BOOTUK_BOOTS_SUBS_MASTER_20180813_20180812234747_20180813_021830.zip | file updated time is : 1534141198.0
+2018-08-17 13:58:58.160927
+there is no file found in folder %s\\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1
+current max_updated_time is 1534481554.0the final max_updated_time is 1534481554.0
+
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\MDQ_PSC\BOOTUK_BOOTS_MDQ_PSC_20180814_20180813230850_20180813_233751.zip | file updated time is : 1534218600.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\MDQ_PSC\BOOTUK_BOOTS_MDQ_PSC_20180815_20180814230946_20180815_001437.zip | file updated time is : 1534307184.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\MDQ_PSC\BOOTUK_BOOTS_MDQ_PSC_20180816_20180815225815_20180815_232608.zip | file updated time is : 1534390714.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\MDQ_PSC\BOOTUK_BOOTS_MDQ_PSC_20180817_20180816230047_20180816_233047.zip | file updated time is : 1534477369.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PRMMST\BOOTUK_BOOTS_SKU_PRMMSTV2_20180813_20180813182615_20180813_182632.zip | file updated time is : 1534199282.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PRMMST\BOOTUK_BOOTS_SKU_PRMMSTV2_20180814_20180814182947_20180814_183005.zip | file updated time is : 1534285894.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PRMMST\BOOTUK_BOOTS_SKU_PRMMSTV2_20180815_20180815180446_20180815_180450.zip | file updated time is : 1534370776.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PRMMST\BOOTUK_BOOTS_SKU_PRMMSTV2_20180816_20180816180618_20180816_180626.zip | file updated time is : 1534457267.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\WHSE_ORDER\BOOTUK_BOOTS_WHSE_ORDER_20180814_20180813224723_20180813_224738.zip | file updated time is : 1534214941.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\WHSE_ORDER\BOOTUK_BOOTS_WHSE_ORDER_20180815_20180814224812_20180814_224856.zip | file updated time is : 1534301421.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\WHSE_ORDER\BOOTUK_BOOTS_WHSE_ORDER_20180816_20180815232642_20180815_232700.zip | file updated time is : 1534390107.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\WHSE_ORDER\BOOTUK_BOOTS_WHSE_ORDER_20180817_20180816233120_20180816_233141.zip | file updated time is : 1534476787.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PROMO\BOOTUK_BOOTS_SKU_PROMOV2_20180813_20180813182616_20180813_184343.zip | file updated time is : 1534200522.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PROMO\BOOTUK_BOOTS_SKU_PROMOV2_20180814_20180814182949_20180814_184545.zip | file updated time is : 1534287026.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PROMO\BOOTUK_BOOTS_SKU_PROMOV2_20180815_20180815180448_20180815_182234.zip | file updated time is : 1534372052.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PROMO\BOOTUK_BOOTS_SKU_PROMOV2_20180816_20180816182109_20180816_183825.zip | file updated time is : 1534459403.0
+2018-08-17 13:59:01.304602
+there is no file found in folder %s\\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2
+current max_updated_time is 1534481554.0the final max_updated_time is 1534481554.0
+
+2018-08-17 13:59:01.636646
+there is no file found in folder %s\\wal1wnnas1.colo.retailsolutions.com\FTP_EXTERNAL\DPSG\DPSG_MASTER_DATA\PROD\WM
+current max_updated_time is 1534481554.0the final max_updated_time is 1534481554.0
+
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD DC Inv Report (EOH+BOH)_2018-08-15_20180817_005052.txt | file updated time is : 1534481538.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Store Inv Report_p2of4_2018-08-14_res_20180817_005050.txt | file updated time is : 1534481552.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Store Inv Report_p3of4_2018-08-14_res_20180817_005049.txt | file updated time is : 1534481554.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Sales Report_p4of4_2018-08-14_res_20180817_005052.txt | file updated time is : 1534481539.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD DC Inv Report (Receipts)_2018-08-15_20180817_005053.txt | file updated time is : 1534481535.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGTL_5013 Target Lite_SVR_Report_201808WK1_res_20180813_232337.txt | file updated time is : 1534222287.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Sales Report_p2of4_2018-08-14_res_20180817_005051.txt | file updated time is : 1534481541.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Store Inv Report_p4of4_2018-08-14_res_20180817_005051.txt | file updated time is : 1534481552.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Store Inv Report_p1of4_2018-08-14_res_20180817_005050.txt | file updated time is : 1534481552.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Sales Report_p3of4_2018-08-14_res_20180817_005052.txt | file updated time is : 1534481540.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Sales Report_p1of4_2018-08-14_res_20180817_005053.txt | file updated time is : 1534481536.0
+2018-08-17 13:59:02.166940
+there is no file found in folder %s\\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET
+current max_updated_time is 1534481554.0the final max_updated_time is 1534481554.0
+
+2018-08-17 13:59:03.121078
+there is no file found in folder %s\\wal1wnnas1.colo.retailsolutions.com\projects\New Retailers\Boots\Adv Card Restatements
+current max_updated_time is 1534481554.0the final max_updated_time is 1534481554.0
+
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180814_20180813233731_20180813_233750.zip | file updated time is : 1534217961.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180814_RES_20180813233748_20180813_233819.zip | file updated time is : 1534217987.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180815_20180815001429_20180815_001502.zip | file updated time is : 1534306590.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180815_RES_20180815001445_20180815_001530.zip | file updated time is : 1534306619.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180816_20180815232609_20180815_232633.zip | file updated time is : 1534390081.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180816_RES_20180815232625_20180815_232700.zip | file updated time is : 1534390114.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180817_20180816233047_20180816_233116.zip | file updated time is : 1534476773.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SALES\BOOTUK_BOOTS_SALES_20180817_RES_20180816233103_20180816_233141.zip | file updated time is : 1534476791.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\DC_INV\BOOTUK_BOOTS_DC_INV_20180814_20180813230214_20180813_230226.zip | file updated time is : 1534215836.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\DC_INV\BOOTUK_BOOTS_DC_INV_20180815_20180814230315_20180814_230331.zip | file updated time is : 1534302301.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\DC_INV\BOOTUK_BOOTS_DC_INV_20180816_20180815225127_20180815_225146.zip | file updated time is : 1534387996.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\DC_INV\BOOTUK_BOOTS_DC_INV_20180817_20180816225411_20180816_225416.zip | file updated time is : 1534474550.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\INV\BOOTUK_BOOTS_INV_20180814_20180813230216_20180813_230854.zip | file updated time is : 1534216242.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\INV\BOOTUK_BOOTS_INV_20180815_20180814230318_20180814_231007.zip | file updated time is : 1534302720.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\INV\BOOTUK_BOOTS_INV_20180816_20180815225130_20180815_225816.zip | file updated time is : 1534388398.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\INV\BOOTUK_BOOTS_INV_20180817_20180816225415_20180816_230055.zip | file updated time is : 1534474962.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1\SUB_MASTER\BOOTUK_BOOTS_SUBS_MASTER_20180813_20180812234747_20180813_021830.zip | file updated time is : 1534141198.0
+2018-08-17 14:04:09.663122
+there is no file found in folder %s\\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase1
+current max_updated_time is 1534481554.0the final max_updated_time is 1534481554.0
+
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\MDQ_PSC\BOOTUK_BOOTS_MDQ_PSC_20180814_20180813230850_20180813_233751.zip | file updated time is : 1534218600.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\MDQ_PSC\BOOTUK_BOOTS_MDQ_PSC_20180815_20180814230946_20180815_001437.zip | file updated time is : 1534307184.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\MDQ_PSC\BOOTUK_BOOTS_MDQ_PSC_20180816_20180815225815_20180815_232608.zip | file updated time is : 1534390714.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\MDQ_PSC\BOOTUK_BOOTS_MDQ_PSC_20180817_20180816230047_20180816_233047.zip | file updated time is : 1534477369.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PRMMST\BOOTUK_BOOTS_SKU_PRMMSTV2_20180813_20180813182615_20180813_182632.zip | file updated time is : 1534199282.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PRMMST\BOOTUK_BOOTS_SKU_PRMMSTV2_20180814_20180814182947_20180814_183005.zip | file updated time is : 1534285894.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PRMMST\BOOTUK_BOOTS_SKU_PRMMSTV2_20180815_20180815180446_20180815_180450.zip | file updated time is : 1534370776.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PRMMST\BOOTUK_BOOTS_SKU_PRMMSTV2_20180816_20180816180618_20180816_180626.zip | file updated time is : 1534457267.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\WHSE_ORDER\BOOTUK_BOOTS_WHSE_ORDER_20180814_20180813224723_20180813_224738.zip | file updated time is : 1534214941.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\WHSE_ORDER\BOOTUK_BOOTS_WHSE_ORDER_20180815_20180814224812_20180814_224856.zip | file updated time is : 1534301421.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\WHSE_ORDER\BOOTUK_BOOTS_WHSE_ORDER_20180816_20180815232642_20180815_232700.zip | file updated time is : 1534390107.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\WHSE_ORDER\BOOTUK_BOOTS_WHSE_ORDER_20180817_20180816233120_20180816_233141.zip | file updated time is : 1534476787.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PROMO\BOOTUK_BOOTS_SKU_PROMOV2_20180813_20180813182616_20180813_184343.zip | file updated time is : 1534200522.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PROMO\BOOTUK_BOOTS_SKU_PROMOV2_20180814_20180814182949_20180814_184545.zip | file updated time is : 1534287026.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PROMO\BOOTUK_BOOTS_SKU_PROMOV2_20180815_20180815180448_20180815_182234.zip | file updated time is : 1534372052.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2\SKU_PROMO\BOOTUK_BOOTS_SKU_PROMOV2_20180816_20180816182109_20180816_183825.zip | file updated time is : 1534459403.0
+2018-08-17 14:04:14.151576
+there is no file found in folder %s\\wal1wnnas1.colo.retailsolutions.com\Engine_Z\Boots_UK\DIRECT_FEED\Phase2
+current max_updated_time is 1534481554.0the final max_updated_time is 1534481554.0
+
+2018-08-17 14:04:15.022703
+there is no file found in folder %s\\wal1wnnas1.colo.retailsolutions.com\FTP_EXTERNAL\DPSG\DPSG_MASTER_DATA\PROD\WM
+current max_updated_time is 1534481554.0the final max_updated_time is 1534481554.0
+
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD DC Inv Report (EOH+BOH)_2018-08-15_20180817_005052.txt | file updated time is : 1534481538.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Store Inv Report_p2of4_2018-08-14_res_20180817_005050.txt | file updated time is : 1534481552.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Store Inv Report_p3of4_2018-08-14_res_20180817_005049.txt | file updated time is : 1534481554.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Sales Report_p4of4_2018-08-14_res_20180817_005052.txt | file updated time is : 1534481539.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD DC Inv Report (Receipts)_2018-08-15_20180817_005053.txt | file updated time is : 1534481535.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGTL_5013 Target Lite_SVR_Report_201808WK1_res_20180813_232337.txt | file updated time is : 1534222287.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Sales Report_p2of4_2018-08-14_res_20180817_005051.txt | file updated time is : 1534481541.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Store Inv Report_p4of4_2018-08-14_res_20180817_005051.txt | file updated time is : 1534481552.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Store Inv Report_p1of4_2018-08-14_res_20180817_005050.txt | file updated time is : 1534481552.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Sales Report_p3of4_2018-08-14_res_20180817_005052.txt | file updated time is : 1534481540.0
+file list : \\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET\TARGET_4366 S&I - SPD Sales Report_p1of4_2018-08-14_res_20180817_005053.txt | file updated time is : 1534481536.0
+2018-08-17 14:04:15.763943
+there is no file found in folder %s\\wal1wnnas1.colo.retailsolutions.com\FTP_INTERNAL\RDP_TARGET
+current max_updated_time is 1534481554.0the final max_updated_time is 1534481554.0
+
+2018-08-17 14:04:17.050125
+there is no file found in folder %s\\wal1wnnas1.colo.retailsolutions.com\projects\New Retailers\Boots\Adv Card Restatements
+current max_updated_time is 1534481554.0the final max_updated_time is 1534481554.0
+

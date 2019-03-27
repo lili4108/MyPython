@@ -1,0 +1,1024 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>test report</title>
+    <meta name="generator" content="HTMLTestRunner 0.8.2"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    
+<style type="text/css" media="screen">
+body        { font-family: verdana, arial, helvetica, sans-serif; font-size: 80%; }
+table       { font-size: 100%; }
+pre         { }
+ 
+/* -- heading ---------------------------------------------------------------------- */
+h1 {
+    font-size: 16pt;
+    color: gray;
+}
+.heading {
+    margin-top: 0ex;
+    margin-bottom: 1ex;
+}
+ 
+.heading .attribute {
+    margin-top: 1ex;
+    margin-bottom: 0;
+}
+ 
+.heading .description {
+    margin-top: 4ex;
+    margin-bottom: 6ex;
+}
+ 
+/* -- css div popup ------------------------------------------------------------------------ */
+a.popup_link {
+}
+ 
+a.popup_link:hover {
+    color: red;
+}
+ 
+.popup_window {
+    display: none;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    /*border: solid #627173 1px; */
+    padding: 10px;
+    background-color: #E6E6D6;
+    font-family: "Lucida Console", "Courier New", Courier, monospace;
+    text-align: left;
+    font-size: 8pt;
+    width: 500px;
+}
+ 
+}
+/* -- report ------------------------------------------------------------------------ */
+#show_detail_line {
+    margin-top: 3ex;
+    margin-bottom: 1ex;
+}
+#result_table {
+    width: 80%;
+    border-collapse: collapse;
+    border: 1px solid #777;
+}
+#header_row {
+    font-weight: bold;
+    color: white;
+    background-color: #777;
+}
+#result_table td {
+    border: 1px solid #777;
+    padding: 2px;
+}
+#total_row  { font-weight: bold; }
+.passClass  { background-color: #6c6; }
+.failClass  { background-color: #c60; }
+.errorClass { background-color: #c00; }
+.passCase   { color: #6c6; }
+.failCase   { color: #c60; font-weight: bold; }
+.errorCase  { color: #c00; font-weight: bold; }
+.hiddenRow  { display: none; }
+.testcase   { margin-left: 2em; }
+ 
+ 
+/* -- ending ---------------------------------------------------------------------- */
+#ending {
+}
+ 
+</style>
+
+</head>
+<body>
+<script language="javascript" type="text/javascript"><!--
+output_list = Array();
+ 
+/* level - 0:Summary; 1:Failed; 2:All */
+function showCase(level) {
+    trs = document.getElementsByTagName("tr");
+    for (var i = 0; i < trs.length; i++) {
+        tr = trs[i];
+        id = tr.id;
+        if (id.substr(0,2) == 'ft') {
+            if (level < 1) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+        if (id.substr(0,2) == 'pt') {
+            if (level > 1) {
+                tr.className = '';
+            }
+            else {
+                tr.className = 'hiddenRow';
+            }
+        }
+    }
+}
+ 
+ 
+function showClassDetail(cid, count) {
+    var id_list = Array(count);
+    var toHide = 1;
+    for (var i = 0; i < count; i++) {
+        tid0 = 't' + cid.substr(1) + '.' + (i+1);
+        tid = 'f' + tid0;
+        tr = document.getElementById(tid);
+        if (!tr) {
+            tid = 'p' + tid0;
+            tr = document.getElementById(tid);
+        }
+        id_list[i] = tid;
+        if (tr.className) {
+            toHide = 0;
+        }
+    }
+    for (var i = 0; i < count; i++) {
+        tid = id_list[i];
+        if (toHide) {
+            document.getElementById('div_'+tid).style.display = 'none'
+            document.getElementById(tid).className = 'hiddenRow';
+        }
+        else {
+            document.getElementById(tid).className = '';
+        }
+    }
+}
+ 
+ 
+function showTestDetail(div_id){
+    var details_div = document.getElementById(div_id)
+    var displayState = details_div.style.display
+    // alert(displayState)
+    if (displayState != 'block' ) {
+        displayState = 'block'
+        details_div.style.display = 'block'
+    }
+    else {
+        details_div.style.display = 'none'
+    }
+}
+ 
+ 
+function html_escape(s) {
+    s = s.replace(/&/g,'&');
+    s = s.replace(/</g,'<');
+    s = s.replace(/>/g,'>');
+    return s;
+}
+ 
+/* obsoleted by detail in <div>
+function showOutput(id, name) {
+    var w = window.open("", //url
+                    name,
+                    "resizable,scrollbars,status,width=800,height=450");
+    d = w.document;
+    d.write("<pre>");
+    d.write(html_escape(output_list[id]));
+    d.write("\n");
+    d.write("<a href='javascript:window.close()'>close</a>\n");
+    d.write("</pre>\n");
+    d.close();
+}
+*/
+--></script>
+ 
+<div class='heading'>
+<h1>test report</h1>
+<p class='attribute'><strong>Start Time:</strong> 2018-04-17 18:01:22</p>
+<p class='attribute'><strong>Duration:</strong> 0:01:07.810113</p>
+<p class='attribute'><strong>Status:</strong> Pass 1 Failure 1</p>
+
+<p class='description'>run RDP test case</p>
+</div>
+ 
+
+
+<p id='show_detail_line'>Show
+<a href='javascript:showCase(0)'>Summary</a>
+<a href='javascript:showCase(1)'>Failed</a>
+<a href='javascript:showCase(2)'>All</a>
+</p>
+<table id='result_table'>
+<colgroup>
+<col align='left' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+</colgroup>
+<tr id='header_row'>
+    <td colspan='2'>Test Group/Test case</td>
+    <td>Count</td>
+    <td>Pass</td>
+    <td>Fail</td>
+    <td>Error</td>
+    <td>View</td>
+    <td>Screenshot</td>
+</tr>
+
+<tr class='failClass'>
+    <td>case_id</td>
+    <td>rdp_main.RDPTest</td>
+    <td>2</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1',2)">Detail</a></td>
+    <td>$nbsp;</td>
+</tr>
+
+<tr id='pt1.1' class='hiddenRow'>
+    <td align = 'center'></td>
+    <td class='none'><div class='testcase'>test_rdp_fileloader</div></td>
+    <td colspan='5' align='center'>
+ 
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
+        pass</a>
+ 
+    <div id='div_pt1.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.1: RDP ID : PREP_BOOTS_RDP ---------------------------------
+there are 14 files loaded complete today !!
+ 
+SQLSERVER:load_id  1010 , row_count  4022
+VERTICA  :load_id  1010 , row_count  4022
+
+SQLSERVER:load_id  1011 , row_count  1084307
+VERTICA  :load_id  1011 , row_count  1084307
+
+SQLSERVER:load_id  1012 , row_count  1693534
+VERTICA  :load_id  1012 , row_count  1693534
+
+SQLSERVER:load_id  1014 , row_count  18015717
+VERTICA  :load_id  1014 , row_count  18015717
+
+SQLSERVER:load_id  1015 , row_count  6267907
+VERTICA  :load_id  1015 , row_count  6267907
+
+SQLSERVER:load_id  1016 , row_count  13431
+VERTICA  :load_id  1016 , row_count  13431
+
+SQLSERVER:load_id  1017 , row_count  1555
+VERTICA  :load_id  1017 , row_count  1555
+
+SQLSERVER:load_id  1018 , row_count  17628986
+VERTICA  :load_id  1018 , row_count  17628986
+
+SQLSERVER:load_id  1019 , row_count  14934
+VERTICA  :load_id  1019 , row_count  14934
+
+SQLSERVER:load_id  1020 , row_count  18032488
+VERTICA  :load_id  1020 , row_count  18032488
+
+SQLSERVER:load_id  1021 , row_count  1705868
+VERTICA  :load_id  1021 , row_count  1705868
+
+SQLSERVER:load_id  1022 , row_count  80081
+VERTICA  :load_id  1022 , row_count  80081
+
+SQLSERVER:load_id  1023 , row_count  1623952
+VERTICA  :load_id  1023 , row_count  1623952
+
+SQLSERVER:load_id  1024 , row_count  21374205
+VERTICA  :load_id  1024 , row_count  21374205
+
+RDP ID : PREP_AUX_RDP ---------------------------------
+there is 1 file loaded complete today !!
+ 
+SQLSERVER:load_id  1350 , row_count  15904
+VERTICA  :load_id  1350 , row_count  15904
+
+RDP ID : PREP_TARGET_RDP ---------------------------------
+there are 87 files loaded complete today !!
+ 
+SQLSERVER:load_id  11968 , row_count  6183
+VERTICA  :load_id  11968 , row_count  6183
+
+SQLSERVER:load_id  11969 , row_count  102293
+VERTICA  :load_id  11969 , row_count  102293
+
+SQLSERVER:load_id  11970 , row_count  30368
+VERTICA  :load_id  11970 , row_count  30368
+
+SQLSERVER:load_id  11971 , row_count  109091
+VERTICA  :load_id  11971 , row_count  109091
+
+SQLSERVER:load_id  11972 , row_count  143554
+VERTICA  :load_id  11972 , row_count  143554
+
+SQLSERVER:load_id  11973 , row_count  183295
+VERTICA  :load_id  11973 , row_count  183295
+
+SQLSERVER:load_id  11974 , row_count  188123
+VERTICA  :load_id  11974 , row_count  188123
+
+SQLSERVER:load_id  11975 , row_count  73995
+VERTICA  :load_id  11975 , row_count  73995
+
+SQLSERVER:load_id  11976 , row_count  73178
+VERTICA  :load_id  11976 , row_count  73178
+
+SQLSERVER:load_id  11977 , row_count  1580
+VERTICA  :load_id  11977 , row_count  1580
+
+SQLSERVER:load_id  11978 , row_count  69199
+VERTICA  :load_id  11978 , row_count  69199
+
+SQLSERVER:load_id  11979 , row_count  101665
+VERTICA  :load_id  11979 , row_count  101665
+
+SQLSERVER:load_id  11980 , row_count  143880
+VERTICA  :load_id  11980 , row_count  143880
+
+SQLSERVER:load_id  11981 , row_count  791
+VERTICA  :load_id  11981 , row_count  791
+
+SQLSERVER:load_id  11982 , row_count  4870
+VERTICA  :load_id  11982 , row_count  4870
+
+SQLSERVER:load_id  11983 , row_count  63089
+VERTICA  :load_id  11983 , row_count  63089
+
+SQLSERVER:load_id  11984 , row_count  87845
+VERTICA  :load_id  11984 , row_count  87845
+
+SQLSERVER:load_id  11985 , row_count  5968
+VERTICA  :load_id  11985 , row_count  5968
+
+SQLSERVER:load_id  11986 , row_count  62744
+VERTICA  :load_id  11986 , row_count  62744
+
+SQLSERVER:load_id  11987 , row_count  10797
+VERTICA  :load_id  11987 , row_count  10797
+
+SQLSERVER:load_id  11988 , row_count  164
+VERTICA  :load_id  11988 , row_count  164
+
+SQLSERVER:load_id  11989 , row_count  71239
+VERTICA  :load_id  11989 , row_count  71239
+
+SQLSERVER:load_id  11990 , row_count  68980
+VERTICA  :load_id  11990 , row_count  68980
+
+SQLSERVER:load_id  11991 , row_count  89115
+VERTICA  :load_id  11991 , row_count  89115
+
+SQLSERVER:load_id  11992 , row_count  65392
+VERTICA  :load_id  11992 , row_count  65392
+
+SQLSERVER:load_id  11993 , row_count  55801
+VERTICA  :load_id  11993 , row_count  55801
+
+SQLSERVER:load_id  11994 , row_count  97818
+VERTICA  :load_id  11994 , row_count  97818
+
+SQLSERVER:load_id  11995 , row_count  25845
+VERTICA  :load_id  11995 , row_count  25845
+
+SQLSERVER:load_id  11996 , row_count  33171
+VERTICA  :load_id  11996 , row_count  33171
+
+SQLSERVER:load_id  11997 , row_count  57590
+VERTICA  :load_id  11997 , row_count  57590
+
+SQLSERVER:load_id  11998 , row_count  3687
+VERTICA  :load_id  11998 , row_count  3687
+
+SQLSERVER:load_id  11999 , row_count  64972
+VERTICA  :load_id  11999 , row_count  64972
+
+SQLSERVER:load_id  12000 , row_count  65554
+VERTICA  :load_id  12000 , row_count  65554
+
+SQLSERVER:load_id  12001 , row_count  1976
+VERTICA  :load_id  12001 , row_count  1976
+
+SQLSERVER:load_id  12002 , row_count  79077
+VERTICA  :load_id  12002 , row_count  79077
+
+SQLSERVER:load_id  12003 , row_count  240
+VERTICA  :load_id  12003 , row_count  240
+
+SQLSERVER:load_id  12004 , row_count  149
+VERTICA  :load_id  12004 , row_count  149
+
+SQLSERVER:load_id  12005 , row_count  10743
+VERTICA  :load_id  12005 , row_count  10743
+
+SQLSERVER:load_id  12006 , row_count  1792
+VERTICA  :load_id  12006 , row_count  1792
+
+SQLSERVER:load_id  12007 , row_count  3
+VERTICA  :load_id  12007 , row_count  3
+
+SQLSERVER:load_id  12008 , row_count  41458
+VERTICA  :load_id  12008 , row_count  41458
+
+SQLSERVER:load_id  12009 , row_count  40199
+VERTICA  :load_id  12009 , row_count  40199
+
+SQLSERVER:load_id  12010 , row_count  41254
+VERTICA  :load_id  12010 , row_count  41254
+
+SQLSERVER:load_id  12011 , row_count  44304
+VERTICA  :load_id  12011 , row_count  44304
+
+SQLSERVER:load_id  12012 , row_count  36042
+VERTICA  :load_id  12012 , row_count  36042
+
+SQLSERVER:load_id  12013 , row_count  40394
+VERTICA  :load_id  12013 , row_count  40394
+
+SQLSERVER:load_id  12014 , row_count  7305
+VERTICA  :load_id  12014 , row_count  7305
+
+SQLSERVER:load_id  12015 , row_count  73
+VERTICA  :load_id  12015 , row_count  73
+
+SQLSERVER:load_id  12016 , row_count  232
+VERTICA  :load_id  12016 , row_count  232
+
+SQLSERVER:load_id  12017 , row_count  134238
+VERTICA  :load_id  12017 , row_count  134238
+
+SQLSERVER:load_id  12018 , row_count  65682
+VERTICA  :load_id  12018 , row_count  65682
+
+SQLSERVER:load_id  12019 , row_count  2460
+VERTICA  :load_id  12019 , row_count  2460
+
+SQLSERVER:load_id  12020 , row_count  35415
+VERTICA  :load_id  12020 , row_count  35415
+
+SQLSERVER:load_id  12021 , row_count  525637
+VERTICA  :load_id  12021 , row_count  525637
+
+SQLSERVER:load_id  12022 , row_count  181440
+VERTICA  :load_id  12022 , row_count  181440
+
+SQLSERVER:load_id  12023 , row_count  278
+VERTICA  :load_id  12023 , row_count  278
+
+SQLSERVER:load_id  12024 , row_count  18754
+VERTICA  :load_id  12024 , row_count  18754
+
+SQLSERVER:load_id  12025 , row_count  378
+VERTICA  :load_id  12025 , row_count  378
+
+SQLSERVER:load_id  12026 , row_count  2989879
+VERTICA  :load_id  12026 , row_count  2989879
+
+SQLSERVER:load_id  12027 , row_count  87506
+VERTICA  :load_id  12027 , row_count  87506
+
+SQLSERVER:load_id  12028 , row_count  30708
+VERTICA  :load_id  12028 , row_count  30708
+
+SQLSERVER:load_id  12029 , row_count  4114
+VERTICA  :load_id  12029 , row_count  4114
+
+SQLSERVER:load_id  12030 , row_count  33495
+VERTICA  :load_id  12030 , row_count  33495
+
+SQLSERVER:load_id  12031 , row_count  7521
+VERTICA  :load_id  12031 , row_count  7521
+
+SQLSERVER:load_id  12032 , row_count  162
+VERTICA  :load_id  12032 , row_count  162
+
+SQLSERVER:load_id  12033 , row_count  109005
+VERTICA  :load_id  12033 , row_count  109005
+
+SQLSERVER:load_id  12034 , row_count  147
+VERTICA  :load_id  12034 , row_count  147
+
+SQLSERVER:load_id  12035 , row_count  63051
+VERTICA  :load_id  12035 , row_count  63051
+
+SQLSERVER:load_id  12036 , row_count  33311
+VERTICA  :load_id  12036 , row_count  33311
+
+SQLSERVER:load_id  12037 , row_count  3919
+VERTICA  :load_id  12037 , row_count  3919
+
+SQLSERVER:load_id  12038 , row_count  77850
+VERTICA  :load_id  12038 , row_count  77850
+
+SQLSERVER:load_id  12039 , row_count  1611
+VERTICA  :load_id  12039 , row_count  1611
+
+SQLSERVER:load_id  12040 , row_count  341
+VERTICA  :load_id  12040 , row_count  341
+
+SQLSERVER:load_id  12041 , row_count  96
+VERTICA  :load_id  12041 , row_count  96
+
+SQLSERVER:load_id  12042 , row_count  5881
+VERTICA  :load_id  12042 , row_count  5881
+
+SQLSERVER:load_id  12043 , row_count  2009
+VERTICA  :load_id  12043 , row_count  2009
+
+SQLSERVER:load_id  12044 , row_count  5894
+VERTICA  :load_id  12044 , row_count  5894
+
+SQLSERVER:load_id  12045 , row_count  160183
+VERTICA  :load_id  12045 , row_count  160183
+
+SQLSERVER:load_id  12046 , row_count  57465
+VERTICA  :load_id  12046 , row_count  57465
+
+SQLSERVER:load_id  12047 , row_count  71856
+VERTICA  :load_id  12047 , row_count  71856
+
+SQLSERVER:load_id  12048 , row_count  166531
+VERTICA  :load_id  12048 , row_count  166531
+
+SQLSERVER:load_id  12049 , row_count  101010
+VERTICA  :load_id  12049 , row_count  101010
+
+SQLSERVER:load_id  12050 , row_count  19922
+VERTICA  :load_id  12050 , row_count  19922
+
+SQLSERVER:load_id  12051 , row_count  19937
+VERTICA  :load_id  12051 , row_count  19937
+
+SQLSERVER:load_id  12052 , row_count  341
+VERTICA  :load_id  12052 , row_count  341
+
+SQLSERVER:load_id  12053 , row_count  6040
+VERTICA  :load_id  12053 , row_count  6040
+
+SQLSERVER:load_id  12054 , row_count  91483
+VERTICA  :load_id  12054 , row_count  91483
+
+RDP ID : PREP_MR_RDP ---------------------------------
+there are 0 files loaded complete today !!
+ 
+RDP ID : PREP_PEPSICO_RDP ---------------------------------
+there are 74 files loaded complete today !!
+ 
+SQLSERVER:load_id  12376 , row_count  360
+VERTICA  :load_id  12376 , row_count  360
+
+SQLSERVER:load_id  12377 , row_count  1888742
+VERTICA  :load_id  12377 , row_count  1888742
+
+SQLSERVER:load_id  12378 , row_count  1421246
+VERTICA  :load_id  12378 , row_count  1421246
+
+SQLSERVER:load_id  12379 , row_count  954689
+VERTICA  :load_id  12379 , row_count  954689
+
+SQLSERVER:load_id  12380 , row_count  1166400
+VERTICA  :load_id  12380 , row_count  1166400
+
+SQLSERVER:load_id  12381 , row_count  1228389
+VERTICA  :load_id  12381 , row_count  1228389
+
+SQLSERVER:load_id  12382 , row_count  1156877
+VERTICA  :load_id  12382 , row_count  1156877
+
+SQLSERVER:load_id  12383 , row_count  1422112
+VERTICA  :load_id  12383 , row_count  1422112
+
+SQLSERVER:load_id  12384 , row_count  1308750
+VERTICA  :load_id  12384 , row_count  1308750
+
+SQLSERVER:load_id  12385 , row_count  1324817
+VERTICA  :load_id  12385 , row_count  1324817
+
+SQLSERVER:load_id  12386 , row_count  1378752
+VERTICA  :load_id  12386 , row_count  1378752
+
+SQLSERVER:load_id  12387 , row_count  1810124
+VERTICA  :load_id  12387 , row_count  1810124
+
+SQLSERVER:load_id  12388 , row_count  690411
+VERTICA  :load_id  12388 , row_count  690411
+
+SQLSERVER:load_id  12390 , row_count  1471798
+VERTICA  :load_id  12390 , row_count  1471798
+
+SQLSERVER:load_id  12392 , row_count  1164546
+VERTICA  :load_id  12392 , row_count  1164546
+
+SQLSERVER:load_id  12394 , row_count  1810219
+VERTICA  :load_id  12394 , row_count  1810219
+
+SQLSERVER:load_id  12395 , row_count  1190608
+VERTICA  :load_id  12395 , row_count  1190608
+
+SQLSERVER:load_id  12396 , row_count  803668
+VERTICA  :load_id  12396 , row_count  803668
+
+SQLSERVER:load_id  12398 , row_count  1383644
+VERTICA  :load_id  12398 , row_count  1383644
+
+SQLSERVER:load_id  12399 , row_count  1359924
+VERTICA  :load_id  12399 , row_count  1359924
+
+SQLSERVER:load_id  12401 , row_count  24031
+VERTICA  :load_id  12401 , row_count  24031
+
+SQLSERVER:load_id  12402 , row_count  1284443
+VERTICA  :load_id  12402 , row_count  1284443
+
+SQLSERVER:load_id  12403 , row_count  735
+VERTICA  :load_id  12403 , row_count  735
+
+SQLSERVER:load_id  12404 , row_count  2342469
+VERTICA  :load_id  12404 , row_count  2342469
+
+SQLSERVER:load_id  12405 , row_count  488308
+VERTICA  :load_id  12405 , row_count  488308
+
+SQLSERVER:load_id  12406 , row_count  6250149
+VERTICA  :load_id  12406 , row_count  6250149
+
+SQLSERVER:load_id  12408 , row_count  1402240
+VERTICA  :load_id  12408 , row_count  1402240
+
+SQLSERVER:load_id  12411 , row_count  1234560
+VERTICA  :load_id  12411 , row_count  1234560
+
+SQLSERVER:load_id  12412 , row_count  1086009
+VERTICA  :load_id  12412 , row_count  1086009
+
+SQLSERVER:load_id  12414 , row_count  1355253
+VERTICA  :load_id  12414 , row_count  1355253
+
+SQLSERVER:load_id  12420 , row_count  1331831
+VERTICA  :load_id  12420 , row_count  1331831
+
+SQLSERVER:load_id  12436 , row_count  1848125
+VERTICA  :load_id  12436 , row_count  1848125
+
+SQLSERVER:load_id  12437 , row_count  1382546
+VERTICA  :load_id  12437 , row_count  1382546
+
+SQLSERVER:load_id  12438 , row_count  1189592
+VERTICA  :load_id  12438 , row_count  1189592
+
+SQLSERVER:load_id  12439 , row_count  1429565
+VERTICA  :load_id  12439 , row_count  1429565
+
+SQLSERVER:load_id  12440 , row_count  1449656
+VERTICA  :load_id  12440 , row_count  1449656
+
+SQLSERVER:load_id  12441 , row_count  1312076
+VERTICA  :load_id  12441 , row_count  1312076
+
+SQLSERVER:load_id  12442 , row_count  1110055
+VERTICA  :load_id  12442 , row_count  1110055
+
+SQLSERVER:load_id  12443 , row_count  1408463
+VERTICA  :load_id  12443 , row_count  1408463
+
+SQLSERVER:load_id  12444 , row_count  1176320
+VERTICA  :load_id  12444 , row_count  1176320
+
+SQLSERVER:load_id  12445 , row_count  1353279
+VERTICA  :load_id  12445 , row_count  1353279
+
+SQLSERVER:load_id  12446 , row_count  1190668
+VERTICA  :load_id  12446 , row_count  1190668
+
+SQLSERVER:load_id  12447 , row_count  1217286
+VERTICA  :load_id  12447 , row_count  1217286
+
+SQLSERVER:load_id  12448 , row_count  1471682
+VERTICA  :load_id  12448 , row_count  1471682
+
+SQLSERVER:load_id  12449 , row_count  463745
+VERTICA  :load_id  12449 , row_count  463745
+
+SQLSERVER:load_id  12450 , row_count  1402240
+VERTICA  :load_id  12450 , row_count  1402240
+
+SQLSERVER:load_id  12451 , row_count  1234560
+VERTICA  :load_id  12451 , row_count  1234560
+
+SQLSERVER:load_id  12452 , row_count  1308796
+VERTICA  :load_id  12452 , row_count  1308796
+
+SQLSERVER:load_id  12453 , row_count  2164200
+VERTICA  :load_id  12453 , row_count  2164200
+
+SQLSERVER:load_id  12454 , row_count  362
+VERTICA  :load_id  12454 , row_count  362
+
+SQLSERVER:load_id  12455 , row_count  111
+VERTICA  :load_id  12455 , row_count  111
+
+SQLSERVER:load_id  12456 , row_count  735
+VERTICA  :load_id  12456 , row_count  735
+
+SQLSERVER:load_id  12457 , row_count  735
+VERTICA  :load_id  12457 , row_count  735
+
+SQLSERVER:load_id  12458 , row_count  39429
+VERTICA  :load_id  12458 , row_count  39429
+
+SQLSERVER:load_id  12459 , row_count  1617120
+VERTICA  :load_id  12459 , row_count  1617120
+
+SQLSERVER:load_id  12460 , row_count  488308
+VERTICA  :load_id  12460 , row_count  488308
+
+SQLSERVER:load_id  12461 , row_count  5168312
+VERTICA  :load_id  12461 , row_count  5168312
+
+SQLSERVER:load_id  12462 , row_count  4087257
+VERTICA  :load_id  12462 , row_count  4087257
+
+SQLSERVER:load_id  12463 , row_count  463866
+VERTICA  :load_id  12463 , row_count  463866
+
+SQLSERVER:load_id  12464 , row_count  25109
+VERTICA  :load_id  12464 , row_count  25109
+
+SQLSERVER:load_id  12467 , row_count  2342469
+VERTICA  :load_id  12467 , row_count  2342469
+
+SQLSERVER:load_id  12468 , row_count  1775775
+VERTICA  :load_id  12468 , row_count  1775775
+
+SQLSERVER:load_id  12469 , row_count  488308
+VERTICA  :load_id  12469 , row_count  488308
+
+SQLSERVER:load_id  12471 , row_count  6335805
+VERTICA  :load_id  12471 , row_count  6335805
+
+SQLSERVER:load_id  12473 , row_count  789903
+VERTICA  :load_id  12473 , row_count  789903
+
+SQLSERVER:load_id  12475 , row_count  138610
+VERTICA  :load_id  12475 , row_count  138610
+
+SQLSERVER:load_id  12476 , row_count  1307299
+VERTICA  :load_id  12476 , row_count  1307299
+
+SQLSERVER:load_id  12477 , row_count  1739463
+VERTICA  :load_id  12477 , row_count  1739463
+
+SQLSERVER:load_id  12479 , row_count  6335098
+VERTICA  :load_id  12479 , row_count  6335098
+
+SQLSERVER:load_id  12480 , row_count  6946471
+VERTICA  :load_id  12480 , row_count  6946471
+
+SQLSERVER:load_id  12481 , row_count  1546223
+VERTICA  :load_id  12481 , row_count  1546223
+
+SQLSERVER:load_id  12483 , row_count  1364415
+VERTICA  :load_id  12483 , row_count  1364415
+
+SQLSERVER:load_id  12484 , row_count  2048113
+VERTICA  :load_id  12484 , row_count  2048113
+
+SQLSERVER:load_id  12485 , row_count  900716
+VERTICA  :load_id  12485 , row_count  900716
+
+RDP ID : PREP_WM_RDP ---------------------------------
+there are 54 files loaded complete today !!
+ 
+SQLSERVER:load_id  5884 , row_count  97660
+VERTICA  :load_id  5884 , row_count  97660
+
+SQLSERVER:load_id  5885 , row_count  25306
+VERTICA  :load_id  5885 , row_count  25306
+
+SQLSERVER:load_id  5886 , row_count  1287
+VERTICA  :load_id  5886 , row_count  1287
+
+SQLSERVER:load_id  5887 , row_count  53
+VERTICA  :load_id  5887 , row_count  53
+
+SQLSERVER:load_id  5888 , row_count  65
+VERTICA  :load_id  5888 , row_count  65
+
+SQLSERVER:load_id  5889 , row_count  7567
+VERTICA  :load_id  5889 , row_count  7567
+
+SQLSERVER:load_id  5890 , row_count  604303
+VERTICA  :load_id  5890 , row_count  604303
+
+SQLSERVER:load_id  5891 , row_count  707
+VERTICA  :load_id  5891 , row_count  707
+
+SQLSERVER:load_id  5892 , row_count  433558
+VERTICA  :load_id  5892 , row_count  433558
+
+SQLSERVER:load_id  5893 , row_count  422849
+VERTICA  :load_id  5893 , row_count  422849
+
+SQLSERVER:load_id  5894 , row_count  38731
+VERTICA  :load_id  5894 , row_count  38731
+
+SQLSERVER:load_id  5895 , row_count  4654
+VERTICA  :load_id  5895 , row_count  4654
+
+SQLSERVER:load_id  5896 , row_count  19889
+VERTICA  :load_id  5896 , row_count  19889
+
+SQLSERVER:load_id  5897 , row_count  61681
+VERTICA  :load_id  5897 , row_count  61681
+
+SQLSERVER:load_id  5898 , row_count  491899
+VERTICA  :load_id  5898 , row_count  491899
+
+SQLSERVER:load_id  5899 , row_count  475535
+VERTICA  :load_id  5899 , row_count  475535
+
+SQLSERVER:load_id  5900 , row_count  169
+VERTICA  :load_id  5900 , row_count  169
+
+SQLSERVER:load_id  5901 , row_count  1526964
+VERTICA  :load_id  5901 , row_count  1526964
+
+SQLSERVER:load_id  5902 , row_count  11
+VERTICA  :load_id  5902 , row_count  11
+
+SQLSERVER:load_id  5903 , row_count  15373
+VERTICA  :load_id  5903 , row_count  15373
+
+SQLSERVER:load_id  5904 , row_count  142
+VERTICA  :load_id  5904 , row_count  142
+
+SQLSERVER:load_id  5905 , row_count  1063866
+VERTICA  :load_id  5905 , row_count  1063866
+
+SQLSERVER:load_id  5906 , row_count  1323165
+VERTICA  :load_id  5906 , row_count  1323165
+
+SQLSERVER:load_id  5907 , row_count  10563
+VERTICA  :load_id  5907 , row_count  10563
+
+SQLSERVER:load_id  5910 , row_count  1063637
+VERTICA  :load_id  5910 , row_count  1063637
+
+SQLSERVER:load_id  5911 , row_count  1958038
+VERTICA  :load_id  5911 , row_count  1958038
+
+SQLSERVER:load_id  5912 , row_count  1063637
+VERTICA  :load_id  5912 , row_count  1063637
+
+SQLSERVER:load_id  5913 , row_count  5877233
+VERTICA  :load_id  5913 , row_count  5877233
+
+SQLSERVER:load_id  5915 , row_count  5877159
+VERTICA  :load_id  5915 , row_count  5877159
+
+SQLSERVER:load_id  5917 , row_count  1578909
+VERTICA  :load_id  5917 , row_count  1578909
+
+SQLSERVER:load_id  5918 , row_count  123662
+VERTICA  :load_id  5918 , row_count  123662
+
+SQLSERVER:load_id  5919 , row_count  10563
+VERTICA  :load_id  5919 , row_count  10563
+
+SQLSERVER:load_id  5920 , row_count  464352
+VERTICA  :load_id  5920 , row_count  464352
+
+SQLSERVER:load_id  5921 , row_count  53
+VERTICA  :load_id  5921 , row_count  53
+
+SQLSERVER:load_id  5922 , row_count  1099048
+VERTICA  :load_id  5922 , row_count  1099048
+
+SQLSERVER:load_id  5923 , row_count  285
+VERTICA  :load_id  5923 , row_count  285
+
+SQLSERVER:load_id  5924 , row_count  169
+VERTICA  :load_id  5924 , row_count  169
+
+SQLSERVER:load_id  5925 , row_count  714
+VERTICA  :load_id  5925 , row_count  714
+
+SQLSERVER:load_id  5926 , row_count  491899
+VERTICA  :load_id  5926 , row_count  491899
+
+SQLSERVER:load_id  5927 , row_count  475535
+VERTICA  :load_id  5927 , row_count  475535
+
+SQLSERVER:load_id  5928 , row_count  5877159
+VERTICA  :load_id  5928 , row_count  5877159
+
+SQLSERVER:load_id  5929 , row_count  7756
+VERTICA  :load_id  5929 , row_count  7756
+
+SQLSERVER:load_id  5930 , row_count  123662
+VERTICA  :load_id  5930 , row_count  123662
+
+SQLSERVER:load_id  5931 , row_count  10563
+VERTICA  :load_id  5931 , row_count  10563
+
+SQLSERVER:load_id  5932 , row_count  290
+VERTICA  :load_id  5932 , row_count  290
+
+SQLSERVER:load_id  5933 , row_count  15373
+VERTICA  :load_id  5933 , row_count  15373
+
+SQLSERVER:load_id  5934 , row_count  604969
+VERTICA  :load_id  5934 , row_count  604969
+
+SQLSERVER:load_id  5935 , row_count  25307
+VERTICA  :load_id  5935 , row_count  25307
+
+SQLSERVER:load_id  5936 , row_count  1288
+VERTICA  :load_id  5936 , row_count  1288
+
+SQLSERVER:load_id  5937 , row_count  19983
+VERTICA  :load_id  5937 , row_count  19983
+
+SQLSERVER:load_id  5938 , row_count  38732
+VERTICA  :load_id  5938 , row_count  38732
+
+SQLSERVER:load_id  5939 , row_count  11
+VERTICA  :load_id  5939 , row_count  11
+
+SQLSERVER:load_id  5940 , row_count  13597
+VERTICA  :load_id  5940 , row_count  13597
+
+SQLSERVER:load_id  5941 , row_count  1065534
+VERTICA  :load_id  5941 , row_count  1065534
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+ 
+    </td>
+    <td align = 'center'> 
+        <a href = "" title = "">
+            <img src=".\data\img.png" height =20 width=20 border=0>
+        </a>
+    </td>
+</tr>
+
+<tr id='ft1.2' class='none'>
+    <td align = 'center'></td>
+    <td class='failCase'><div class='testcase'>test_rdp_transformer</div></td>
+    <td colspan='5' align='center'>
+ 
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.2')" >
+        fail</a>
+ 
+    <div id='div_ft1.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.2: RDP_ID : PREP_BOOTS_RDP   RDP_SERVER PREZ2CDB2\DB1 
+The count of event_key   : 6 
+Event_key - 3002000001166 , Table DS_DC_FACT : Count 0 
+Traceback (most recent call last):
+  File "D:\PyCharm\PRE_RDP_Daily_Monitor\DailyMonitor\rdp_main.py", line 139, in test_rdp_transformer
+    self.assertGreater(DS_COUNT,1)
+AssertionError: 0 not greater than 1
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+ 
+    </td>
+    <td align = 'center'> 
+        <a href = "" title = "">
+            <img src=".\data\img.png" height =20 width=20 border=0>
+        </a>
+    </td>
+</tr>
+
+<tr id='total_row'>
+    <td colspan='2'>Total</td>
+    <td>2</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td colspan='2'> </td>
+</tr>
+</table>
+
+<div id='ending'> </div>
+ 
+</body>
+</html>

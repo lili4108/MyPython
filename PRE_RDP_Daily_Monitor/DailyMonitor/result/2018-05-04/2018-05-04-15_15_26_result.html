@@ -1,0 +1,929 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>test report</title>
+    <meta name="generator" content="HTMLTestRunner 0.8.2"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    
+<style type="text/css" media="screen">
+body        { font-family: verdana, arial, helvetica, sans-serif; font-size: 80%; }
+table       { font-size: 100%; }
+pre         { }
+ 
+/* -- heading ---------------------------------------------------------------------- */
+h1 {
+    font-size: 16pt;
+    color: gray;
+}
+.heading {
+    margin-top: 0ex;
+    margin-bottom: 1ex;
+}
+ 
+.heading .attribute {
+    margin-top: 1ex;
+    margin-bottom: 0;
+}
+ 
+.heading .description {
+    margin-top: 4ex;
+    margin-bottom: 6ex;
+}
+ 
+/* -- css div popup ------------------------------------------------------------------------ */
+a.popup_link {
+}
+ 
+a.popup_link:hover {
+    color: red;
+}
+ 
+.popup_window {
+    display: none;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    /*border: solid #627173 1px; */
+    padding: 10px;
+    background-color: #E6E6D6;
+    font-family: "Lucida Console", "Courier New", Courier, monospace;
+    text-align: left;
+    font-size: 8pt;
+    width: 500px;
+}
+ 
+}
+/* -- report ------------------------------------------------------------------------ */
+#show_detail_line {
+    margin-top: 3ex;
+    margin-bottom: 1ex;
+}
+#result_table {
+    width: 80%;
+    border-collapse: collapse;
+    border: 1px solid #777;
+}
+#header_row {
+    font-weight: bold;
+    color: white;
+    background-color: #777;
+}
+#result_table td {
+    border: 1px solid #777;
+    padding: 2px;
+}
+#total_row  { font-weight: bold; }
+.passClass  { background-color: #6c6; }
+.failClass  { background-color: #c60; }
+.errorClass { background-color: #c00; }
+.passCase   { color: #6c6; }
+.failCase   { color: #c60; font-weight: bold; }
+.errorCase  { color: #c00; font-weight: bold; }
+.hiddenRow  { display: none; }
+.testcase   { margin-left: 2em; }
+ 
+ 
+/* -- ending ---------------------------------------------------------------------- */
+#ending {
+}
+ 
+</style>
+
+</head>
+<body>
+<script language="javascript" type="text/javascript"><!--
+output_list = Array();
+ 
+/* level - 0:Summary; 1:Failed; 2:All */
+function showCase(level) {
+    trs = document.getElementsByTagName("tr");
+    for (var i = 0; i < trs.length; i++) {
+        tr = trs[i];
+        id = tr.id;
+        if (id.substr(0,2) == 'ft') {
+            if (level < 1) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+        if (id.substr(0,2) == 'pt') {
+            if (level > 1) {
+                tr.className = '';
+            }
+            else {
+                tr.className = 'hiddenRow';
+            }
+        }
+    }
+}
+ 
+ 
+function showClassDetail(cid, count) {
+    var id_list = Array(count);
+    var toHide = 1;
+    for (var i = 0; i < count; i++) {
+        tid0 = 't' + cid.substr(1) + '.' + (i+1);
+        tid = 'f' + tid0;
+        tr = document.getElementById(tid);
+        if (!tr) {
+            tid = 'p' + tid0;
+            tr = document.getElementById(tid);
+        }
+        id_list[i] = tid;
+        if (tr.className) {
+            toHide = 0;
+        }
+    }
+    for (var i = 0; i < count; i++) {
+        tid = id_list[i];
+        if (toHide) {
+            document.getElementById('div_'+tid).style.display = 'none'
+            document.getElementById(tid).className = 'hiddenRow';
+        }
+        else {
+            document.getElementById(tid).className = '';
+        }
+    }
+}
+ 
+ 
+function showTestDetail(div_id){
+    var details_div = document.getElementById(div_id)
+    var displayState = details_div.style.display
+    // alert(displayState)
+    if (displayState != 'block' ) {
+        displayState = 'block'
+        details_div.style.display = 'block'
+    }
+    else {
+        details_div.style.display = 'none'
+    }
+}
+ 
+ 
+function html_escape(s) {
+    s = s.replace(/&/g,'&');
+    s = s.replace(/</g,'<');
+    s = s.replace(/>/g,'>');
+    return s;
+}
+ 
+/* obsoleted by detail in <div>
+function showOutput(id, name) {
+    var w = window.open("", //url
+                    name,
+                    "resizable,scrollbars,status,width=800,height=450");
+    d = w.document;
+    d.write("<pre>");
+    d.write(html_escape(output_list[id]));
+    d.write("\n");
+    d.write("<a href='javascript:window.close()'>close</a>\n");
+    d.write("</pre>\n");
+    d.close();
+}
+*/
+--></script>
+ 
+<div class='heading'>
+<h1>test report</h1>
+<p class='attribute'><strong>Start Time:</strong> 2018-05-04 15:15:26</p>
+<p class='attribute'><strong>Duration:</strong> 0:06:39.603330</p>
+<p class='attribute'><strong>Status:</strong> Pass 2</p>
+
+<p class='description'>run RDP test cases</p>
+</div>
+ 
+
+
+<p id='show_detail_line'>Show
+<a href='javascript:showCase(0)'>Summary</a>
+<a href='javascript:showCase(1)'>Failed</a>
+<a href='javascript:showCase(2)'>All</a>
+</p>
+<table id='result_table'>
+<colgroup>
+<col align='left' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+</colgroup>
+<tr id='header_row'>
+    <td colspan='2'>Test Group/Test case</td>
+    <td>Count</td>
+    <td>Pass</td>
+    <td>Fail</td>
+    <td>Error</td>
+    <td>View</td>
+    <td>Screenshot</td>
+</tr>
+
+<tr class='passClass'>
+    <td>case_id</td>
+    <td>rdp_main.RDPTest</td>
+    <td>2</td>
+    <td>2</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1',2)">Detail</a></td>
+    <td>$nbsp;</td>
+</tr>
+
+<tr id='pt1.1' class='hiddenRow'>
+    <td align = 'center'></td>
+    <td class='none'><div class='testcase'>test_rdp_fileloader</div></td>
+    <td colspan='5' align='center'>
+ 
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
+        pass</a>
+ 
+    <div id='div_pt1.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.1: RDP ID : PREP_AUX_RDP ---------------------------------
+there are 0 files loaded complete today !!
+ 
+RDP ID : PREP_TARGET_RDP ---------------------------------
+there are 567 files loaded complete today !!
+ 
+RDP ID : PREP_MR_RDP ---------------------------------
+there are 0 files loaded complete today !!
+ 
+RDP ID : PREP_WM_RDP ---------------------------------
+there are 63 files loaded complete today !!
+ 
+RDP ID : PREP_PEPSICO_RDP ---------------------------------
+there are 92 files loaded complete today !!
+ 
+RDP ID : PREP_BOOTS_RDP ---------------------------------
+there are 10 files loaded complete today !!
+ 
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+ 
+    </td>
+    <td align = 'center'> 
+        <a href = "" title = "">
+            <img src=".\data\img.png" height =20 width=20 border=0>
+        </a>
+    </td>
+</tr>
+
+<tr id='pt1.2' class='hiddenRow'>
+    <td align = 'center'></td>
+    <td class='none'><div class='testcase'>test_rdp_transformer</div></td>
+    <td colspan='5' align='center'>
+ 
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2')" >
+        pass</a>
+ 
+    <div id='div_pt1.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.2: RDP_ID : PREP_AUX_RDP   RDP_SERVER PREZ2CDB2\DB1  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+The count of event_key   : 0 
+
+RDP_ID : PREP_TARGET_RDP   RDP_SERVER PREZ2CDB2\DB1  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+The count of event_key   : 164 
+[0_ROW_DS_COUNT]Event_key - 5002000003488 , Table DS_DC_FACT , File_set : TARGET_GM_FIN_MIQ_Extract_DC : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003489 , Table DS_STORE_FACT , File_set : TARGET_GM_FIN_MIQ_Extract_Str : Count 0 
+[ROW_DS_COUNT]Event_key : 5002000003490 , Table : DS_STORE_FACT , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_STORE_FACT       7011
+select MAX("Amount") "Amount",MAX("AmountType_Key") "AmountType_Key",MAX("EVENT_KEY") "EVENT_KEY",MAX("FST_KEY") "FST_KEY",MAX("Item_key") "Item_key",MAX("Period_key") "Period_key",MAX("Retailer_Key") "Retailer_Key",MAX("Store_key") "Store_key",MAX("Units") "Units",MAX("Vendor_Key") "Vendor_Key" from  PREP_TARGET_RDP.DS_STORE_FACT where event_key = 5002000003490
+{'Amount': Decimal('443.3200'), 'FST_KEY': 4, 'Retailer_Key': 15, 'Units': Decimal('120.0000'), 'Item_key': 15162945, 'EVENT_KEY': 5002000003490, 'Period_key': 20180430, 'Vendor_Key': 5439, 'Store_key': 6137190, 'AmountType_Key': 839}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0_ROW_DS_COUNT]Event_key - 5002000003491 , Table DS_DC_FACT , File_set : TARGET_GM_FIN_MIQ_Extract_DC : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003492 , Table DS_STORE_FACT , File_set : TARGET_SPD_STR_INV_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003493 , Table DS_STORE_FACT , File_set : TARGET_SPD_STR_INV_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003494 , Table DS_STORE_FACT , File_set : TARGET_GM_FIN_MIQ_Extract_Str : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003495 , Table DS_DC_FACT , File_set : TARGET_GM_FIN_MIQ_Extract_DC : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003496 , Table DS_STORE_FACT , File_set : TARGET_GM_FIN_MIQ_Extract_Str : Count 0 
+[ROW_DS_COUNT]Event_key : 5002000003497 , Table : DS_DC_FACT , File_set : TARGET_GM_FIN_MIQ_Extract_DC 
+DS_DC_FACT       7012
+select MAX("Amount") "Amount",MAX("AmountType_Key") "AmountType_Key",MAX("DC_key") "DC_key",MAX("EVENT_KEY") "EVENT_KEY",MAX("FST_KEY") "FST_KEY",MAX("Item_key") "Item_key",MAX("Period_key") "Period_key",MAX("Retailer_Key") "Retailer_Key",MAX("Units") "Units",MAX("Vendor_Key") "Vendor_Key" from  PREP_TARGET_RDP.DS_DC_FACT where event_key = 5002000003497
+{'Amount': Decimal('83.4000'), 'DC_key': 6079696, 'Vendor_Key': 5091, 'Retailer_Key': 153, 'Item_key': 14843067, 'EVENT_KEY': 5002000003497, 'Period_key': 20180428, 'AmountType_Key': 622, 'Units': None, 'FST_KEY': -1}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 5002000003498 , Table : DS_STORE_FACT , File_set : TARGET_GM_FIN_MIQ_Extract_Str 
+DS_STORE_FACT       7011
+select MAX("Amount") "Amount",MAX("AmountType_Key") "AmountType_Key",MAX("EVENT_KEY") "EVENT_KEY",MAX("FST_KEY") "FST_KEY",MAX("Item_key") "Item_key",MAX("Period_key") "Period_key",MAX("Retailer_Key") "Retailer_Key",MAX("Store_key") "Store_key",MAX("Units") "Units",MAX("Vendor_Key") "Vendor_Key" from  PREP_TARGET_RDP.DS_STORE_FACT where event_key = 5002000003498
+{'Amount': Decimal('4560.6700'), 'FST_KEY': -1, 'Retailer_Key': 15, 'Units': None, 'Item_key': 15164536, 'EVENT_KEY': 5002000003498, 'Period_key': 20180428, 'Vendor_Key': 5329, 'Store_key': 6137190, 'AmountType_Key': 852}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0_ROW_DS_COUNT]Event_key - 5002000003499 , Table DS_STORE_FACT , File_set : TARGET_SPD_SLS_MIQ_Extract : Count 0 
+[ROW_DS_COUNT]Event_key : 5002000003500 , Table : DS_STORE_FACT , File_set : TARGET_SPD_STR_INV_MIQ_Extract 
+DS_STORE_FACT       7011
+select MAX("Amount") "Amount",MAX("AmountType_Key") "AmountType_Key",MAX("EVENT_KEY") "EVENT_KEY",MAX("FST_KEY") "FST_KEY",MAX("Item_key") "Item_key",MAX("Period_key") "Period_key",MAX("Retailer_Key") "Retailer_Key",MAX("Store_key") "Store_key",MAX("Units") "Units",MAX("Vendor_Key") "Vendor_Key" from  PREP_TARGET_RDP.DS_STORE_FACT where event_key = 5002000003500
+{'Amount': Decimal('19399.4100'), 'FST_KEY': -1, 'Retailer_Key': 15, 'Units': Decimal('4419.0000'), 'Item_key': 15164721, 'EVENT_KEY': 5002000003500, 'Period_key': 20160625, 'Vendor_Key': 574, 'Store_key': 5911242, 'AmountType_Key': 321}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 5002000003501 , Table : DS_STORE_FACT , File_set : TARGET_DSD_VENDOR_SHPMNT_Extract 
+DS_STORE_FACT       7011
+select MAX("Amount") "Amount",MAX("AmountType_Key") "AmountType_Key",MAX("EVENT_KEY") "EVENT_KEY",MAX("FST_KEY") "FST_KEY",MAX("Item_key") "Item_key",MAX("Period_key") "Period_key",MAX("Retailer_Key") "Retailer_Key",MAX("Store_key") "Store_key",MAX("Units") "Units",MAX("Vendor_Key") "Vendor_Key" from  PREP_TARGET_RDP.DS_STORE_FACT where event_key = 5002000003501
+{'Amount': Decimal('553.0000'), 'FST_KEY': -1, 'Retailer_Key': 15, 'Units': Decimal('3328.0000'), 'Item_key': 14768955, 'EVENT_KEY': 5002000003501, 'Period_key': 20180502, 'Vendor_Key': 55, 'Store_key': 6137190, 'AmountType_Key': 822}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 5002000003502 , Table : DS_DC_FACT , File_set : TARGET_SPD_DC_INV_EBOH_MIQ_Extract 
+DS_DC_FACT       7012
+select MAX("Amount") "Amount",MAX("AmountType_Key") "AmountType_Key",MAX("DC_key") "DC_key",MAX("EVENT_KEY") "EVENT_KEY",MAX("FST_KEY") "FST_KEY",MAX("Item_key") "Item_key",MAX("Period_key") "Period_key",MAX("Retailer_Key") "Retailer_Key",MAX("Units") "Units",MAX("Vendor_Key") "Vendor_Key" from  PREP_TARGET_RDP.DS_DC_FACT where event_key = 5002000003502
+{'Amount': Decimal('135194.5200'), 'DC_key': 6091675, 'Vendor_Key': 5755, 'Retailer_Key': 153, 'Item_key': 13479319, 'EVENT_KEY': 5002000003502, 'Period_key': 20170928, 'AmountType_Key': 153, 'Units': Decimal('12462.0000'), 'FST_KEY': -1}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 5002000003503 , Table : DS_DC_FACT , File_set : TARGET_SPD_DC_INV_RECPT_MIQ_Extract 
+DS_DC_FACT       7012
+select MAX("Amount") "Amount",MAX("AmountType_Key") "AmountType_Key",MAX("DC_key") "DC_key",MAX("EVENT_KEY") "EVENT_KEY",MAX("FST_KEY") "FST_KEY",MAX("Item_key") "Item_key",MAX("Period_key") "Period_key",MAX("Retailer_Key") "Retailer_Key",MAX("Units") "Units",MAX("Vendor_Key") "Vendor_Key" from  PREP_TARGET_RDP.DS_DC_FACT where event_key = 5002000003503
+{'Amount': Decimal('169783.0200'), 'DC_key': 5392959, 'Vendor_Key': 5755, 'Retailer_Key': 153, 'Item_key': 13416878, 'EVENT_KEY': 5002000003503, 'Period_key': 20170928, 'AmountType_Key': 321, 'Units': Decimal('4008.0000'), 'FST_KEY': -1}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 5002000003504 , Table : DS_STORE_FACT , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_STORE_FACT       7011
+select MAX("Amount") "Amount",MAX("AmountType_Key") "AmountType_Key",MAX("EVENT_KEY") "EVENT_KEY",MAX("FST_KEY") "FST_KEY",MAX("Item_key") "Item_key",MAX("Period_key") "Period_key",MAX("Retailer_Key") "Retailer_Key",MAX("Store_key") "Store_key",MAX("Units") "Units",MAX("Vendor_Key") "Vendor_Key" from  PREP_TARGET_RDP.DS_STORE_FACT where event_key = 5002000003504
+{'Amount': Decimal('199.9900'), 'FST_KEY': 4, 'Retailer_Key': 15, 'Units': Decimal('2.0000'), 'Item_key': 12598393, 'EVENT_KEY': 5002000003504, 'Period_key': 20170410, 'Vendor_Key': 5730, 'Store_key': 5931672, 'AmountType_Key': 839}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 5002000003505 , Table : DS_STORE_FACT , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_STORE_FACT       7011
+select MAX("Amount") "Amount",MAX("AmountType_Key") "AmountType_Key",MAX("EVENT_KEY") "EVENT_KEY",MAX("FST_KEY") "FST_KEY",MAX("Item_key") "Item_key",MAX("Period_key") "Period_key",MAX("Retailer_Key") "Retailer_Key",MAX("Store_key") "Store_key",MAX("Units") "Units",MAX("Vendor_Key") "Vendor_Key" from  PREP_TARGET_RDP.DS_STORE_FACT where event_key = 5002000003505
+{'Amount': Decimal('356.9700'), 'FST_KEY': 4, 'Retailer_Key': 15, 'Units': Decimal('31.0000'), 'Item_key': 14711527, 'EVENT_KEY': 5002000003505, 'Period_key': 20170517, 'Vendor_Key': 5730, 'Store_key': 5993304, 'AmountType_Key': 839}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 5002000003506 , Table : DS_STORE_FACT , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_STORE_FACT       7011
+select MAX("Amount") "Amount",MAX("AmountType_Key") "AmountType_Key",MAX("EVENT_KEY") "EVENT_KEY",MAX("FST_KEY") "FST_KEY",MAX("Item_key") "Item_key",MAX("Period_key") "Period_key",MAX("Retailer_Key") "Retailer_Key",MAX("Store_key") "Store_key",MAX("Units") "Units",MAX("Vendor_Key") "Vendor_Key" from  PREP_TARGET_RDP.DS_STORE_FACT where event_key = 5002000003506
+{'Amount': Decimal('279.9600'), 'FST_KEY': 4, 'Retailer_Key': 15, 'Units': Decimal('19.0000'), 'Item_key': 12636327, 'EVENT_KEY': 5002000003506, 'Period_key': 20170630, 'Vendor_Key': 5730, 'Store_key': 5993300, 'AmountType_Key': 839}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 5002000003507 , Table : DS_STORE_FACT , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_STORE_FACT       7011
+select MAX("Amount") "Amount",MAX("AmountType_Key") "AmountType_Key",MAX("EVENT_KEY") "EVENT_KEY",MAX("FST_KEY") "FST_KEY",MAX("Item_key") "Item_key",MAX("Period_key") "Period_key",MAX("Retailer_Key") "Retailer_Key",MAX("Store_key") "Store_key",MAX("Units") "Units",MAX("Vendor_Key") "Vendor_Key" from  PREP_TARGET_RDP.DS_STORE_FACT where event_key = 5002000003507
+{'Amount': Decimal('399.9800'), 'FST_KEY': 4, 'Retailer_Key': 15, 'Units': Decimal('3.0000'), 'Item_key': 14836452, 'EVENT_KEY': 5002000003507, 'Period_key': 20170724, 'Vendor_Key': 5730, 'Store_key': 5993302, 'AmountType_Key': 839}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 5002000003508 , Table : DS_STORE_FACT , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_STORE_FACT       7011
+select MAX("Amount") "Amount",MAX("AmountType_Key") "AmountType_Key",MAX("EVENT_KEY") "EVENT_KEY",MAX("FST_KEY") "FST_KEY",MAX("Item_key") "Item_key",MAX("Period_key") "Period_key",MAX("Retailer_Key") "Retailer_Key",MAX("Store_key") "Store_key",MAX("Units") "Units",MAX("Vendor_Key") "Vendor_Key" from  PREP_TARGET_RDP.DS_STORE_FACT where event_key = 5002000003508
+{'Amount': Decimal('388.9900'), 'FST_KEY': 3, 'Retailer_Key': 15, 'Units': Decimal('8.0000'), 'Item_key': 14684749, 'EVENT_KEY': 5002000003508, 'Period_key': 20170830, 'Vendor_Key': 5730, 'Store_key': 6029172, 'AmountType_Key': 839}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 5002000003509 , Table : DS_STORE_FACT , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_STORE_FACT       7011
+select MAX("Amount") "Amount",MAX("AmountType_Key") "AmountType_Key",MAX("EVENT_KEY") "EVENT_KEY",MAX("FST_KEY") "FST_KEY",MAX("Item_key") "Item_key",MAX("Period_key") "Period_key",MAX("Retailer_Key") "Retailer_Key",MAX("Store_key") "Store_key",MAX("Units") "Units",MAX("Vendor_Key") "Vendor_Key" from  PREP_TARGET_RDP.DS_STORE_FACT where event_key = 5002000003509
+{'Amount': Decimal('269.9700'), 'FST_KEY': 4, 'Retailer_Key': 15, 'Units': Decimal('3.0000'), 'Item_key': 14684752, 'EVENT_KEY': 5002000003509, 'Period_key': 20171030, 'Vendor_Key': 5730, 'Store_key': 6080875, 'AmountType_Key': 839}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 5002000003510 , Table : DS_STORE_FACT , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_STORE_FACT       7011
+select MAX("Amount") "Amount",MAX("AmountType_Key") "AmountType_Key",MAX("EVENT_KEY") "EVENT_KEY",MAX("FST_KEY") "FST_KEY",MAX("Item_key") "Item_key",MAX("Period_key") "Period_key",MAX("Retailer_Key") "Retailer_Key",MAX("Store_key") "Store_key",MAX("Units") "Units",MAX("Vendor_Key") "Vendor_Key" from  PREP_TARGET_RDP.DS_STORE_FACT where event_key = 5002000003510
+{'Amount': Decimal('249.9900'), 'FST_KEY': 4, 'Retailer_Key': 15, 'Units': Decimal('9.0000'), 'Item_key': 14873921, 'EVENT_KEY': 5002000003510, 'Period_key': 20171126, 'Vendor_Key': 5730, 'Store_key': 6080875, 'AmountType_Key': 839}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 5002000003511 , Table : DS_STORE_FACT , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_STORE_FACT       7011
+select MAX("Amount") "Amount",MAX("AmountType_Key") "AmountType_Key",MAX("EVENT_KEY") "EVENT_KEY",MAX("FST_KEY") "FST_KEY",MAX("Item_key") "Item_key",MAX("Period_key") "Period_key",MAX("Retailer_Key") "Retailer_Key",MAX("Store_key") "Store_key",MAX("Units") "Units",MAX("Vendor_Key") "Vendor_Key" from  PREP_TARGET_RDP.DS_STORE_FACT where event_key = 5002000003511
+{'Amount': Decimal('249.9900'), 'FST_KEY': 4, 'Retailer_Key': 15, 'Units': Decimal('10.0000'), 'Item_key': 14836799, 'EVENT_KEY': 5002000003511, 'Period_key': 20171212, 'Vendor_Key': 5730, 'Store_key': 6080875, 'AmountType_Key': 839}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 5002000003512 , Table : DS_STORE_FACT , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_STORE_FACT       7011
+select MAX("Amount") "Amount",MAX("AmountType_Key") "AmountType_Key",MAX("EVENT_KEY") "EVENT_KEY",MAX("FST_KEY") "FST_KEY",MAX("Item_key") "Item_key",MAX("Period_key") "Period_key",MAX("Retailer_Key") "Retailer_Key",MAX("Store_key") "Store_key",MAX("Units") "Units",MAX("Vendor_Key") "Vendor_Key" from  PREP_TARGET_RDP.DS_STORE_FACT where event_key = 5002000003512
+{'Amount': Decimal('1706.0900'), 'FST_KEY': 4, 'Retailer_Key': 15, 'Units': Decimal('511.0000'), 'Item_key': 14873921, 'EVENT_KEY': 5002000003512, 'Period_key': 20180129, 'Vendor_Key': 5730, 'Store_key': 6099416, 'AmountType_Key': 839}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 5002000003513 , Table : DS_STORE_FACT , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_STORE_FACT       7011
+select MAX("Amount") "Amount",MAX("AmountType_Key") "AmountType_Key",MAX("EVENT_KEY") "EVENT_KEY",MAX("FST_KEY") "FST_KEY",MAX("Item_key") "Item_key",MAX("Period_key") "Period_key",MAX("Retailer_Key") "Retailer_Key",MAX("Store_key") "Store_key",MAX("Units") "Units",MAX("Vendor_Key") "Vendor_Key" from  PREP_TARGET_RDP.DS_STORE_FACT where event_key = 5002000003513
+{'Amount': Decimal('249.9900'), 'FST_KEY': 4, 'Retailer_Key': 15, 'Units': Decimal('44.0000'), 'Item_key': 14684748, 'EVENT_KEY': 5002000003513, 'Period_key': 20180220, 'Vendor_Key': 5730, 'Store_key': 6099416, 'AmountType_Key': 839}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 5002000003514 , Table : DS_STORE_FACT , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_STORE_FACT       7011
+select MAX("Amount") "Amount",MAX("AmountType_Key") "AmountType_Key",MAX("EVENT_KEY") "EVENT_KEY",MAX("FST_KEY") "FST_KEY",MAX("Item_key") "Item_key",MAX("Period_key") "Period_key",MAX("Retailer_Key") "Retailer_Key",MAX("Store_key") "Store_key",MAX("Units") "Units",MAX("Vendor_Key") "Vendor_Key" from  PREP_TARGET_RDP.DS_STORE_FACT where event_key = 5002000003514
+{'Amount': Decimal('1183.2600'), 'FST_KEY': 4, 'Retailer_Key': 15, 'Units': Decimal('367.0000'), 'Item_key': 14873921, 'EVENT_KEY': 5002000003514, 'Period_key': 20180331, 'Vendor_Key': 5730, 'Store_key': 6135649, 'AmountType_Key': 839}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0_ROW_DS_COUNT]Event_key - 5002000003515 , Table DS_STORE_FACT , File_set : TARGET_SPD_SLS_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003516 , Table DS_STORE_FACT , File_set : TARGET_SPD_SLS_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003517 , Table DS_STORE_FACT , File_set : TARGET_SPD_SLS_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003518 , Table DS_STORE_FACT , File_set : TARGET_SPD_SLS_MIQ_Extract : Count 0 
+[ROW_DS_COUNT]Event_key : 5002000003519 , Table : DS_STORE_FACT , File_set : TARGET_DSD_VENDOR_SHPMNT_Extract 
+DS_STORE_FACT       7011
+select MAX("Amount") "Amount",MAX("AmountType_Key") "AmountType_Key",MAX("EVENT_KEY") "EVENT_KEY",MAX("FST_KEY") "FST_KEY",MAX("Item_key") "Item_key",MAX("Period_key") "Period_key",MAX("Retailer_Key") "Retailer_Key",MAX("Store_key") "Store_key",MAX("Units") "Units",MAX("Vendor_Key") "Vendor_Key" from  PREP_TARGET_RDP.DS_STORE_FACT where event_key = 5002000003519
+{'Amount': Decimal('702.0000'), 'FST_KEY': -1, 'Retailer_Key': 15, 'Units': Decimal('1920.0000'), 'Item_key': 14768955, 'EVENT_KEY': 5002000003519, 'Period_key': 20180501, 'Vendor_Key': 55, 'Store_key': 6137190, 'AmountType_Key': 822}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0_ROW_DS_COUNT]Event_key - 5002000003520 , Table DS_STORE_FACT , File_set : TARGET_SPD_SLS_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003521 , Table DS_STORE_FACT , File_set : TARGET_SPD_SLS_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003522 , Table DS_STORE_FACT , File_set : TARGET_SPD_SLS_MIQ_Extract : Count 0 
+[ROW_DS_COUNT]Event_key : 5002000003523 , Table : DS_STORE_FACT , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_STORE_FACT       7011
+select MAX("Amount") "Amount",MAX("AmountType_Key") "AmountType_Key",MAX("EVENT_KEY") "EVENT_KEY",MAX("FST_KEY") "FST_KEY",MAX("Item_key") "Item_key",MAX("Period_key") "Period_key",MAX("Retailer_Key") "Retailer_Key",MAX("Store_key") "Store_key",MAX("Units") "Units",MAX("Vendor_Key") "Vendor_Key" from  PREP_TARGET_RDP.DS_STORE_FACT where event_key = 5002000003523
+{'Amount': Decimal('354.9200'), 'FST_KEY': 4, 'Retailer_Key': 15, 'Units': Decimal('232.0000'), 'Item_key': 15162945, 'EVENT_KEY': 5002000003523, 'Period_key': 20180502, 'Vendor_Key': 5329, 'Store_key': 6137190, 'AmountType_Key': 839}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0_ROW_DS_COUNT]Event_key - 5002000003524 , Table DS_STORE_FACT , File_set : TG_DLY_SLS_SVR_BPD_EXTRACT : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003525 , Table DS_STORE_FACT , File_set : TG_DLY_SLS_SVR_BPD_EXTRACT : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003526 , Table DS_STORE_FACT , File_set : TG_DLY_SLS_SVR_BPD_EXTRACT : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003527 , Table DS_STORE_FACT , File_set : TG_DLY_SLS_SVR_BPD_EXTRACT : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003528 , Table DS_STORE_FACT , File_set : TG_DLY_SLS_SVR_BPD_EXTRACT : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003529 , Table DS_STORE_FACT , File_set : TG_DLY_SLS_SVR_BPD_EXTRACT : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003530 , Table DS_STORE_FACT , File_set : TG_DLY_SLS_SVR_BPD_EXTRACT : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003531 , Table DS_STORE_FACT , File_set : TG_DLY_SLS_SVR_BPD_EXTRACT : Count 0 
+[ROW_DS_COUNT]Event_key : 5002000003532 , Table : DS_STORE_FACT , File_set : TG_DLY_SLS_SVR_BPD_EXTRACT 
+DS_STORE_FACT       7011
+select MAX("Amount") "Amount",MAX("AmountType_Key") "AmountType_Key",MAX("EVENT_KEY") "EVENT_KEY",MAX("FST_KEY") "FST_KEY",MAX("Item_key") "Item_key",MAX("Period_key") "Period_key",MAX("Retailer_Key") "Retailer_Key",MAX("Store_key") "Store_key",MAX("Units") "Units",MAX("Vendor_Key") "Vendor_Key" from  PREP_TARGET_RDP.DS_STORE_FACT where event_key = 5002000003532
+{'Amount': Decimal('3562.7200'), 'FST_KEY': 4, 'Retailer_Key': 15, 'Units': Decimal('315.0000'), 'Item_key': 15163860, 'EVENT_KEY': 5002000003532, 'Period_key': 20180502, 'Vendor_Key': 5836, 'Store_key': 6137190, 'AmountType_Key': 841}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0_ROW_DS_COUNT]Event_key - 5002000003533 , Table DS_STORE_FACT , File_set : TARGET_SPD_STR_INV_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003534 , Table DS_STORE_FACT , File_set : TARGET_SPD_STR_INV_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003535 , Table DS_STORE_FACT , File_set : TARGET_SPD_STR_INV_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003536 , Table DS_STORE_FACT , File_set : TARGET_SPD_STR_INV_MIQ_Extract : Count 0 
+[ROW_DS_COUNT]Event_key : 5002000003537 , Table : DS_STORE_FACT , File_set : TARGET_SPD_STR_INV_MIQ_Extract 
+DS_STORE_FACT       7011
+select MAX("Amount") "Amount",MAX("AmountType_Key") "AmountType_Key",MAX("EVENT_KEY") "EVENT_KEY",MAX("FST_KEY") "FST_KEY",MAX("Item_key") "Item_key",MAX("Period_key") "Period_key",MAX("Retailer_Key") "Retailer_Key",MAX("Store_key") "Store_key",MAX("Units") "Units",MAX("Vendor_Key") "Vendor_Key" from  PREP_TARGET_RDP.DS_STORE_FACT where event_key = 5002000003537
+{'Amount': Decimal('25233.8200'), 'FST_KEY': -1, 'Retailer_Key': 15, 'Units': Decimal('40807.0000'), 'Item_key': 15162945, 'EVENT_KEY': 5002000003537, 'Period_key': 20180430, 'Vendor_Key': 5439, 'Store_key': 6137190, 'AmountType_Key': 321}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0_ROW_DS_COUNT]Event_key - 5002000003538 , Table DS_STORE_FACT , File_set : TARGET_SPD_STR_INV_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003539 , Table DS_STORE_FACT , File_set : TARGET_SPD_STR_INV_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003540 , Table DS_STORE_FACT , File_set : TARGET_SPD_STR_INV_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003541 , Table DS_STORE_FACT , File_set : TARGET_SPD_STR_INV_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003542 , Table DS_STORE_FACT , File_set : TARGET_SPD_STR_INV_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003543 , Table DS_DC_FACT , File_set : TARGET_DLY_INV_ITEM_LOC_VEN_SVR_EXTRACT_DC : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003544 , Table DS_STORE_FACT , File_set : TARGET_DLY_INV_ITEM_LOC_VEN_SVR_EXTRACT_Str : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003545 , Table DS_DC_FACT , File_set : TARGET_DLY_INV_ITEM_LOC_VEN_SVR_EXTRACT_DC : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003546 , Table DS_STORE_FACT , File_set : TARGET_DLY_INV_ITEM_LOC_VEN_SVR_EXTRACT_Str : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003547 , Table DS_DC_FACT , File_set : TARGET_DLY_INV_ITEM_LOC_VEN_SVR_EXTRACT_DC : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003548 , Table DS_STORE_FACT , File_set : TARGET_DLY_INV_ITEM_LOC_VEN_SVR_EXTRACT_Str : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003549 , Table DS_DC_FACT , File_set : TARGET_DLY_INV_ITEM_LOC_VEN_SVR_EXTRACT_DC : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003550 , Table DS_STORE_FACT , File_set : TARGET_DLY_INV_ITEM_LOC_VEN_SVR_EXTRACT_Str : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003551 , Table DS_DC_FACT , File_set : TARGET_DLY_INV_ITEM_LOC_VEN_SVR_EXTRACT_DC : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003552 , Table DS_STORE_FACT , File_set : TARGET_DLY_INV_ITEM_LOC_VEN_SVR_EXTRACT_Str : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003553 , Table DS_DC_FACT , File_set : TARGET_DLY_INV_ITEM_LOC_VEN_SVR_EXTRACT_DC : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003554 , Table DS_STORE_FACT , File_set : TARGET_DLY_INV_ITEM_LOC_VEN_SVR_EXTRACT_Str : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003555 , Table DS_DC_FACT , File_set : TARGET_DLY_INV_ITEM_LOC_VEN_SVR_EXTRACT_DC : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003556 , Table DS_STORE_FACT , File_set : TARGET_DLY_INV_ITEM_LOC_VEN_SVR_EXTRACT_Str : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003557 , Table DS_DC_FACT , File_set : TARGET_DLY_INV_ITEM_LOC_VEN_SVR_EXTRACT_DC : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003558 , Table DS_STORE_FACT , File_set : TARGET_DLY_INV_ITEM_LOC_VEN_SVR_EXTRACT_Str : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003559 , Table DS_DC_FACT , File_set : TARGET_DLY_INV_ITEM_LOC_VEN_SVR_EXTRACT_DC : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003560 , Table DS_STORE_FACT , File_set : TARGET_DLY_INV_ITEM_LOC_VEN_SVR_EXTRACT_Str : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003561 , Table DS_DC_FACT , File_set : TARGET_DLY_INV_ITEM_LOC_VEN_SVR_EXTRACT_DC : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003562 , Table DS_STORE_FACT , File_set : TARGET_DLY_INV_ITEM_LOC_VEN_SVR_EXTRACT_Str : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003563 , Table DS_STORE_FACT , File_set : TARGET_SPD_STR_INV_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003564 , Table DS_DC_FACT , File_set : TARGET_DLY_INV_ITEM_LOC_VEN_SVR_EXTRACT_DC : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003565 , Table DS_STORE_FACT , File_set : TARGET_DLY_INV_ITEM_LOC_VEN_SVR_EXTRACT_Str : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003566 , Table DS_DC_FACT , File_set : TARGET_GM_ITEM_STR_VEN_SVR_Extract_DC : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003567 , Table DS_STORE_FACT , File_set : TARGET_GM_ITEM_STR_VEN_SVR_Extract_Str : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003568 , Table DS_STORE_FACT , File_set : TARGET_SPD_STR_INV_MIQ_Extract : Count 0 
+[ROW_DS_COUNT]Event_key : 5002000003569 , Table : DS_DC_FACT , File_set : TARGET_DLY_INV_ITEM_LOC_VEN_SVR_EXTRACT_DC 
+DS_DC_FACT       7012
+select MAX("Amount") "Amount",MAX("AmountType_Key") "AmountType_Key",MAX("DC_key") "DC_key",MAX("EVENT_KEY") "EVENT_KEY",MAX("FST_KEY") "FST_KEY",MAX("Item_key") "Item_key",MAX("Period_key") "Period_key",MAX("Retailer_Key") "Retailer_Key",MAX("Units") "Units",MAX("Vendor_Key") "Vendor_Key" from  PREP_TARGET_RDP.DS_DC_FACT where event_key = 5002000003569
+{'Amount': Decimal('1136657.9000'), 'DC_key': 6095458, 'Vendor_Key': 5836, 'Retailer_Key': 153, 'Item_key': 15164590, 'EVENT_KEY': 5002000003569, 'Period_key': 20180502, 'AmountType_Key': 321, 'Units': Decimal('89688.0000'), 'FST_KEY': -1}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 5002000003570 , Table : DS_STORE_FACT , File_set : TARGET_DLY_INV_ITEM_LOC_VEN_SVR_EXTRACT_Str 
+DS_STORE_FACT       7011
+select MAX("Amount") "Amount",MAX("AmountType_Key") "AmountType_Key",MAX("EVENT_KEY") "EVENT_KEY",MAX("FST_KEY") "FST_KEY",MAX("Item_key") "Item_key",MAX("Period_key") "Period_key",MAX("Retailer_Key") "Retailer_Key",MAX("Store_key") "Store_key",MAX("Units") "Units",MAX("Vendor_Key") "Vendor_Key" from  PREP_TARGET_RDP.DS_STORE_FACT where event_key = 5002000003570
+{'Amount': Decimal('328603.0500'), 'FST_KEY': -1, 'Retailer_Key': 15, 'Units': Decimal('7364.0000'), 'Item_key': 15164590, 'EVENT_KEY': 5002000003570, 'Period_key': 20180502, 'Vendor_Key': 5836, 'Store_key': 6137190, 'AmountType_Key': 321}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0_ROW_DS_COUNT]Event_key - 5002000003571 , Table DS_DC_FACT , File_set : TARGET_GM_ITEM_STR_VEN_SVR_Extract_DC : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003572 , Table DS_STORE_FACT , File_set : TARGET_GM_ITEM_STR_VEN_SVR_Extract_Str : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003573 , Table DS_STORE_FACT , File_set : TARGET_SPD_STR_INV_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003574 , Table DS_DC_FACT , File_set : TARGET_GM_ITEM_STR_VEN_SVR_Extract_DC : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003575 , Table DS_STORE_FACT , File_set : TARGET_GM_ITEM_STR_VEN_SVR_Extract_Str : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003576 , Table DS_DC_FACT , File_set : TARGET_GM_ITEM_STR_VEN_SVR_Extract_DC : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003577 , Table DS_STORE_FACT , File_set : TARGET_GM_ITEM_STR_VEN_SVR_Extract_Str : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003578 , Table DS_DC_FACT , File_set : TARGET_GM_ITEM_STR_VEN_SVR_Extract_DC : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003579 , Table DS_STORE_FACT , File_set : TARGET_GM_ITEM_STR_VEN_SVR_Extract_Str : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003580 , Table DS_STORE_FACT , File_set : TARGET_SPD_STR_INV_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003581 , Table DS_DC_FACT , File_set : TARGET_GM_ITEM_STR_VEN_SVR_Extract_DC : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003582 , Table DS_STORE_FACT , File_set : TARGET_GM_ITEM_STR_VEN_SVR_Extract_Str : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003583 , Table DS_DC_FACT , File_set : TARGET_GM_ITEM_STR_VEN_SVR_Extract_DC : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003584 , Table DS_STORE_FACT , File_set : TARGET_GM_ITEM_STR_VEN_SVR_Extract_Str : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003585 , Table DS_DC_FACT , File_set : TARGET_GM_ITEM_STR_VEN_SVR_Extract_DC : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003586 , Table DS_STORE_FACT , File_set : TARGET_GM_ITEM_STR_VEN_SVR_Extract_Str : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003587 , Table DS_DC_FACT , File_set : TARGET_GM_ITEM_STR_VEN_SVR_Extract_DC : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003588 , Table DS_STORE_FACT , File_set : TARGET_GM_ITEM_STR_VEN_SVR_Extract_Str : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003589 , Table DS_DC_FACT , File_set : TARGET_GM_ITEM_STR_VEN_SVR_Extract_DC : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003590 , Table DS_STORE_FACT , File_set : TARGET_GM_ITEM_STR_VEN_SVR_Extract_Str : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003591 , Table DS_DC_FACT , File_set : TARGET_GM_ITEM_STR_VEN_SVR_Extract_DC : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003592 , Table DS_STORE_FACT , File_set : TARGET_GM_ITEM_STR_VEN_SVR_Extract_Str : Count 0 
+[ROW_DS_COUNT]Event_key : 5002000003593 , Table : DS_DC_FACT , File_set : TARGET_GM_ITEM_STR_VEN_SVR_Extract_DC 
+DS_DC_FACT       7012
+select MAX("Amount") "Amount",MAX("AmountType_Key") "AmountType_Key",MAX("DC_key") "DC_key",MAX("EVENT_KEY") "EVENT_KEY",MAX("FST_KEY") "FST_KEY",MAX("Item_key") "Item_key",MAX("Period_key") "Period_key",MAX("Retailer_Key") "Retailer_Key",MAX("Units") "Units",MAX("Vendor_Key") "Vendor_Key" from  PREP_TARGET_RDP.DS_DC_FACT where event_key = 5002000003593
+{'Amount': Decimal('451.4800'), 'DC_key': 6095458, 'Vendor_Key': 5836, 'Retailer_Key': 153, 'Item_key': 15164735, 'EVENT_KEY': 5002000003593, 'Period_key': 20180428, 'AmountType_Key': 626, 'Units': None, 'FST_KEY': -1}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 5002000003594 , Table : DS_STORE_FACT , File_set : TARGET_GM_ITEM_STR_VEN_SVR_Extract_Str 
+DS_STORE_FACT       7011
+select MAX("Amount") "Amount",MAX("AmountType_Key") "AmountType_Key",MAX("EVENT_KEY") "EVENT_KEY",MAX("FST_KEY") "FST_KEY",MAX("Item_key") "Item_key",MAX("Period_key") "Period_key",MAX("Retailer_Key") "Retailer_Key",MAX("Store_key") "Store_key",MAX("Units") "Units",MAX("Vendor_Key") "Vendor_Key" from  PREP_TARGET_RDP.DS_STORE_FACT where event_key = 5002000003594
+{'Amount': Decimal('55773.4400'), 'FST_KEY': -1, 'Retailer_Key': 15, 'Units': None, 'Item_key': 15164748, 'EVENT_KEY': 5002000003594, 'Period_key': 20180428, 'Vendor_Key': 5836, 'Store_key': 6137190, 'AmountType_Key': 852}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0_ROW_DS_COUNT]Event_key - 5002000003595 , Table DS_DC_FACT , File_set : TARGET_SPD_DC_INV_EBOH_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003596 , Table DS_DC_FACT , File_set : TARGET_SPD_DC_INV_RECPT_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003597 , Table DS_STORE_FACT , File_set : TARGET_SPD_SLS_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003598 , Table DS_STORE_FACT , File_set : TARGET_SPD_STR_INV_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003599 , Table DS_DC_FACT , File_set : TARGET_SPD_DC_INV_EBOH_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003600 , Table DS_DC_FACT , File_set : TARGET_SPD_DC_INV_RECPT_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003601 , Table DS_STORE_FACT , File_set : TARGET_SPD_STR_INV_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003602 , Table DS_DC_FACT , File_set : TARGET_SPD_DC_INV_EBOH_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003603 , Table DS_DC_FACT , File_set : TARGET_SPD_DC_INV_RECPT_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003604 , Table DS_STORE_FACT , File_set : TARGET_SPD_STR_INV_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003605 , Table DS_DC_FACT , File_set : TARGET_SPD_DC_INV_EBOH_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003606 , Table DS_DC_FACT , File_set : TARGET_SPD_DC_INV_RECPT_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003607 , Table DS_STORE_FACT , File_set : TARGET_SPD_SLS_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003608 , Table DS_STORE_FACT , File_set : TARGET_SPD_STR_INV_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003609 , Table DS_STORE_FACT , File_set : TARGET_SPD_SLS_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003610 , Table DS_STORE_FACT , File_set : TARGET_SPD_STR_INV_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003611 , Table DS_DC_FACT , File_set : TARGET_SPD_DC_INV_EBOH_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003612 , Table DS_DC_FACT , File_set : TARGET_SPD_DC_INV_RECPT_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003613 , Table DS_STORE_FACT , File_set : TARGET_SPD_SLS_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003614 , Table DS_STORE_FACT , File_set : TARGET_SPD_STR_INV_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003615 , Table DS_STORE_FACT , File_set : TARGET_SPD_SLS_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003616 , Table DS_STORE_FACT , File_set : TARGET_SPD_STR_INV_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003617 , Table DS_STORE_FACT , File_set : TARGET_SPD_SLS_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003618 , Table DS_STORE_FACT , File_set : TARGET_SPD_STR_INV_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003619 , Table DS_DC_FACT , File_set : TARGET_SPD_DC_INV_EBOH_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003620 , Table DS_DC_FACT , File_set : TARGET_SPD_DC_INV_RECPT_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003621 , Table DS_STORE_FACT , File_set : TARGET_SPD_SLS_MIQ_Extract : Count 0 
+[ROW_DS_COUNT]Event_key : 5002000003622 , Table : DS_STORE_FACT , File_set : TARGET_SPD_STR_INV_MIQ_Extract 
+DS_STORE_FACT       7011
+select MAX("Amount") "Amount",MAX("AmountType_Key") "AmountType_Key",MAX("EVENT_KEY") "EVENT_KEY",MAX("FST_KEY") "FST_KEY",MAX("Item_key") "Item_key",MAX("Period_key") "Period_key",MAX("Retailer_Key") "Retailer_Key",MAX("Store_key") "Store_key",MAX("Units") "Units",MAX("Vendor_Key") "Vendor_Key" from  PREP_TARGET_RDP.DS_STORE_FACT where event_key = 5002000003622
+{'Amount': Decimal('25211.0800'), 'FST_KEY': -1, 'Retailer_Key': 15, 'Units': Decimal('42247.0000'), 'Item_key': 15164634, 'EVENT_KEY': 5002000003622, 'Period_key': 20180502, 'Vendor_Key': 5439, 'Store_key': 6137190, 'AmountType_Key': 321}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0_ROW_DS_COUNT]Event_key - 5002000003623 , Table DS_DC_FACT , File_set : TARGET_SPD_DC_INV_EBOH_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003624 , Table DS_DC_FACT , File_set : TARGET_SPD_DC_INV_RECPT_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003625 , Table DS_STORE_FACT , File_set : TARGET_SPD_SLS_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003626 , Table DS_STORE_FACT , File_set : TARGET_SPD_STR_INV_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003627 , Table DS_DC_FACT , File_set : TARGET_SPD_DC_INV_EBOH_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003628 , Table DS_DC_FACT , File_set : TARGET_SPD_DC_INV_RECPT_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003629 , Table DS_STORE_FACT , File_set : TARGET_SPD_SLS_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003630 , Table DS_DC_FACT , File_set : TARGET_SPD_DC_INV_EBOH_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003631 , Table DS_DC_FACT , File_set : TARGET_SPD_DC_INV_RECPT_MIQ_Extract : Count 0 
+[0_ROW_DS_COUNT]Event_key - 5002000003632 , Table DS_STORE_FACT , File_set : TARGET_SPD_SLS_MIQ_Extract : Count 0 
+[ROW_DS_COUNT]Event_key : 5002000003633 , Table : DS_STORE_FACT , File_set : TARGET_SPD_STR_INV_MIQ_Extract 
+DS_STORE_FACT       7011
+select MAX("Amount") "Amount",MAX("AmountType_Key") "AmountType_Key",MAX("EVENT_KEY") "EVENT_KEY",MAX("FST_KEY") "FST_KEY",MAX("Item_key") "Item_key",MAX("Period_key") "Period_key",MAX("Retailer_Key") "Retailer_Key",MAX("Store_key") "Store_key",MAX("Units") "Units",MAX("Vendor_Key") "Vendor_Key" from  PREP_TARGET_RDP.DS_STORE_FACT where event_key = 5002000003633
+{'Amount': Decimal('13165.8800'), 'FST_KEY': -1, 'Retailer_Key': 15, 'Units': Decimal('50638.0000'), 'Item_key': 15098652, 'EVENT_KEY': 5002000003633, 'Period_key': 20180425, 'Vendor_Key': 5439, 'Store_key': 6137190, 'AmountType_Key': 321}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 5002000003634 , Table : DS_DC_FACT , File_set : TARGET_SPD_DC_INV_RECPT_MIQ_Extract 
+DS_DC_FACT       7012
+select MAX("Amount") "Amount",MAX("AmountType_Key") "AmountType_Key",MAX("DC_key") "DC_key",MAX("EVENT_KEY") "EVENT_KEY",MAX("FST_KEY") "FST_KEY",MAX("Item_key") "Item_key",MAX("Period_key") "Period_key",MAX("Retailer_Key") "Retailer_Key",MAX("Units") "Units",MAX("Vendor_Key") "Vendor_Key" from  PREP_TARGET_RDP.DS_DC_FACT where event_key = 5002000003634
+{'Amount': Decimal('21815.0400'), 'DC_key': 5392959, 'Vendor_Key': 383, 'Retailer_Key': 153, 'Item_key': 13122267, 'EVENT_KEY': 5002000003634, 'Period_key': 20170625, 'AmountType_Key': 321, 'Units': Decimal('7296.0000'), 'FST_KEY': -1}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 5002000003635 , Table : DS_STORE_FACT , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_STORE_FACT       7011
+select MAX("Amount") "Amount",MAX("AmountType_Key") "AmountType_Key",MAX("EVENT_KEY") "EVENT_KEY",MAX("FST_KEY") "FST_KEY",MAX("Item_key") "Item_key",MAX("Period_key") "Period_key",MAX("Retailer_Key") "Retailer_Key",MAX("Store_key") "Store_key",MAX("Units") "Units",MAX("Vendor_Key") "Vendor_Key" from  PREP_TARGET_RDP.DS_STORE_FACT where event_key = 5002000003635
+{'Amount': Decimal('182.5100'), 'FST_KEY': 4, 'Retailer_Key': 15, 'Units': Decimal('107.0000'), 'Item_key': 13153214, 'EVENT_KEY': 5002000003635, 'Period_key': 20170625, 'Vendor_Key': 574, 'Store_key': 5993304, 'AmountType_Key': 839}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0_ROW_DS_COUNT]Event_key - 5002000003636 , Table DS_STORE_FACT , File_set : TARGET_SPD_SLS_MIQ_Extract : Count 0 
+[ROW_DS_COUNT]Event_key : 5002000003637 , Table : DS_STORE_FACT , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_STORE_FACT       7011
+select MAX("Amount") "Amount",MAX("AmountType_Key") "AmountType_Key",MAX("EVENT_KEY") "EVENT_KEY",MAX("FST_KEY") "FST_KEY",MAX("Item_key") "Item_key",MAX("Period_key") "Period_key",MAX("Retailer_Key") "Retailer_Key",MAX("Store_key") "Store_key",MAX("Units") "Units",MAX("Vendor_Key") "Vendor_Key" from  PREP_TARGET_RDP.DS_STORE_FACT where event_key = 5002000003637
+{'Amount': Decimal('1586.9400'), 'FST_KEY': 4, 'Retailer_Key': 15, 'Units': Decimal('117.0000'), 'Item_key': 14726266, 'EVENT_KEY': 5002000003637, 'Period_key': 20180122, 'Vendor_Key': 5755, 'Store_key': 6099416, 'AmountType_Key': 839}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0_ROW_DS_COUNT]Event_key - 5002000003638 , Table DS_STORE_FACT , File_set : TARGET_SPD_STR_INV_MIQ_Extract : Count 0 
+[ROW_DS_COUNT]Event_key : 5002000003639 , Table : DS_STORE_FACT , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_STORE_FACT       7011
+select MAX("Amount") "Amount",MAX("AmountType_Key") "AmountType_Key",MAX("EVENT_KEY") "EVENT_KEY",MAX("FST_KEY") "FST_KEY",MAX("Item_key") "Item_key",MAX("Period_key") "Period_key",MAX("Retailer_Key") "Retailer_Key",MAX("Store_key") "Store_key",MAX("Units") "Units",MAX("Vendor_Key") "Vendor_Key" from  PREP_TARGET_RDP.DS_STORE_FACT where event_key = 5002000003639
+{'Amount': Decimal('280.4900'), 'FST_KEY': 4, 'Retailer_Key': 15, 'Units': Decimal('56.0000'), 'Item_key': 13153214, 'EVENT_KEY': 5002000003639, 'Period_key': 20170622, 'Vendor_Key': 5730, 'Store_key': 5993304, 'AmountType_Key': 839}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 5002000003640 , Table : DS_STORE_FACT , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_STORE_FACT       7011
+select MAX("Amount") "Amount",MAX("AmountType_Key") "AmountType_Key",MAX("EVENT_KEY") "EVENT_KEY",MAX("FST_KEY") "FST_KEY",MAX("Item_key") "Item_key",MAX("Period_key") "Period_key",MAX("Retailer_Key") "Retailer_Key",MAX("Store_key") "Store_key",MAX("Units") "Units",MAX("Vendor_Key") "Vendor_Key" from  PREP_TARGET_RDP.DS_STORE_FACT where event_key = 5002000003640
+{'Amount': Decimal('137.4500'), 'FST_KEY': 4, 'Retailer_Key': 15, 'Units': Decimal('34.0000'), 'Item_key': 13721759, 'EVENT_KEY': 5002000003640, 'Period_key': 20180204, 'Vendor_Key': 55, 'Store_key': 6099416, 'AmountType_Key': 839}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 5002000003641 , Table : DS_STORE_FACT , File_set : TARGET_SPD_STR_INV_MIQ_Extract 
+DS_STORE_FACT       7011
+select MAX("Amount") "Amount",MAX("AmountType_Key") "AmountType_Key",MAX("EVENT_KEY") "EVENT_KEY",MAX("FST_KEY") "FST_KEY",MAX("Item_key") "Item_key",MAX("Period_key") "Period_key",MAX("Retailer_Key") "Retailer_Key",MAX("Store_key") "Store_key",MAX("Units") "Units",MAX("Vendor_Key") "Vendor_Key" from  PREP_TARGET_RDP.DS_STORE_FACT where event_key = 5002000003641
+{'Amount': Decimal('2246.2500'), 'FST_KEY': -1, 'Retailer_Key': 15, 'Units': Decimal('640.0000'), 'Item_key': 14928455, 'EVENT_KEY': 5002000003641, 'Period_key': 20170625, 'Vendor_Key': 574, 'Store_key': 6029173, 'AmountType_Key': 321}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0_ROW_DS_COUNT]Event_key - 5002000003642 , Table DS_STORE_FACT , File_set : TARGET_SPD_STR_INV_MIQ_Extract : Count 0 
+[ROW_DS_COUNT]Event_key : 5002000003643 , Table : DS_STORE_FACT , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_STORE_FACT       7011
+select MAX("Amount") "Amount",MAX("AmountType_Key") "AmountType_Key",MAX("EVENT_KEY") "EVENT_KEY",MAX("FST_KEY") "FST_KEY",MAX("Item_key") "Item_key",MAX("Period_key") "Period_key",MAX("Retailer_Key") "Retailer_Key",MAX("Store_key") "Store_key",MAX("Units") "Units",MAX("Vendor_Key") "Vendor_Key" from  PREP_TARGET_RDP.DS_STORE_FACT where event_key = 5002000003643
+{'Amount': Decimal('266.4200'), 'FST_KEY': 4, 'Retailer_Key': 15, 'Units': Decimal('63.0000'), 'Item_key': 13153214, 'EVENT_KEY': 5002000003643, 'Period_key': 20170618, 'Vendor_Key': 653, 'Store_key': 5993304, 'AmountType_Key': 839}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 5002000003644 , Table : DS_STORE_FACT , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_STORE_FACT       7011
+select MAX("Amount") "Amount",MAX("AmountType_Key") "AmountType_Key",MAX("EVENT_KEY") "EVENT_KEY",MAX("FST_KEY") "FST_KEY",MAX("Item_key") "Item_key",MAX("Period_key") "Period_key",MAX("Retailer_Key") "Retailer_Key",MAX("Store_key") "Store_key",MAX("Units") "Units",MAX("Vendor_Key") "Vendor_Key" from  PREP_TARGET_RDP.DS_STORE_FACT where event_key = 5002000003644
+{'Amount': Decimal('272.5500'), 'FST_KEY': 4, 'Retailer_Key': 15, 'Units': Decimal('53.0000'), 'Item_key': 14405260, 'EVENT_KEY': 5002000003644, 'Period_key': 20170819, 'Vendor_Key': 647, 'Store_key': 6029173, 'AmountType_Key': 839}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 5002000003645 , Table : DS_STORE_FACT , File_set : TARGET_SPD_STR_INV_MIQ_Extract 
+DS_STORE_FACT       7011
+select MAX("Amount") "Amount",MAX("AmountType_Key") "AmountType_Key",MAX("EVENT_KEY") "EVENT_KEY",MAX("FST_KEY") "FST_KEY",MAX("Item_key") "Item_key",MAX("Period_key") "Period_key",MAX("Retailer_Key") "Retailer_Key",MAX("Store_key") "Store_key",MAX("Units") "Units",MAX("Vendor_Key") "Vendor_Key" from  PREP_TARGET_RDP.DS_STORE_FACT where event_key = 5002000003645
+{'Amount': Decimal('2246.2500'), 'FST_KEY': -1, 'Retailer_Key': 15, 'Units': Decimal('640.0000'), 'Item_key': 14928455, 'EVENT_KEY': 5002000003645, 'Period_key': 20170624, 'Vendor_Key': 574, 'Store_key': 6029173, 'AmountType_Key': 321}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 5002000003646 , Table : DS_STORE_FACT , File_set : TARGET_SPD_STR_INV_MIQ_Extract 
+DS_STORE_FACT       7011
+select MAX("Amount") "Amount",MAX("AmountType_Key") "AmountType_Key",MAX("EVENT_KEY") "EVENT_KEY",MAX("FST_KEY") "FST_KEY",MAX("Item_key") "Item_key",MAX("Period_key") "Period_key",MAX("Retailer_Key") "Retailer_Key",MAX("Store_key") "Store_key",MAX("Units") "Units",MAX("Vendor_Key") "Vendor_Key" from  PREP_TARGET_RDP.DS_STORE_FACT where event_key = 5002000003646
+{'Amount': Decimal('3917.4600'), 'FST_KEY': -1, 'Retailer_Key': 15, 'Units': Decimal('654.0000'), 'Item_key': 14836828, 'EVENT_KEY': 5002000003646, 'Period_key': 20170918, 'Vendor_Key': 574, 'Store_key': 6099416, 'AmountType_Key': 321}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 5002000003647 , Table : DS_DC_FACT , File_set : TARGET_SPD_DC_INV_EBOH_MIQ_Extract 
+DS_DC_FACT       7012
+select MAX("Amount") "Amount",MAX("AmountType_Key") "AmountType_Key",MAX("DC_key") "DC_key",MAX("EVENT_KEY") "EVENT_KEY",MAX("FST_KEY") "FST_KEY",MAX("Item_key") "Item_key",MAX("Period_key") "Period_key",MAX("Retailer_Key") "Retailer_Key",MAX("Units") "Units",MAX("Vendor_Key") "Vendor_Key" from  PREP_TARGET_RDP.DS_DC_FACT where event_key = 5002000003647
+{'Amount': Decimal('254281.5600'), 'DC_key': 6079696, 'Vendor_Key': 5439, 'Retailer_Key': 153, 'Item_key': 15164773, 'EVENT_KEY': 5002000003647, 'Period_key': 20180502, 'AmountType_Key': 153, 'Units': Decimal('180480.0000'), 'FST_KEY': -1}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 5002000003648 , Table : DS_DC_FACT , File_set : TARGET_SPD_DC_INV_RECPT_MIQ_Extract 
+DS_DC_FACT       7012
+select MAX("Amount") "Amount",MAX("AmountType_Key") "AmountType_Key",MAX("DC_key") "DC_key",MAX("EVENT_KEY") "EVENT_KEY",MAX("FST_KEY") "FST_KEY",MAX("Item_key") "Item_key",MAX("Period_key") "Period_key",MAX("Retailer_Key") "Retailer_Key",MAX("Units") "Units",MAX("Vendor_Key") "Vendor_Key" from  PREP_TARGET_RDP.DS_DC_FACT where event_key = 5002000003648
+{'Amount': Decimal('251160.0000'), 'DC_key': 5392959, 'Vendor_Key': 5439, 'Retailer_Key': 153, 'Item_key': 15076215, 'EVENT_KEY': 5002000003648, 'Period_key': 20180502, 'AmountType_Key': 321, 'Units': Decimal('319440.0000'), 'FST_KEY': -1}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 5002000003649 , Table : DS_STORE_FACT , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_STORE_FACT       7011
+select MAX("Amount") "Amount",MAX("AmountType_Key") "AmountType_Key",MAX("EVENT_KEY") "EVENT_KEY",MAX("FST_KEY") "FST_KEY",MAX("Item_key") "Item_key",MAX("Period_key") "Period_key",MAX("Retailer_Key") "Retailer_Key",MAX("Store_key") "Store_key",MAX("Units") "Units",MAX("Vendor_Key") "Vendor_Key" from  PREP_TARGET_RDP.DS_STORE_FACT where event_key = 5002000003649
+{'Amount': Decimal('620.7300'), 'FST_KEY': 4, 'Retailer_Key': 15, 'Units': Decimal('95.0000'), 'Item_key': 15162945, 'EVENT_KEY': 5002000003649, 'Period_key': 20180501, 'Vendor_Key': 5439, 'Store_key': 6137190, 'AmountType_Key': 839}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 5002000003650 , Table : DS_STORE_FACT , File_set : TARGET_SPD_STR_INV_MIQ_Extract 
+DS_STORE_FACT       7011
+select MAX("Amount") "Amount",MAX("AmountType_Key") "AmountType_Key",MAX("EVENT_KEY") "EVENT_KEY",MAX("FST_KEY") "FST_KEY",MAX("Item_key") "Item_key",MAX("Period_key") "Period_key",MAX("Retailer_Key") "Retailer_Key",MAX("Store_key") "Store_key",MAX("Units") "Units",MAX("Vendor_Key") "Vendor_Key" from  PREP_TARGET_RDP.DS_STORE_FACT where event_key = 5002000003650
+{'Amount': Decimal('25230.0300'), 'FST_KEY': -1, 'Retailer_Key': 15, 'Units': Decimal('40807.0000'), 'Item_key': 15162945, 'EVENT_KEY': 5002000003650, 'Period_key': 20180501, 'Vendor_Key': 5439, 'Store_key': 6137190, 'AmountType_Key': 321}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 5002000003651 , Table : DS_STORE_FACT , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_STORE_FACT       7011
+select MAX("Amount") "Amount",MAX("AmountType_Key") "AmountType_Key",MAX("EVENT_KEY") "EVENT_KEY",MAX("FST_KEY") "FST_KEY",MAX("Item_key") "Item_key",MAX("Period_key") "Period_key",MAX("Retailer_Key") "Retailer_Key",MAX("Store_key") "Store_key",MAX("Units") "Units",MAX("Vendor_Key") "Vendor_Key" from  PREP_TARGET_RDP.DS_STORE_FACT where event_key = 5002000003651
+{'Amount': Decimal('1799.8000'), 'FST_KEY': 4, 'Retailer_Key': 15, 'Units': Decimal('101.0000'), 'Item_key': 15098631, 'EVENT_KEY': 5002000003651, 'Period_key': 20180429, 'Vendor_Key': 5730, 'Store_key': 6137190, 'AmountType_Key': 839}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+RDP_ID : PREP_MR_RDP   RDP_SERVER PREZ2CDB2\DB1  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+The count of event_key   : 0 
+
+RDP_ID : PREP_WM_RDP   RDP_SERVER PREZ2CDB2\DB1  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+The count of event_key   : 53 
+[ROW_DS_COUNT]Event_key : 1002000005141 , Table : DS_WM_FACT_DPCSUS_WMTCAT_WMCAT_COMP_STORE_SALES , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_WM_FACT_{VENDOR_KEY}_{RETAILER_KEY}_WMCAT_COMP_STORE_SALES       1012
+select MAX("ChangeStatus") "ChangeStatus",MAX("EVENT_KEY") "EVENT_KEY",MAX("PERIOD_KEY") "PERIOD_KEY",MAX("POSSales") "POSSales",MAX("REQUEST_DATE") "REQUEST_DATE",MAX("RETAILER_KEY") "RETAILER_KEY",MAX("STORE_KEY") "STORE_KEY",MAX("VENDOR_KEY") "VENDOR_KEY",MAX("WeeklyCOMPStoreSales") "WeeklyCOMPStoreSales" from  PREP_WM_RDP.DS_WM_FACT_DPCSUS_WMTCAT_WMCAT_COMP_STORE_SALES where event_key = 1002000005141
+{'RETAILER_KEY': 1010, 'ChangeStatus': 0, 'PERIOD_KEY': 20180421, 'VENDOR_KEY': 5629, 'REQUEST_DATE': datetime.datetime(2018, 5, 3, 0, 57, 28), 'EVENT_KEY': 1002000005141, 'STORE_KEY': 6156890, 'POSSales': Decimal('30259.04000'), 'WeeklyCOMPStoreSales': Decimal('30259.04000')}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 1002000005176 , Table : DS_WM_FACT_DPSG_WALMRT_WMSSC_COMP_STORE_SALES , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_WM_FACT_{VENDOR_KEY}_{RETAILER_KEY}_WMSSC_COMP_STORE_SALES       292
+select MAX("ChangeStatus") "ChangeStatus",MAX("EVENT_KEY") "EVENT_KEY",MAX("PERIOD_KEY") "PERIOD_KEY",MAX("POSSales") "POSSales",MAX("REQUEST_DATE") "REQUEST_DATE",MAX("RETAILER_KEY") "RETAILER_KEY",MAX("STORE_KEY") "STORE_KEY",MAX("VENDOR_KEY") "VENDOR_KEY",MAX("WeeklyCOMPStoreSales") "WeeklyCOMPStoreSales" from  PREP_WM_RDP.DS_WM_FACT_DPSG_WALMRT_WMSSC_COMP_STORE_SALES where event_key = 1002000005176
+{'RETAILER_KEY': 22, 'ChangeStatus': None, 'PERIOD_KEY': 20161022, 'VENDOR_KEY': 5222, 'REQUEST_DATE': datetime.datetime(2018, 4, 30, 1, 1, 16), 'EVENT_KEY': 1002000005176, 'STORE_KEY': 5515155, 'POSSales': Decimal('1438.09000'), 'WeeklyCOMPStoreSales': Decimal('0')}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0_ROW_DS_COUNT]Event_key - 1002000005140 , Table DS_WM_FACT_DPSG_WALMRT_WMSSC_QA_STORE_SALES_WEEKLY , File_set : TARGET_SPD_SLS_MIQ_Extract  : Count 0 
+[0_ROW_DS_COUNT]Event_key - 1002000005139 , Table DS_WM_FACT_DPSG_WALMRT_WMSSC_QA_STORE_SALES_WEEKLY , File_set : TARGET_SPD_SLS_MIQ_Extract  : Count 0 
+[ROW_DS_COUNT]Event_key : 1002000005137 , Table : DS_WM_FACT_DPSG_WALMRT_WMSSC_ITEM_REPLENISHMENT , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_WM_FACT_{VENDOR_KEY}_{RETAILER_KEY}_WMSSC_ITEM_REPLENISHMENT       382
+select MAX("CurrReplInstock") "CurrReplInstock",MAX("CurrValidStoreItemComb") "CurrValidStoreItemComb",MAX("EVENT_KEY") "EVENT_KEY",MAX("ITEM_KEY") "ITEM_KEY",MAX("PERIOD_KEY") "PERIOD_KEY",MAX("REQUEST_DATE") "REQUEST_DATE",MAX("RETAILER_KEY") "RETAILER_KEY",MAX("VENDOR_KEY") "VENDOR_KEY" from  PREP_WM_RDP.DS_WM_FACT_DPSG_WALMRT_WMSSC_ITEM_REPLENISHMENT where event_key = 1002000005137
+{'CurrReplInstock': Decimal('100.00000'), 'PERIOD_KEY': 20180502, 'ITEM_KEY': 14113173, 'VENDOR_KEY': 5222, 'EVENT_KEY': 1002000005137, 'REQUEST_DATE': datetime.datetime(2018, 5, 3, 0, 53, 49), 'RETAILER_KEY': 22, 'CurrValidStoreItemComb': 4685}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0_ROW_DS_COUNT]Event_key - 1002000005135 , Table DS_WM_FACT_DPSG_WALMRT_WMSSC_DOTCOM_SALES , File_set : TARGET_SPD_SLS_MIQ_Extract  : Count 0 
+[0_ROW_DS_COUNT]Event_key - 1002000005138 , Table DS_WM_FACT_DPSG_WALMRT_WMSSC_QA_STORE_SALES_DAILY , File_set : TARGET_SPD_SLS_MIQ_Extract  : Count 0 
+[0_ROW_DS_COUNT]Event_key - 1002000005136 , Table DS_WM_FACT_DPSG_WALMRT_WMSSC_DOTCOM_SALES , File_set : TARGET_SPD_SLS_MIQ_Extract  : Count 0 
+[0_ROW_DS_COUNT]Event_key - 1002000005175 , Table DS_WM_FACT_DPSG_WALMRT_WMSSC_COMP_STORE_SALES , File_set : TARGET_SPD_SLS_MIQ_Extract  : Count 0 
+[0_ROW_DS_COUNT]Event_key - 1002000005144 , Table DS_WM_FACT_DPSG_WALMRT_WMSSC_QA_STORE_SALES_DAILY , File_set : TARGET_SPD_SLS_MIQ_Extract  : Count 0 
+[ROW_DS_COUNT]Event_key : 1002000005145 , Table : DS_WM_FACT_DPSG_WALMRT_WMSSC_GENERAL_PO , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_WM_FACT_{VENDOR_KEY}_{RETAILER_KEY}_WMSSC_GENERAL_PO       603
+select MAX("AvgOnHandCost") "AvgOnHandCost",MAX("DC_KEY") "DC_KEY",MAX("EarlyCases") "EarlyCases",MAX("EVENT_KEY") "EVENT_KEY",MAX("GrossMaintainedMargin") "GrossMaintainedMargin",MAX("InWindowCases") "InWindowCases",MAX("ITEM_KEY") "ITEM_KEY",MAX("LateCases") "LateCases",MAX("OnOrderCost") "OnOrderCost",MAX("OnOrderRetail") "OnOrderRetail",MAX("OnTimeCases") "OnTimeCases",MAX("OverageCases") "OverageCases",MAX("PERIOD_KEY") "PERIOD_KEY",MAX("POArrivalDate") "POArrivalDate",MAX("POArrivalTime") "POArrivalTime",MAX("POCancelDate") "POCancelDate",MAX("POCasesOrdered") "POCasesOrdered",MAX("POCasesReceived") "POCasesReceived",MAX("POCasesReceivedWeight") "POCasesReceivedWeight",MAX("POCreateDate") "POCreateDate",MAX("PODueDate") "PODueDate",MAX("POLineNbr") "POLineNbr",MAX("POOrderDate") "POOrderDate",MAX("POOriginalDueDate") "POOriginalDueDate",MAX("POReceivedDate") "POReceivedDate",MAX("POReceivedTime") "POReceivedTime",MAX("POShipDate") "POShipDate",MAX("REQUEST_DATE") "REQUEST_DATE",MAX("RETAILER_KEY") "RETAILER_KEY",MAX("ShortCases") "ShortCases",MAX("VENDOR_KEY") "VENDOR_KEY",MAX("WhseQtyOrdered") "WhseQtyOrdered",MAX("WhseQtyReceived") "WhseQtyReceived" from  PREP_WM_RDP.DS_WM_FACT_DPSG_WALMRT_WMSSC_GENERAL_PO where event_key = 1002000005145
+{'PERIOD_KEY': 20180428, 'ITEM_KEY': 14402110, 'OverageCases': 0, 'DC_KEY': 6007439, 'LateCases': 0, 'REQUEST_DATE': datetime.datetime(2018, 5, 3, 2, 57, 23), 'POReceivedDate': None, 'POShipDate': datetime.date(2017, 10, 25), 'OnOrderRetail': Decimal('45.36000'), 'PODueDate': datetime.date(2017, 11, 3), 'VENDOR_KEY': 5222, 'POCancelDate': datetime.date(2017, 10, 27), 'WhseQtyOrdered': 27, 'POLineNbr': 2, 'AvgOnHandCost': Decimal('221370.90000'), 'POReceivedTime': None, 'POCreateDate': datetime.date(2017, 10, 21), 'OnTimeCases': 0, 'OnOrderCost': Decimal('482.76000'), 'EVENT_KEY': 1002000005145, 'EarlyCases': 0, 'POArrivalDate': None, 'POCasesOrdered': 27, 'WhseQtyReceived': 0, 'RETAILER_KEY': 183, 'InWindowCases': 0, 'ShortCases': 27, 'POCasesReceivedWeight': None, 'POCasesReceived': 0, 'GrossMaintainedMargin': Decimal('45907.69841'), 'POOriginalDueDate': datetime.date(2017, 11, 3), 'POArrivalTime': None, 'POOrderDate': None}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 1002000005146 , Table : DS_WM_FACT_DPSG_WALMRT_WMSSC_GENERAL_PO , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_WM_FACT_{VENDOR_KEY}_{RETAILER_KEY}_WMSSC_GENERAL_PO       603
+select MAX("AvgOnHandCost") "AvgOnHandCost",MAX("DC_KEY") "DC_KEY",MAX("EarlyCases") "EarlyCases",MAX("EVENT_KEY") "EVENT_KEY",MAX("GrossMaintainedMargin") "GrossMaintainedMargin",MAX("InWindowCases") "InWindowCases",MAX("ITEM_KEY") "ITEM_KEY",MAX("LateCases") "LateCases",MAX("OnOrderCost") "OnOrderCost",MAX("OnOrderRetail") "OnOrderRetail",MAX("OnTimeCases") "OnTimeCases",MAX("OverageCases") "OverageCases",MAX("PERIOD_KEY") "PERIOD_KEY",MAX("POArrivalDate") "POArrivalDate",MAX("POArrivalTime") "POArrivalTime",MAX("POCancelDate") "POCancelDate",MAX("POCasesOrdered") "POCasesOrdered",MAX("POCasesReceived") "POCasesReceived",MAX("POCasesReceivedWeight") "POCasesReceivedWeight",MAX("POCreateDate") "POCreateDate",MAX("PODueDate") "PODueDate",MAX("POLineNbr") "POLineNbr",MAX("POOrderDate") "POOrderDate",MAX("POOriginalDueDate") "POOriginalDueDate",MAX("POReceivedDate") "POReceivedDate",MAX("POReceivedTime") "POReceivedTime",MAX("POShipDate") "POShipDate",MAX("REQUEST_DATE") "REQUEST_DATE",MAX("RETAILER_KEY") "RETAILER_KEY",MAX("ShortCases") "ShortCases",MAX("VENDOR_KEY") "VENDOR_KEY",MAX("WhseQtyOrdered") "WhseQtyOrdered",MAX("WhseQtyReceived") "WhseQtyReceived" from  PREP_WM_RDP.DS_WM_FACT_DPSG_WALMRT_WMSSC_GENERAL_PO where event_key = 1002000005146
+{'PERIOD_KEY': 20180521, 'ITEM_KEY': 15164062, 'OverageCases': 376602, 'DC_KEY': 6007439, 'LateCases': 2070, 'REQUEST_DATE': datetime.datetime(2018, 5, 3, 3, 5, 15), 'POReceivedDate': None, 'POShipDate': datetime.date(2018, 5, 4), 'OnOrderRetail': Decimal('5224837.50000'), 'PODueDate': datetime.date(2018, 5, 21), 'VENDOR_KEY': 5222, 'POCancelDate': datetime.date(2018, 5, 4), 'WhseQtyOrdered': 278658, 'POLineNbr': 994, 'AvgOnHandCost': Decimal('2080740.55000'), 'POReceivedTime': None, 'POCreateDate': datetime.date(2018, 5, 2), 'OnTimeCases': 2160, 'OnOrderCost': Decimal('4179870.00000'), 'EVENT_KEY': 1002000005146, 'EarlyCases': 1176, 'POArrivalDate': datetime.date(2018, 5, 1), 'POCasesOrdered': 139329, 'WhseQtyReceived': 1512040, 'RETAILER_KEY': 183, 'InWindowCases': 2160, 'ShortCases': 139329, 'POCasesReceivedWeight': None, 'POCasesReceived': 424394, 'GrossMaintainedMargin': Decimal('473756.73614'), 'POOriginalDueDate': datetime.date(2018, 5, 21), 'POArrivalTime': None, 'POOrderDate': None}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 1002000005148 , Table : DS_WM_FACT_DPCSUS_WMTCAT_WMCAT_WAREHOUSE_INVENTORY_POSITION , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_WM_FACT_{VENDOR_KEY}_{RETAILER_KEY}_WMCAT_WAREHOUSE_INVENTORY_POSITION       1281
+select MAX("DC_KEY") "DC_KEY",MAX("EVENT_KEY") "EVENT_KEY",MAX("ITEM_KEY") "ITEM_KEY",MAX("PERIOD_KEY") "PERIOD_KEY",MAX("REQUEST_DATE") "REQUEST_DATE",MAX("RETAILER_KEY") "RETAILER_KEY",MAX("VENDOR_KEY") "VENDOR_KEY",MAX("WhseOnHandCases") "WhseOnHandCases",MAX("WhseOnHandQty") "WhseOnHandQty",MAX("WhseOnHandSell") "WhseOnHandSell" from  PREP_WM_RDP.DS_WM_FACT_DPCSUS_WMTCAT_WMCAT_WAREHOUSE_INVENTORY_POSITION where event_key = 1002000005148
+{'WhseOnHandCases': 2351, 'RETAILER_KEY': 183, 'PERIOD_KEY': 20180428, 'ITEM_KEY': 12243584, 'VENDOR_KEY': 5629, 'REQUEST_DATE': datetime.datetime(2018, 5, 3, 4, 6, 28), 'DC_KEY': 5821458, 'EVENT_KEY': 1002000005148, 'WhseOnHandSell': Decimal('17105.20000'), 'WhseOnHandQty': 4702}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 1002000005148 , Table : DS_WM_FACT_DPCSUS_WMTCAT_WMCAT_WAREHOUSE_INVENTORY_POSITION , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_WM_FACT_{VENDOR_KEY}_{RETAILER_KEY}_WMCAT_WAREHOUSE_INVENTORY_POSITION       1281
+select MAX("DC_KEY") "DC_KEY",MAX("EVENT_KEY") "EVENT_KEY",MAX("ITEM_KEY") "ITEM_KEY",MAX("PERIOD_KEY") "PERIOD_KEY",MAX("REQUEST_DATE") "REQUEST_DATE",MAX("RETAILER_KEY") "RETAILER_KEY",MAX("VENDOR_KEY") "VENDOR_KEY",MAX("WhseOnHandCases") "WhseOnHandCases",MAX("WhseOnHandQty") "WhseOnHandQty",MAX("WhseOnHandSell") "WhseOnHandSell" from  PREP_WM_RDP.DS_WM_FACT_DPCSUS_WMTCAT_WMCAT_WAREHOUSE_INVENTORY_POSITION where event_key = 1002000005148
+{'WhseOnHandCases': 2351, 'RETAILER_KEY': 183, 'PERIOD_KEY': 20180428, 'ITEM_KEY': 12243584, 'VENDOR_KEY': 5629, 'REQUEST_DATE': datetime.datetime(2018, 5, 3, 4, 6, 28), 'DC_KEY': 5821458, 'EVENT_KEY': 1002000005148, 'WhseOnHandSell': Decimal('17105.20000'), 'WhseOnHandQty': 4702}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 1002000005182 , Table : DS_WM_FACT_DPSG_WALMRT_WMSSC_WAREHOUSE_INVENTORY_POSITION , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_WM_FACT_{VENDOR_KEY}_{RETAILER_KEY}_WMSSC_WAREHOUSE_INVENTORY_POSITION       282
+select MAX("DC_KEY") "DC_KEY",MAX("EVENT_KEY") "EVENT_KEY",MAX("ITEM_KEY") "ITEM_KEY",MAX("OutsInEaches") "OutsInEaches",MAX("PERIOD_KEY") "PERIOD_KEY",MAX("POSQty") "POSQty",MAX("POSSales") "POSSales",MAX("PullsInEaches") "PullsInEaches",MAX("REQUEST_DATE") "REQUEST_DATE",MAX("RETAILER_KEY") "RETAILER_KEY",MAX("StoreOrders") "StoreOrders",MAX("VENDOR_KEY") "VENDOR_KEY",MAX("WhseOnHandCases") "WhseOnHandCases",MAX("WhseOnHandCost") "WhseOnHandCost",MAX("WhseOnHandQty") "WhseOnHandQty",MAX("WhseOnHandSell") "WhseOnHandSell",MAX("WhseOutsCases") "WhseOutsCases",MAX("WhsePullsCases") "WhsePullsCases",MAX("WhseReceivedCases") "WhseReceivedCases",MAX("WhseReceivedQty") "WhseReceivedQty",MAX("WhseShipsCases") "WhseShipsCases",MAX("WhseShipsQty") "WhseShipsQty",MAX("WhseSSOrderCases") "WhseSSOrderCases",MAX("WhseSSOrderQty") "WhseSSOrderQty",MAX("WhseSSOrdersCost") "WhseSSOrdersCost",MAX("WhseSSOrdersSell") "WhseSSOrdersSell" from  PREP_WM_RDP.DS_WM_FACT_DPSG_WALMRT_WMSSC_WAREHOUSE_INVENTORY_POSITION where event_key = 1002000005182
+{'WhseOnHandCost': Decimal('0'), 'PullsInEaches': 0, 'PERIOD_KEY': 20180428, 'ITEM_KEY': 13987112, 'WhseOutsCases': Decimal('0'), 'DC_KEY': 322129, 'WhseShipsQty': 0, 'WhseShipsCases': 0, 'WhseSSOrdersCost': Decimal('0'), 'WhseOnHandCases': 0, 'VENDOR_KEY': 5222, 'WhseSSOrderCases': 0, 'WhseSSOrderQty': 0, 'WhseSSOrdersSell': Decimal('0'), 'WhseOnHandQty': 0, 'StoreOrders': 0, 'EVENT_KEY': 1002000005182, 'POSSales': None, 'WhseOnHandSell': Decimal('0'), 'WhsePullsCases': Decimal('0'), 'RETAILER_KEY': 183, 'REQUEST_DATE': datetime.datetime(2018, 5, 3, 4, 41, 53), 'POSQty': None, 'WhseReceivedQty': 0, 'OutsInEaches': 0, 'WhseReceivedCases': None}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 1002000005152 , Table : DS_WM_FACT_DPSG_WALMRT_WMSSC_ITEM_SVIST , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_WM_FACT_{VENDOR_KEY}_{RETAILER_KEY}_WMSSC_ITEM_SVIST       412
+select MAX("EVENT_KEY") "EVENT_KEY",MAX("ITEM_KEY") "ITEM_KEY",MAX("PERIOD_KEY") "PERIOD_KEY",MAX("ReplenishmentStoreItemOutofStockCount") "ReplenishmentStoreItemOutofStockCount",MAX("ReplenishmentStoreItemsCount") "ReplenishmentStoreItemsCount",MAX("REQUEST_DATE") "REQUEST_DATE",MAX("RETAILER_KEY") "RETAILER_KEY",MAX("VENDOR_KEY") "VENDOR_KEY" from  PREP_WM_RDP.DS_WM_FACT_DPSG_WALMRT_WMSSC_ITEM_SVIST where event_key = 1002000005152
+{'RETAILER_KEY': 22, 'PERIOD_KEY': 20180502, 'ITEM_KEY': -1, 'VENDOR_KEY': 5222, 'EVENT_KEY': 1002000005152, 'ReplenishmentStoreItemOutofStockCount': None, 'ReplenishmentStoreItemsCount': None, 'REQUEST_DATE': datetime.datetime(2018, 5, 3, 6, 44, 34)}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0_ROW_DS_COUNT]Event_key - 1002000005149 , Table DS_WM_FACT_DPSG_WALMRT_WMSSC_WAREHOUSE_INVENTORY_POSITION , File_set : TARGET_SPD_SLS_MIQ_Extract  : Count 0 
+[0_ROW_DS_COUNT]Event_key - 1002000005150 , Table DS_WM_FACT_DPSG_WALMRT_WMSSC_WAREHOUSE_INVENTORY_POSITION , File_set : TARGET_SPD_SLS_MIQ_Extract  : Count 0 
+[ROW_DS_COUNT]Event_key : 1002000005155 , Table : DS_WM_FACT_DPSG_WALMRT_WMSSC_STORE_SALES , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_WM_FACT_{VENDOR_KEY}_{RETAILER_KEY}_WMSSC_STORE_SALES       67
+select MAX("AvgInstock") "AvgInstock",MAX("AvgReplInstock") "AvgReplInstock",MAX("AvgStrDDRateOfSale") "AvgStrDDRateOfSale",MAX("AvgTraitedStoreItemComb") "AvgTraitedStoreItemComb",MAX("AvgValidStoreItemComb") "AvgValidStoreItemComb",MAX("CalculatedCompStoreQty") "CalculatedCompStoreQty",MAX("CalculatedCompStoreSales") "CalculatedCompStoreSales",MAX("CalculatedUnitPrice") "CalculatedUnitPrice",MAX("CalPosOnHand") "CalPosOnHand",MAX("CurrentHORetail") "CurrentHORetail",MAX("CurrTraitedStoreItemComb") "CurrTraitedStoreItemComb",MAX("CurrValidStoreItemComb") "CurrValidStoreItemComb",MAX("DC_KEY") "DC_KEY",MAX("DDSumByCases") "DDSumByCases",MAX("DSD_IND") "DSD_IND",MAX("EVENT_DESCRIPTION_KEY") "EVENT_DESCRIPTION_KEY",MAX("EVENT_KEY") "EVENT_KEY",MAX("EventID") "EventID",MAX("GrossAvgShipCost") "GrossAvgShipCost",MAX("GrossShipCost") "GrossShipCost",MAX("GrossShipQty") "GrossShipQty",MAX("GrossShipRetail") "GrossShipRetail",MAX("HistEachesStrOrdered") "HistEachesStrOrdered",MAX("HistEachesStrReceived") "HistEachesStrReceived",MAX("HistOnHandQty") "HistOnHandQty",MAX("HistOnHandWeekEnding") "HistOnHandWeekEnding",MAX("HistStrOrderedCost") "HistStrOrderedCost",MAX("ITEM_KEY") "ITEM_KEY",MAX("MaxShelfQty") "MaxShelfQty",MAX("NetShipQty") "NetShipQty",MAX("NetShipRetail") "NetShipRetail",MAX("NetShipsCost") "NetShipsCost",MAX("OOS_REASON_KEY") "OOS_REASON_KEY",MAX("PERIOD_KEY") "PERIOD_KEY",MAX("POGInd") "POGInd",MAX("POSCost") "POSCost",MAX("POSQty") "POSQty",MAX("POSSales") "POSSales",MAX("ReplenishedFlag") "ReplenishedFlag",MAX("REQUEST_DATE") "REQUEST_DATE",MAX("RETAILER_KEY") "RETAILER_KEY",MAX("SalesType") "SalesType",MAX("SICurrAvgUnitRetail") "SICurrAvgUnitRetail",MAX("SIMUMDQty") "SIMUMDQty",MAX("SIPrevAvgUnitRetail") "SIPrevAvgUnitRetail",MAX("SITotalMUMD") "SITotalMUMD",MAX("STORE_KEY") "STORE_KEY",MAX("StoreOutsQty") "StoreOutsQty",MAX("StoreSpecificCost") "StoreSpecificCost",MAX("StoreSpecificRetail") "StoreSpecificRetail",MAX("StrRCCost") "StrRCCost",MAX("TotalAdjQty") "TotalAdjQty",MAX("TotalCustomerItemReturn") "TotalCustomerItemReturn",MAX("TotalCustomerReturnRetail") "TotalCustomerReturnRetail",MAX("VENDOR_KEY") "VENDOR_KEY",MAX("WeeklyCompStoreQty") "WeeklyCompStoreQty",MAX("WeeklyCompStoreSales") "WeeklyCompStoreSales",MAX("WhseReceivedCases") "WhseReceivedCases" from  PREP_WM_RDP.DS_WM_FACT_DPSG_WALMRT_WMSSC_STORE_SALES where event_key = 1002000005155
+{'SalesType': 9, 'DC_KEY': 6098166, 'TotalCustomerItemReturn': 12, 'SIPrevAvgUnitRetail': Decimal('9.98000'), 'DDSumByCases': Decimal('0'), 'EventID': None, 'PERIOD_KEY': 20180502, 'StoreSpecificRetail': Decimal('11.98000'), 'ReplenishedFlag': 1, 'GrossShipQty': 240, 'HistOnHandQty': 685, 'STORE_KEY': 6139934, 'HistEachesStrReceived': None, 'HistEachesStrOrdered': None, 'VENDOR_KEY': 5222, 'TotalAdjQty': 51, 'POSCost': Decimal('82.50000'), 'EVENT_KEY': 1002000005155, 'StrRCCost': Decimal('0'), 'NetShipRetail': Decimal('479.04000'), 'CurrentHORetail': Decimal('11.98000'), 'RETAILER_KEY': 22, 'OOS_REASON_KEY': None, 'REQUEST_DATE': datetime.datetime(2018, 5, 3, 5, 7, 44), 'POSQty': 53, 'TotalCustomerReturnRetail': 30, 'HistOnHandWeekEnding': None, 'SICurrAvgUnitRetail': Decimal('9.98000'), 'CalPosOnHand': None, 'NetShipQty': 240, 'StoreSpecificCost': Decimal('8.25000'), 'CalculatedUnitPrice': None, 'AvgValidStoreItemComb': 0, 'ITEM_KEY': 14402110, 'SITotalMUMD': Decimal('28.83000'), 'MaxShelfQty': 0, 'StoreOutsQty': 0, 'GrossShipCost': Decimal('396.00000'), 'AvgStrDDRateOfSale': Decimal('0'), 'AvgTraitedStoreItemComb': 0, 'POGInd': 1, 'DSD_IND': 1, 'AvgReplInstock': 0, 'CalculatedCompStoreSales': Decimal('99.80000'), 'CalculatedCompStoreQty': 53, 'CurrValidStoreItemComb': 0, 'GrossAvgShipCost': Decimal('8.25000'), 'AvgInstock': 0, 'EVENT_DESCRIPTION_KEY': 5002852, 'NetShipsCost': Decimal('396.00000'), 'GrossShipRetail': Decimal('479.04000'), 'POSSales': Decimal('99.80000'), 'WhseReceivedCases': 0, 'WeeklyCompStoreQty': None, 'HistStrOrderedCost': None, 'WeeklyCompStoreSales': None, 'SIMUMDQty': 32, 'CurrTraitedStoreItemComb': 0}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 1002000005151 , Table : DS_WM_FACT_DPSG_WALMRT_WMSSC_GROCERY_PO , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_WM_FACT_{VENDOR_KEY}_{RETAILER_KEY}_WMSSC_GROCERY_PO       604
+select MAX("DC_KEY") "DC_KEY",MAX("EarlyCases") "EarlyCases",MAX("EVENT_KEY") "EVENT_KEY",MAX("InWindowCases") "InWindowCases",MAX("ITEM_KEY") "ITEM_KEY",MAX("LateCases") "LateCases",MAX("OnOrderCost") "OnOrderCost",MAX("OnOrderRetail") "OnOrderRetail",MAX("OnTimeCases") "OnTimeCases",MAX("OverageCases") "OverageCases",MAX("PERIOD_KEY") "PERIOD_KEY",MAX("POArrivalDate") "POArrivalDate",MAX("POArrivalTime") "POArrivalTime",MAX("POCancelDate") "POCancelDate",MAX("POCasesOrdered") "POCasesOrdered",MAX("POCasesReceived") "POCasesReceived",MAX("POCasesReceivedWeight") "POCasesReceivedWeight",MAX("POCreateDate") "POCreateDate",MAX("PODueDate") "PODueDate",MAX("POLineNbr") "POLineNbr",MAX("POOrderDate") "POOrderDate",MAX("POOriginalDueDate") "POOriginalDueDate",MAX("POReceivedDate") "POReceivedDate",MAX("POReceivedTime") "POReceivedTime",MAX("POShipDate") "POShipDate",MAX("REQUEST_DATE") "REQUEST_DATE",MAX("RETAILER_KEY") "RETAILER_KEY",MAX("ShortCases") "ShortCases",MAX("VENDOR_KEY") "VENDOR_KEY",MAX("WhseQtyOrdered") "WhseQtyOrdered",MAX("WhseQtyReceived") "WhseQtyReceived" from  PREP_WM_RDP.DS_WM_FACT_DPSG_WALMRT_WMSSC_GROCERY_PO where event_key = 1002000005151
+{'PERIOD_KEY': 20160506, 'ITEM_KEY': 12243788, 'OverageCases': 90, 'DC_KEY': 331907, 'LateCases': 400, 'REQUEST_DATE': datetime.datetime(2018, 5, 3, 5, 28, 2), 'POReceivedDate': datetime.date(2016, 5, 7), 'POShipDate': None, 'OnOrderRetail': None, 'PODueDate': datetime.date(2016, 12, 31), 'VENDOR_KEY': 5222, 'POCancelDate': None, 'WhseQtyOrdered': None, 'POLineNbr': 22, 'OnOrderCost': None, 'POReceivedTime': 2344, 'POCreateDate': None, 'OnTimeCases': 1000, 'WhseQtyReceived': None, 'EVENT_KEY': 1002000005151, 'EarlyCases': 180, 'POArrivalDate': datetime.date(2016, 5, 4), 'POCasesOrdered': 1000, 'RETAILER_KEY': 183, 'InWindowCases': 1000, 'ShortCases': 180, 'POCasesReceivedWeight': Decimal('27824.64000'), 'POCasesReceived': 1000, 'POOriginalDueDate': datetime.date(2016, 5, 6), 'POArrivalTime': 2349, 'POOrderDate': datetime.date(2016, 4, 27)}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 1002000005181 , Table : DS_WM_FACT_DPSG_WALMRT_WMSSC_WAREHOUSE_INVENTORY_POSITION , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_WM_FACT_{VENDOR_KEY}_{RETAILER_KEY}_WMSSC_WAREHOUSE_INVENTORY_POSITION       282
+select MAX("DC_KEY") "DC_KEY",MAX("EVENT_KEY") "EVENT_KEY",MAX("ITEM_KEY") "ITEM_KEY",MAX("OutsInEaches") "OutsInEaches",MAX("PERIOD_KEY") "PERIOD_KEY",MAX("POSQty") "POSQty",MAX("POSSales") "POSSales",MAX("PullsInEaches") "PullsInEaches",MAX("REQUEST_DATE") "REQUEST_DATE",MAX("RETAILER_KEY") "RETAILER_KEY",MAX("StoreOrders") "StoreOrders",MAX("VENDOR_KEY") "VENDOR_KEY",MAX("WhseOnHandCases") "WhseOnHandCases",MAX("WhseOnHandCost") "WhseOnHandCost",MAX("WhseOnHandQty") "WhseOnHandQty",MAX("WhseOnHandSell") "WhseOnHandSell",MAX("WhseOutsCases") "WhseOutsCases",MAX("WhsePullsCases") "WhsePullsCases",MAX("WhseReceivedCases") "WhseReceivedCases",MAX("WhseReceivedQty") "WhseReceivedQty",MAX("WhseShipsCases") "WhseShipsCases",MAX("WhseShipsQty") "WhseShipsQty",MAX("WhseSSOrderCases") "WhseSSOrderCases",MAX("WhseSSOrderQty") "WhseSSOrderQty",MAX("WhseSSOrdersCost") "WhseSSOrdersCost",MAX("WhseSSOrdersSell") "WhseSSOrdersSell" from  PREP_WM_RDP.DS_WM_FACT_DPSG_WALMRT_WMSSC_WAREHOUSE_INVENTORY_POSITION where event_key = 1002000005181
+{'WhseOnHandCost': Decimal('66892.32000'), 'PullsInEaches': 36108, 'PERIOD_KEY': 20180428, 'ITEM_KEY': 14113174, 'WhseOutsCases': Decimal('6318.00000'), 'DC_KEY': 5821458, 'WhseShipsQty': 25932, 'WhseShipsCases': 4341, 'WhseSSOrdersCost': Decimal('81761.40000'), 'WhseOnHandCases': 5903, 'VENDOR_KEY': 5222, 'WhseSSOrderCases': 6612, 'WhseSSOrderQty': 52920, 'WhseSSOrdersSell': Decimal('81761.40000'), 'WhseOnHandQty': 43296, 'StoreOrders': 36672, 'EVENT_KEY': 1002000005181, 'POSSales': None, 'WhseOnHandSell': Decimal('66892.32000'), 'WhsePullsCases': Decimal('4197.00000'), 'RETAILER_KEY': 183, 'REQUEST_DATE': datetime.datetime(2018, 5, 3, 5, 18, 30), 'POSQty': None, 'WhseReceivedQty': 87840, 'OutsInEaches': 32400, 'WhseReceivedCases': None}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 1002000005153 , Table : DS_WM_FACT_DPSG_WALMRT_WMSSC_STORE_SALES , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_WM_FACT_{VENDOR_KEY}_{RETAILER_KEY}_WMSSC_STORE_SALES       67
+select MAX("AvgInstock") "AvgInstock",MAX("AvgReplInstock") "AvgReplInstock",MAX("AvgStrDDRateOfSale") "AvgStrDDRateOfSale",MAX("AvgTraitedStoreItemComb") "AvgTraitedStoreItemComb",MAX("AvgValidStoreItemComb") "AvgValidStoreItemComb",MAX("CalculatedCompStoreQty") "CalculatedCompStoreQty",MAX("CalculatedCompStoreSales") "CalculatedCompStoreSales",MAX("CalculatedUnitPrice") "CalculatedUnitPrice",MAX("CalPosOnHand") "CalPosOnHand",MAX("CurrentHORetail") "CurrentHORetail",MAX("CurrTraitedStoreItemComb") "CurrTraitedStoreItemComb",MAX("CurrValidStoreItemComb") "CurrValidStoreItemComb",MAX("DC_KEY") "DC_KEY",MAX("DDSumByCases") "DDSumByCases",MAX("DSD_IND") "DSD_IND",MAX("EVENT_DESCRIPTION_KEY") "EVENT_DESCRIPTION_KEY",MAX("EVENT_KEY") "EVENT_KEY",MAX("EventID") "EventID",MAX("GrossAvgShipCost") "GrossAvgShipCost",MAX("GrossShipCost") "GrossShipCost",MAX("GrossShipQty") "GrossShipQty",MAX("GrossShipRetail") "GrossShipRetail",MAX("HistEachesStrOrdered") "HistEachesStrOrdered",MAX("HistEachesStrReceived") "HistEachesStrReceived",MAX("HistOnHandQty") "HistOnHandQty",MAX("HistOnHandWeekEnding") "HistOnHandWeekEnding",MAX("HistStrOrderedCost") "HistStrOrderedCost",MAX("ITEM_KEY") "ITEM_KEY",MAX("MaxShelfQty") "MaxShelfQty",MAX("NetShipQty") "NetShipQty",MAX("NetShipRetail") "NetShipRetail",MAX("NetShipsCost") "NetShipsCost",MAX("OOS_REASON_KEY") "OOS_REASON_KEY",MAX("PERIOD_KEY") "PERIOD_KEY",MAX("POGInd") "POGInd",MAX("POSCost") "POSCost",MAX("POSQty") "POSQty",MAX("POSSales") "POSSales",MAX("ReplenishedFlag") "ReplenishedFlag",MAX("REQUEST_DATE") "REQUEST_DATE",MAX("RETAILER_KEY") "RETAILER_KEY",MAX("SalesType") "SalesType",MAX("SICurrAvgUnitRetail") "SICurrAvgUnitRetail",MAX("SIMUMDQty") "SIMUMDQty",MAX("SIPrevAvgUnitRetail") "SIPrevAvgUnitRetail",MAX("SITotalMUMD") "SITotalMUMD",MAX("STORE_KEY") "STORE_KEY",MAX("StoreOutsQty") "StoreOutsQty",MAX("StoreSpecificCost") "StoreSpecificCost",MAX("StoreSpecificRetail") "StoreSpecificRetail",MAX("StrRCCost") "StrRCCost",MAX("TotalAdjQty") "TotalAdjQty",MAX("TotalCustomerItemReturn") "TotalCustomerItemReturn",MAX("TotalCustomerReturnRetail") "TotalCustomerReturnRetail",MAX("VENDOR_KEY") "VENDOR_KEY",MAX("WeeklyCompStoreQty") "WeeklyCompStoreQty",MAX("WeeklyCompStoreSales") "WeeklyCompStoreSales",MAX("WhseReceivedCases") "WhseReceivedCases" from  PREP_WM_RDP.DS_WM_FACT_DPSG_WALMRT_WMSSC_STORE_SALES where event_key = 1002000005153
+{'SalesType': 9, 'DC_KEY': 6007439, 'TotalCustomerItemReturn': 51, 'SIPrevAvgUnitRetail': Decimal('37.50000'), 'DDSumByCases': Decimal('0'), 'EventID': None, 'PERIOD_KEY': 20180502, 'StoreSpecificRetail': Decimal('93.96000'), 'ReplenishedFlag': 1, 'GrossShipQty': 672, 'HistOnHandQty': 8795, 'STORE_KEY': 5031497, 'HistEachesStrReceived': None, 'HistEachesStrOrdered': None, 'VENDOR_KEY': 5222, 'TotalAdjQty': 303, 'POSCost': Decimal('4560.00000'), 'EVENT_KEY': 1002000005153, 'StrRCCost': Decimal('19.70000'), 'NetShipRetail': Decimal('1991.04000'), 'CurrentHORetail': Decimal('134.00000'), 'RETAILER_KEY': 22, 'OOS_REASON_KEY': None, 'REQUEST_DATE': datetime.datetime(2018, 5, 3, 5, 12, 19), 'POSQty': 304, 'TotalCustomerReturnRetail': 102, 'HistOnHandWeekEnding': None, 'SICurrAvgUnitRetail': Decimal('23.28000'), 'CalPosOnHand': None, 'NetShipQty': 672, 'StoreSpecificCost': Decimal('76.85000'), 'CalculatedUnitPrice': None, 'AvgValidStoreItemComb': 1, 'ITEM_KEY': 15076227, 'SITotalMUMD': Decimal('464.31000'), 'MaxShelfQty': 230, 'StoreOutsQty': 120, 'GrossShipCost': Decimal('1489.73040'), 'AvgStrDDRateOfSale': Decimal('0'), 'AvgTraitedStoreItemComb': 1, 'POGInd': 1, 'DSD_IND': 1, 'AvgReplInstock': 0, 'CalculatedCompStoreSales': Decimal('633.88000'), 'CalculatedCompStoreQty': 304, 'CurrValidStoreItemComb': 1, 'GrossAvgShipCost': Decimal('76.85000'), 'AvgInstock': 0, 'EVENT_DESCRIPTION_KEY': 5002854, 'NetShipsCost': Decimal('1489.73040'), 'GrossShipRetail': Decimal('1991.04000'), 'POSSales': Decimal('633.88000'), 'WhseReceivedCases': 2064, 'WeeklyCompStoreQty': None, 'HistStrOrderedCost': None, 'WeeklyCompStoreSales': None, 'SIMUMDQty': 642, 'CurrTraitedStoreItemComb': 1}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 1002000005154 , Table : DS_WM_FACT_DPSG_WALMRT_WMSSC_STORE_SALES , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_WM_FACT_{VENDOR_KEY}_{RETAILER_KEY}_WMSSC_STORE_SALES       67
+select MAX("AvgInstock") "AvgInstock",MAX("AvgReplInstock") "AvgReplInstock",MAX("AvgStrDDRateOfSale") "AvgStrDDRateOfSale",MAX("AvgTraitedStoreItemComb") "AvgTraitedStoreItemComb",MAX("AvgValidStoreItemComb") "AvgValidStoreItemComb",MAX("CalculatedCompStoreQty") "CalculatedCompStoreQty",MAX("CalculatedCompStoreSales") "CalculatedCompStoreSales",MAX("CalculatedUnitPrice") "CalculatedUnitPrice",MAX("CalPosOnHand") "CalPosOnHand",MAX("CurrentHORetail") "CurrentHORetail",MAX("CurrTraitedStoreItemComb") "CurrTraitedStoreItemComb",MAX("CurrValidStoreItemComb") "CurrValidStoreItemComb",MAX("DC_KEY") "DC_KEY",MAX("DDSumByCases") "DDSumByCases",MAX("DSD_IND") "DSD_IND",MAX("EVENT_DESCRIPTION_KEY") "EVENT_DESCRIPTION_KEY",MAX("EVENT_KEY") "EVENT_KEY",MAX("EventID") "EventID",MAX("GrossAvgShipCost") "GrossAvgShipCost",MAX("GrossShipCost") "GrossShipCost",MAX("GrossShipQty") "GrossShipQty",MAX("GrossShipRetail") "GrossShipRetail",MAX("HistEachesStrOrdered") "HistEachesStrOrdered",MAX("HistEachesStrReceived") "HistEachesStrReceived",MAX("HistOnHandQty") "HistOnHandQty",MAX("HistOnHandWeekEnding") "HistOnHandWeekEnding",MAX("HistStrOrderedCost") "HistStrOrderedCost",MAX("ITEM_KEY") "ITEM_KEY",MAX("MaxShelfQty") "MaxShelfQty",MAX("NetShipQty") "NetShipQty",MAX("NetShipRetail") "NetShipRetail",MAX("NetShipsCost") "NetShipsCost",MAX("OOS_REASON_KEY") "OOS_REASON_KEY",MAX("PERIOD_KEY") "PERIOD_KEY",MAX("POGInd") "POGInd",MAX("POSCost") "POSCost",MAX("POSQty") "POSQty",MAX("POSSales") "POSSales",MAX("ReplenishedFlag") "ReplenishedFlag",MAX("REQUEST_DATE") "REQUEST_DATE",MAX("RETAILER_KEY") "RETAILER_KEY",MAX("SalesType") "SalesType",MAX("SICurrAvgUnitRetail") "SICurrAvgUnitRetail",MAX("SIMUMDQty") "SIMUMDQty",MAX("SIPrevAvgUnitRetail") "SIPrevAvgUnitRetail",MAX("SITotalMUMD") "SITotalMUMD",MAX("STORE_KEY") "STORE_KEY",MAX("StoreOutsQty") "StoreOutsQty",MAX("StoreSpecificCost") "StoreSpecificCost",MAX("StoreSpecificRetail") "StoreSpecificRetail",MAX("StrRCCost") "StrRCCost",MAX("TotalAdjQty") "TotalAdjQty",MAX("TotalCustomerItemReturn") "TotalCustomerItemReturn",MAX("TotalCustomerReturnRetail") "TotalCustomerReturnRetail",MAX("VENDOR_KEY") "VENDOR_KEY",MAX("WeeklyCompStoreQty") "WeeklyCompStoreQty",MAX("WeeklyCompStoreSales") "WeeklyCompStoreSales",MAX("WhseReceivedCases") "WhseReceivedCases" from  PREP_WM_RDP.DS_WM_FACT_DPSG_WALMRT_WMSSC_STORE_SALES where event_key = 1002000005154
+{'SalesType': 9, 'DC_KEY': 6098166, 'TotalCustomerItemReturn': 576, 'SIPrevAvgUnitRetail': Decimal('37.50000'), 'DDSumByCases': Decimal('0'), 'EventID': None, 'PERIOD_KEY': 20180502, 'StoreSpecificRetail': Decimal('134.00000'), 'ReplenishedFlag': 1, 'GrossShipQty': 704, 'HistOnHandQty': 1986, 'STORE_KEY': 6010942, 'HistEachesStrReceived': None, 'HistEachesStrOrdered': None, 'VENDOR_KEY': 5222, 'TotalAdjQty': 138, 'POSCost': Decimal('6280.00000'), 'EVENT_KEY': 1002000005154, 'StrRCCost': Decimal('23.14000'), 'NetShipRetail': Decimal('1760.00000'), 'CurrentHORetail': Decimal('163.00000'), 'RETAILER_KEY': 22, 'OOS_REASON_KEY': None, 'REQUEST_DATE': datetime.datetime(2018, 5, 3, 5, 29, 24), 'POSQty': 628, 'TotalCustomerReturnRetail': 1440, 'HistOnHandWeekEnding': None, 'SICurrAvgUnitRetail': Decimal('37.50000'), 'CalPosOnHand': None, 'NetShipQty': 704, 'StoreSpecificCost': Decimal('86.65000'), 'CalculatedUnitPrice': None, 'AvgValidStoreItemComb': 1, 'ITEM_KEY': 15076227, 'SITotalMUMD': Decimal('194.40000'), 'MaxShelfQty': 105, 'StoreOutsQty': 200, 'GrossShipCost': Decimal('1640.32000'), 'AvgStrDDRateOfSale': Decimal('0'), 'AvgTraitedStoreItemComb': 1, 'POGInd': 1, 'DSD_IND': 1, 'AvgReplInstock': 0, 'CalculatedCompStoreSales': Decimal('1570.00000'), 'CalculatedCompStoreQty': 628, 'CurrValidStoreItemComb': 1, 'GrossAvgShipCost': Decimal('86.65000'), 'AvgInstock': 0, 'EVENT_DESCRIPTION_KEY': 5002854, 'NetShipsCost': Decimal('1640.32000'), 'GrossShipRetail': Decimal('1760.00000'), 'POSSales': Decimal('1570.00000'), 'WhseReceivedCases': 2064, 'WeeklyCompStoreQty': None, 'HistStrOrderedCost': None, 'WeeklyCompStoreSales': None, 'SIMUMDQty': 248, 'CurrTraitedStoreItemComb': 1}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 1002000005156 , Table : DS_WM_FACT_DPSG_WALMRT_WMSSC_STORE_CURRENT_INVENTORY , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_WM_FACT_{VENDOR_KEY}_{RETAILER_KEY}_WMSSC_STORE_CURRENT_INVENTORY       262
+select MAX("AvgStrDDRateOfSale") "AvgStrDDRateOfSale",MAX("CurrInstock") "CurrInstock",MAX("CurrReplInstock") "CurrReplInstock",MAX("CurrReplInstockFlag") "CurrReplInstockFlag",MAX("CurrStrInTransitCost") "CurrStrInTransitCost",MAX("CurrStrInTransitQty") "CurrStrInTransitQty",MAX("CurrStrInTransitRetail") "CurrStrInTransitRetail",MAX("CurrStrInWhseCost") "CurrStrInWhseCost",MAX("CurrStrInWhseQty") "CurrStrInWhseQty",MAX("CurrStrInWhseRetail") "CurrStrInWhseRetail",MAX("CurrStrOnHandCost") "CurrStrOnHandCost",MAX("CurrStrOnHandQty") "CurrStrOnHandQty",MAX("CurrStrOnHandRetail") "CurrStrOnHandRetail",MAX("CurrStrOnOrderCost") "CurrStrOnOrderCost",MAX("CurrStrOnOrderQty") "CurrStrOnOrderQty",MAX("CurrStrOnOrderRetail") "CurrStrOnOrderRetail",MAX("CurrTraitedStoreItemComb") "CurrTraitedStoreItemComb",MAX("CurrValidStoreItemComb") "CurrValidStoreItemComb",MAX("CurrWhseBuyerOrdersCases") "CurrWhseBuyerOrdersCases",MAX("CurrWhseOnHandCases") "CurrWhseOnHandCases",MAX("CurrWhseOnHandCost") "CurrWhseOnHandCost",MAX("CurrWhseOnHandQty") "CurrWhseOnHandQty",MAX("CurrWhseOnHandSell") "CurrWhseOnHandSell",MAX("CurrWhseReservedCases") "CurrWhseReservedCases",MAX("CurrWhseSales") "CurrWhseSales",MAX("CurrWhseSSOrderCases") "CurrWhseSSOrderCases",MAX("DC_KEY") "DC_KEY",MAX("EVENT_KEY") "EVENT_KEY",MAX("InstockFlag") "InstockFlag",MAX("ITEM_KEY") "ITEM_KEY",MAX("MaxShelfQty") "MaxShelfQty",MAX("PERIOD_KEY") "PERIOD_KEY",MAX("REPL_CALCULATION_KEY") "REPL_CALCULATION_KEY",MAX("REQUEST_DATE") "REQUEST_DATE",MAX("RETAILER_KEY") "RETAILER_KEY",MAX("STORE_KEY") "STORE_KEY",MAX("SVISTReplInstock") "SVISTReplInstock",MAX("ValidForecastFlag") "ValidForecastFlag",MAX("VENDOR_KEY") "VENDOR_KEY",MAX("WHPKQty") "WHPKQty" from  PREP_WM_RDP.DS_WM_FACT_DPSG_WALMRT_WMSSC_STORE_CURRENT_INVENTORY where event_key = 1002000005156
+{'CurrReplInstockFlag': None, 'CurrReplInstock': 100, 'CurrWhseOnHandCost': Decimal('19715.54000'), 'CurrWhseReservedCases': 0, 'ITEM_KEY': 15164062, 'CurrStrOnHandCost': Decimal('14335.85000'), 'CurrWhseSales': Decimal('10024.00000'), 'DC_KEY': 6098166, 'MaxShelfQty': None, 'CurrStrInTransitRetail': None, 'SVISTReplInstock': None, 'AvgStrDDRateOfSale': None, 'CurrWhseOnHandQty': 12844, 'VENDOR_KEY': 5222, 'CurrStrInWhseRetail': None, 'CurrStrOnOrderQty': 1392, 'CurrStrInTransitQty': 324, 'InstockFlag': None, 'CurrStrOnOrderRetail': None, 'REPL_CALCULATION_KEY': 0, 'CurrWhseSSOrderCases': 2880, 'CurrInstock': 1, 'CurrWhseOnHandSell': Decimal('21064.16000'), 'CurrValidStoreItemComb': 1, 'CurrStrOnHandRetail': Decimal('26209.10000'), 'CurrStrOnOrderCost': None, 'CurrWhseOnHandCases': 3211, 'CurrStrOnHandQty': 8795, 'EVENT_KEY': 1002000005156, 'CurrStrInWhseQty': 600, 'STORE_KEY': 6181984, 'WHPKQty': None, 'CurrStrInTransitCost': None, 'RETAILER_KEY': 22, 'PERIOD_KEY': 20180502, 'ValidForecastFlag': None, 'REQUEST_DATE': datetime.datetime(2018, 5, 3, 4, 50, 45), 'CurrTraitedStoreItemComb': 1, 'CurrWhseBuyerOrdersCases': 16854, 'CurrStrInWhseCost': None}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 1002000005159 , Table : DS_WM_FACT_DPSG_WALMRT_WMSSC_STORE_SALES , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_WM_FACT_{VENDOR_KEY}_{RETAILER_KEY}_WMSSC_STORE_SALES       67
+select MAX("AvgInstock") "AvgInstock",MAX("AvgReplInstock") "AvgReplInstock",MAX("AvgStrDDRateOfSale") "AvgStrDDRateOfSale",MAX("AvgTraitedStoreItemComb") "AvgTraitedStoreItemComb",MAX("AvgValidStoreItemComb") "AvgValidStoreItemComb",MAX("CalculatedCompStoreQty") "CalculatedCompStoreQty",MAX("CalculatedCompStoreSales") "CalculatedCompStoreSales",MAX("CalculatedUnitPrice") "CalculatedUnitPrice",MAX("CalPosOnHand") "CalPosOnHand",MAX("CurrentHORetail") "CurrentHORetail",MAX("CurrTraitedStoreItemComb") "CurrTraitedStoreItemComb",MAX("CurrValidStoreItemComb") "CurrValidStoreItemComb",MAX("DC_KEY") "DC_KEY",MAX("DDSumByCases") "DDSumByCases",MAX("DSD_IND") "DSD_IND",MAX("EVENT_DESCRIPTION_KEY") "EVENT_DESCRIPTION_KEY",MAX("EVENT_KEY") "EVENT_KEY",MAX("EventID") "EventID",MAX("GrossAvgShipCost") "GrossAvgShipCost",MAX("GrossShipCost") "GrossShipCost",MAX("GrossShipQty") "GrossShipQty",MAX("GrossShipRetail") "GrossShipRetail",MAX("HistEachesStrOrdered") "HistEachesStrOrdered",MAX("HistEachesStrReceived") "HistEachesStrReceived",MAX("HistOnHandQty") "HistOnHandQty",MAX("HistOnHandWeekEnding") "HistOnHandWeekEnding",MAX("HistStrOrderedCost") "HistStrOrderedCost",MAX("ITEM_KEY") "ITEM_KEY",MAX("MaxShelfQty") "MaxShelfQty",MAX("NetShipQty") "NetShipQty",MAX("NetShipRetail") "NetShipRetail",MAX("NetShipsCost") "NetShipsCost",MAX("OOS_REASON_KEY") "OOS_REASON_KEY",MAX("PERIOD_KEY") "PERIOD_KEY",MAX("POGInd") "POGInd",MAX("POSCost") "POSCost",MAX("POSQty") "POSQty",MAX("POSSales") "POSSales",MAX("ReplenishedFlag") "ReplenishedFlag",MAX("REQUEST_DATE") "REQUEST_DATE",MAX("RETAILER_KEY") "RETAILER_KEY",MAX("SalesType") "SalesType",MAX("SICurrAvgUnitRetail") "SICurrAvgUnitRetail",MAX("SIMUMDQty") "SIMUMDQty",MAX("SIPrevAvgUnitRetail") "SIPrevAvgUnitRetail",MAX("SITotalMUMD") "SITotalMUMD",MAX("STORE_KEY") "STORE_KEY",MAX("StoreOutsQty") "StoreOutsQty",MAX("StoreSpecificCost") "StoreSpecificCost",MAX("StoreSpecificRetail") "StoreSpecificRetail",MAX("StrRCCost") "StrRCCost",MAX("TotalAdjQty") "TotalAdjQty",MAX("TotalCustomerItemReturn") "TotalCustomerItemReturn",MAX("TotalCustomerReturnRetail") "TotalCustomerReturnRetail",MAX("VENDOR_KEY") "VENDOR_KEY",MAX("WeeklyCompStoreQty") "WeeklyCompStoreQty",MAX("WeeklyCompStoreSales") "WeeklyCompStoreSales",MAX("WhseReceivedCases") "WhseReceivedCases" from  PREP_WM_RDP.DS_WM_FACT_DPSG_WALMRT_WMSSC_STORE_SALES where event_key = 1002000005159
+{'SalesType': 9, 'DC_KEY': 6098166, 'TotalCustomerItemReturn': 24, 'SIPrevAvgUnitRetail': Decimal('22.50000'), 'DDSumByCases': Decimal('0'), 'EventID': None, 'PERIOD_KEY': 20180502, 'StoreSpecificRetail': Decimal('134.00000'), 'ReplenishedFlag': 1, 'GrossShipQty': 1200, 'HistOnHandQty': 2783, 'STORE_KEY': 6033720, 'HistEachesStrReceived': None, 'HistEachesStrOrdered': None, 'VENDOR_KEY': 5222, 'TotalAdjQty': 87, 'POSCost': Decimal('2685.00000'), 'EVENT_KEY': 1002000005159, 'StrRCCost': Decimal('23.64000'), 'NetShipRetail': Decimal('1972.08000'), 'CurrentHORetail': Decimal('163.00000'), 'RETAILER_KEY': 22, 'OOS_REASON_KEY': None, 'REQUEST_DATE': datetime.datetime(2018, 5, 3, 5, 38, 47), 'POSQty': 231, 'TotalCustomerReturnRetail': 67, 'HistOnHandWeekEnding': None, 'SICurrAvgUnitRetail': Decimal('22.50000'), 'CalPosOnHand': None, 'NetShipQty': 1200, 'StoreSpecificCost': Decimal('86.65000'), 'CalculatedUnitPrice': None, 'AvgValidStoreItemComb': 1, 'ITEM_KEY': 15164062, 'SITotalMUMD': Decimal('224.75000'), 'MaxShelfQty': 168, 'StoreOutsQty': 200, 'GrossShipCost': Decimal('1576.08000'), 'AvgStrDDRateOfSale': Decimal('0'), 'AvgTraitedStoreItemComb': 1, 'POGInd': 1, 'DSD_IND': 1, 'AvgReplInstock': 0, 'CalculatedCompStoreSales': Decimal('1198.48000'), 'CalculatedCompStoreQty': 231, 'CurrValidStoreItemComb': 1, 'GrossAvgShipCost': Decimal('86.65000'), 'AvgInstock': 0, 'EVENT_DESCRIPTION_KEY': 5002854, 'NetShipsCost': Decimal('1576.08000'), 'GrossShipRetail': Decimal('1972.08000'), 'POSSales': Decimal('1198.48000'), 'WhseReceivedCases': 2064, 'WeeklyCompStoreQty': None, 'HistStrOrderedCost': None, 'WeeklyCompStoreSales': None, 'SIMUMDQty': 190, 'CurrTraitedStoreItemComb': 1}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 1002000005160 , Table : DS_WM_FACT_DPSG_WALMRT_WMSSC_STORE_SALES , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_WM_FACT_{VENDOR_KEY}_{RETAILER_KEY}_WMSSC_STORE_SALES       67
+select MAX("AvgInstock") "AvgInstock",MAX("AvgReplInstock") "AvgReplInstock",MAX("AvgStrDDRateOfSale") "AvgStrDDRateOfSale",MAX("AvgTraitedStoreItemComb") "AvgTraitedStoreItemComb",MAX("AvgValidStoreItemComb") "AvgValidStoreItemComb",MAX("CalculatedCompStoreQty") "CalculatedCompStoreQty",MAX("CalculatedCompStoreSales") "CalculatedCompStoreSales",MAX("CalculatedUnitPrice") "CalculatedUnitPrice",MAX("CalPosOnHand") "CalPosOnHand",MAX("CurrentHORetail") "CurrentHORetail",MAX("CurrTraitedStoreItemComb") "CurrTraitedStoreItemComb",MAX("CurrValidStoreItemComb") "CurrValidStoreItemComb",MAX("DC_KEY") "DC_KEY",MAX("DDSumByCases") "DDSumByCases",MAX("DSD_IND") "DSD_IND",MAX("EVENT_DESCRIPTION_KEY") "EVENT_DESCRIPTION_KEY",MAX("EVENT_KEY") "EVENT_KEY",MAX("EventID") "EventID",MAX("GrossAvgShipCost") "GrossAvgShipCost",MAX("GrossShipCost") "GrossShipCost",MAX("GrossShipQty") "GrossShipQty",MAX("GrossShipRetail") "GrossShipRetail",MAX("HistEachesStrOrdered") "HistEachesStrOrdered",MAX("HistEachesStrReceived") "HistEachesStrReceived",MAX("HistOnHandQty") "HistOnHandQty",MAX("HistOnHandWeekEnding") "HistOnHandWeekEnding",MAX("HistStrOrderedCost") "HistStrOrderedCost",MAX("ITEM_KEY") "ITEM_KEY",MAX("MaxShelfQty") "MaxShelfQty",MAX("NetShipQty") "NetShipQty",MAX("NetShipRetail") "NetShipRetail",MAX("NetShipsCost") "NetShipsCost",MAX("OOS_REASON_KEY") "OOS_REASON_KEY",MAX("PERIOD_KEY") "PERIOD_KEY",MAX("POGInd") "POGInd",MAX("POSCost") "POSCost",MAX("POSQty") "POSQty",MAX("POSSales") "POSSales",MAX("ReplenishedFlag") "ReplenishedFlag",MAX("REQUEST_DATE") "REQUEST_DATE",MAX("RETAILER_KEY") "RETAILER_KEY",MAX("SalesType") "SalesType",MAX("SICurrAvgUnitRetail") "SICurrAvgUnitRetail",MAX("SIMUMDQty") "SIMUMDQty",MAX("SIPrevAvgUnitRetail") "SIPrevAvgUnitRetail",MAX("SITotalMUMD") "SITotalMUMD",MAX("STORE_KEY") "STORE_KEY",MAX("StoreOutsQty") "StoreOutsQty",MAX("StoreSpecificCost") "StoreSpecificCost",MAX("StoreSpecificRetail") "StoreSpecificRetail",MAX("StrRCCost") "StrRCCost",MAX("TotalAdjQty") "TotalAdjQty",MAX("TotalCustomerItemReturn") "TotalCustomerItemReturn",MAX("TotalCustomerReturnRetail") "TotalCustomerReturnRetail",MAX("VENDOR_KEY") "VENDOR_KEY",MAX("WeeklyCompStoreQty") "WeeklyCompStoreQty",MAX("WeeklyCompStoreSales") "WeeklyCompStoreSales",MAX("WhseReceivedCases") "WhseReceivedCases" from  PREP_WM_RDP.DS_WM_FACT_DPSG_WALMRT_WMSSC_STORE_SALES where event_key = 1002000005160
+{'SalesType': 9, 'DC_KEY': 6098166, 'TotalCustomerItemReturn': 44, 'SIPrevAvgUnitRetail': Decimal('163.00000'), 'DDSumByCases': Decimal('0'), 'EventID': None, 'PERIOD_KEY': 20180502, 'StoreSpecificRetail': Decimal('163.00000'), 'ReplenishedFlag': 1, 'GrossShipQty': 800, 'HistOnHandQty': 2912, 'STORE_KEY': 6181984, 'HistEachesStrReceived': None, 'HistEachesStrOrdered': None, 'VENDOR_KEY': 5222, 'TotalAdjQty': 194, 'POSCost': Decimal('4485.00000'), 'EVENT_KEY': 1002000005160, 'StrRCCost': Decimal('26.35000'), 'NetShipRetail': Decimal('1626.56000'), 'CurrentHORetail': Decimal('163.00000'), 'RETAILER_KEY': 22, 'OOS_REASON_KEY': None, 'REQUEST_DATE': datetime.datetime(2018, 5, 3, 5, 47, 23), 'POSQty': 318, 'TotalCustomerReturnRetail': 154, 'HistOnHandWeekEnding': None, 'SICurrAvgUnitRetail': Decimal('87.52000'), 'CalPosOnHand': None, 'NetShipQty': 800, 'StoreSpecificCost': Decimal('86.65000'), 'CalculatedUnitPrice': None, 'AvgValidStoreItemComb': 1, 'ITEM_KEY': 15076227, 'SITotalMUMD': Decimal('239.20000'), 'MaxShelfQty': 190, 'StoreOutsQty': 128, 'GrossShipCost': Decimal('1599.36000'), 'AvgStrDDRateOfSale': Decimal('0'), 'AvgTraitedStoreItemComb': 1, 'POGInd': 1, 'DSD_IND': 1, 'AvgReplInstock': 0, 'CalculatedCompStoreSales': Decimal('747.50000'), 'CalculatedCompStoreQty': 318, 'CurrValidStoreItemComb': 1, 'GrossAvgShipCost': Decimal('86.65000'), 'AvgInstock': 0, 'EVENT_DESCRIPTION_KEY': 5002854, 'NetShipsCost': Decimal('1599.36000'), 'GrossShipRetail': Decimal('1626.56000'), 'POSSales': Decimal('747.50000'), 'WhseReceivedCases': 2064, 'WeeklyCompStoreQty': None, 'HistStrOrderedCost': None, 'WeeklyCompStoreSales': None, 'SIMUMDQty': 641, 'CurrTraitedStoreItemComb': 1}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 1002000005157 , Table : DS_WM_FACT_DPSG_WALMRT_WMSSC_STORE_CURRENT_INVENTORY , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_WM_FACT_{VENDOR_KEY}_{RETAILER_KEY}_WMSSC_STORE_CURRENT_INVENTORY       262
+select MAX("AvgStrDDRateOfSale") "AvgStrDDRateOfSale",MAX("CurrInstock") "CurrInstock",MAX("CurrReplInstock") "CurrReplInstock",MAX("CurrReplInstockFlag") "CurrReplInstockFlag",MAX("CurrStrInTransitCost") "CurrStrInTransitCost",MAX("CurrStrInTransitQty") "CurrStrInTransitQty",MAX("CurrStrInTransitRetail") "CurrStrInTransitRetail",MAX("CurrStrInWhseCost") "CurrStrInWhseCost",MAX("CurrStrInWhseQty") "CurrStrInWhseQty",MAX("CurrStrInWhseRetail") "CurrStrInWhseRetail",MAX("CurrStrOnHandCost") "CurrStrOnHandCost",MAX("CurrStrOnHandQty") "CurrStrOnHandQty",MAX("CurrStrOnHandRetail") "CurrStrOnHandRetail",MAX("CurrStrOnOrderCost") "CurrStrOnOrderCost",MAX("CurrStrOnOrderQty") "CurrStrOnOrderQty",MAX("CurrStrOnOrderRetail") "CurrStrOnOrderRetail",MAX("CurrTraitedStoreItemComb") "CurrTraitedStoreItemComb",MAX("CurrValidStoreItemComb") "CurrValidStoreItemComb",MAX("CurrWhseBuyerOrdersCases") "CurrWhseBuyerOrdersCases",MAX("CurrWhseOnHandCases") "CurrWhseOnHandCases",MAX("CurrWhseOnHandCost") "CurrWhseOnHandCost",MAX("CurrWhseOnHandQty") "CurrWhseOnHandQty",MAX("CurrWhseOnHandSell") "CurrWhseOnHandSell",MAX("CurrWhseReservedCases") "CurrWhseReservedCases",MAX("CurrWhseSales") "CurrWhseSales",MAX("CurrWhseSSOrderCases") "CurrWhseSSOrderCases",MAX("DC_KEY") "DC_KEY",MAX("EVENT_KEY") "EVENT_KEY",MAX("InstockFlag") "InstockFlag",MAX("ITEM_KEY") "ITEM_KEY",MAX("MaxShelfQty") "MaxShelfQty",MAX("PERIOD_KEY") "PERIOD_KEY",MAX("REPL_CALCULATION_KEY") "REPL_CALCULATION_KEY",MAX("REQUEST_DATE") "REQUEST_DATE",MAX("RETAILER_KEY") "RETAILER_KEY",MAX("STORE_KEY") "STORE_KEY",MAX("SVISTReplInstock") "SVISTReplInstock",MAX("ValidForecastFlag") "ValidForecastFlag",MAX("VENDOR_KEY") "VENDOR_KEY",MAX("WHPKQty") "WHPKQty" from  PREP_WM_RDP.DS_WM_FACT_DPSG_WALMRT_WMSSC_STORE_CURRENT_INVENTORY where event_key = 1002000005157
+{'CurrReplInstockFlag': None, 'CurrReplInstock': 0, 'CurrWhseOnHandCost': Decimal('0'), 'CurrWhseReservedCases': 0, 'ITEM_KEY': 14402110, 'CurrStrOnHandCost': Decimal('1242.50000'), 'CurrWhseSales': Decimal('0'), 'DC_KEY': 6098166, 'MaxShelfQty': None, 'CurrStrInTransitRetail': None, 'SVISTReplInstock': None, 'AvgStrDDRateOfSale': None, 'CurrWhseOnHandQty': 0, 'VENDOR_KEY': 5222, 'CurrStrInWhseRetail': None, 'CurrStrOnOrderQty': 0, 'CurrStrInTransitQty': 0, 'InstockFlag': None, 'CurrStrOnOrderRetail': None, 'REPL_CALCULATION_KEY': 0, 'CurrWhseSSOrderCases': 0, 'CurrInstock': 0, 'CurrWhseOnHandSell': Decimal('0'), 'CurrValidStoreItemComb': 0, 'CurrStrOnHandRetail': Decimal('1470.00000'), 'CurrStrOnOrderCost': None, 'CurrWhseOnHandCases': 0, 'CurrStrOnHandQty': 875, 'EVENT_KEY': 1002000005157, 'CurrStrInWhseQty': 0, 'STORE_KEY': 6139934, 'WHPKQty': None, 'CurrStrInTransitCost': None, 'RETAILER_KEY': 22, 'PERIOD_KEY': 20180502, 'ValidForecastFlag': None, 'REQUEST_DATE': datetime.datetime(2018, 5, 3, 5, 43, 39), 'CurrTraitedStoreItemComb': 0, 'CurrWhseBuyerOrdersCases': 0, 'CurrStrInWhseCost': None}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 1002000005158 , Table : DS_WM_FACT_DPSG_WALMRT_WMSSC_STORE_SALES , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_WM_FACT_{VENDOR_KEY}_{RETAILER_KEY}_WMSSC_STORE_SALES       67
+select MAX("AvgInstock") "AvgInstock",MAX("AvgReplInstock") "AvgReplInstock",MAX("AvgStrDDRateOfSale") "AvgStrDDRateOfSale",MAX("AvgTraitedStoreItemComb") "AvgTraitedStoreItemComb",MAX("AvgValidStoreItemComb") "AvgValidStoreItemComb",MAX("CalculatedCompStoreQty") "CalculatedCompStoreQty",MAX("CalculatedCompStoreSales") "CalculatedCompStoreSales",MAX("CalculatedUnitPrice") "CalculatedUnitPrice",MAX("CalPosOnHand") "CalPosOnHand",MAX("CurrentHORetail") "CurrentHORetail",MAX("CurrTraitedStoreItemComb") "CurrTraitedStoreItemComb",MAX("CurrValidStoreItemComb") "CurrValidStoreItemComb",MAX("DC_KEY") "DC_KEY",MAX("DDSumByCases") "DDSumByCases",MAX("DSD_IND") "DSD_IND",MAX("EVENT_DESCRIPTION_KEY") "EVENT_DESCRIPTION_KEY",MAX("EVENT_KEY") "EVENT_KEY",MAX("EventID") "EventID",MAX("GrossAvgShipCost") "GrossAvgShipCost",MAX("GrossShipCost") "GrossShipCost",MAX("GrossShipQty") "GrossShipQty",MAX("GrossShipRetail") "GrossShipRetail",MAX("HistEachesStrOrdered") "HistEachesStrOrdered",MAX("HistEachesStrReceived") "HistEachesStrReceived",MAX("HistOnHandQty") "HistOnHandQty",MAX("HistOnHandWeekEnding") "HistOnHandWeekEnding",MAX("HistStrOrderedCost") "HistStrOrderedCost",MAX("ITEM_KEY") "ITEM_KEY",MAX("MaxShelfQty") "MaxShelfQty",MAX("NetShipQty") "NetShipQty",MAX("NetShipRetail") "NetShipRetail",MAX("NetShipsCost") "NetShipsCost",MAX("OOS_REASON_KEY") "OOS_REASON_KEY",MAX("PERIOD_KEY") "PERIOD_KEY",MAX("POGInd") "POGInd",MAX("POSCost") "POSCost",MAX("POSQty") "POSQty",MAX("POSSales") "POSSales",MAX("ReplenishedFlag") "ReplenishedFlag",MAX("REQUEST_DATE") "REQUEST_DATE",MAX("RETAILER_KEY") "RETAILER_KEY",MAX("SalesType") "SalesType",MAX("SICurrAvgUnitRetail") "SICurrAvgUnitRetail",MAX("SIMUMDQty") "SIMUMDQty",MAX("SIPrevAvgUnitRetail") "SIPrevAvgUnitRetail",MAX("SITotalMUMD") "SITotalMUMD",MAX("STORE_KEY") "STORE_KEY",MAX("StoreOutsQty") "StoreOutsQty",MAX("StoreSpecificCost") "StoreSpecificCost",MAX("StoreSpecificRetail") "StoreSpecificRetail",MAX("StrRCCost") "StrRCCost",MAX("TotalAdjQty") "TotalAdjQty",MAX("TotalCustomerItemReturn") "TotalCustomerItemReturn",MAX("TotalCustomerReturnRetail") "TotalCustomerReturnRetail",MAX("VENDOR_KEY") "VENDOR_KEY",MAX("WeeklyCompStoreQty") "WeeklyCompStoreQty",MAX("WeeklyCompStoreSales") "WeeklyCompStoreSales",MAX("WhseReceivedCases") "WhseReceivedCases" from  PREP_WM_RDP.DS_WM_FACT_DPSG_WALMRT_WMSSC_STORE_SALES where event_key = 1002000005158
+{'SalesType': 9, 'DC_KEY': 6007439, 'TotalCustomerItemReturn': 14, 'SIPrevAvgUnitRetail': Decimal('22.50000'), 'DDSumByCases': Decimal('0'), 'EventID': None, 'PERIOD_KEY': 20180502, 'StoreSpecificRetail': Decimal('134.00000'), 'ReplenishedFlag': 1, 'GrossShipQty': 960, 'HistOnHandQty': 2806, 'STORE_KEY': 6033770, 'HistEachesStrReceived': None, 'HistEachesStrOrdered': None, 'VENDOR_KEY': 5222, 'TotalAdjQty': 141, 'POSCost': Decimal('7860.00000'), 'EVENT_KEY': 1002000005158, 'StrRCCost': Decimal('29.40000'), 'NetShipRetail': Decimal('3088.80000'), 'CurrentHORetail': Decimal('163.00000'), 'RETAILER_KEY': 22, 'OOS_REASON_KEY': None, 'REQUEST_DATE': datetime.datetime(2018, 5, 3, 5, 44, 50), 'POSQty': 308, 'TotalCustomerReturnRetail': 100, 'HistOnHandWeekEnding': None, 'SICurrAvgUnitRetail': Decimal('36.30000'), 'CalPosOnHand': None, 'NetShipQty': 960, 'StoreSpecificCost': Decimal('86.65000'), 'CalculatedUnitPrice': None, 'AvgValidStoreItemComb': 1, 'ITEM_KEY': 15076229, 'SITotalMUMD': Decimal('869.55000'), 'MaxShelfQty': 136, 'StoreOutsQty': 102, 'GrossShipCost': Decimal('3003.00000'), 'AvgStrDDRateOfSale': Decimal('0'), 'AvgTraitedStoreItemComb': 1, 'POGInd': 1, 'DSD_IND': 1, 'AvgReplInstock': 0, 'CalculatedCompStoreSales': Decimal('1566.76000'), 'CalculatedCompStoreQty': 308, 'CurrValidStoreItemComb': 1, 'GrossAvgShipCost': Decimal('86.65000'), 'AvgInstock': 0, 'EVENT_DESCRIPTION_KEY': 5002854, 'NetShipsCost': Decimal('3003.00000'), 'GrossShipRetail': Decimal('3088.80000'), 'POSSales': Decimal('1566.76000'), 'WhseReceivedCases': 2064, 'WeeklyCompStoreQty': None, 'HistStrOrderedCost': None, 'WeeklyCompStoreSales': None, 'SIMUMDQty': 561, 'CurrTraitedStoreItemComb': 1}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 1002000005160 , Table : DS_WM_FACT_DPSG_WALMRT_WMSSC_STORE_SALES , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_WM_FACT_{VENDOR_KEY}_{RETAILER_KEY}_WMSSC_STORE_SALES       67
+select MAX("AvgInstock") "AvgInstock",MAX("AvgReplInstock") "AvgReplInstock",MAX("AvgStrDDRateOfSale") "AvgStrDDRateOfSale",MAX("AvgTraitedStoreItemComb") "AvgTraitedStoreItemComb",MAX("AvgValidStoreItemComb") "AvgValidStoreItemComb",MAX("CalculatedCompStoreQty") "CalculatedCompStoreQty",MAX("CalculatedCompStoreSales") "CalculatedCompStoreSales",MAX("CalculatedUnitPrice") "CalculatedUnitPrice",MAX("CalPosOnHand") "CalPosOnHand",MAX("CurrentHORetail") "CurrentHORetail",MAX("CurrTraitedStoreItemComb") "CurrTraitedStoreItemComb",MAX("CurrValidStoreItemComb") "CurrValidStoreItemComb",MAX("DC_KEY") "DC_KEY",MAX("DDSumByCases") "DDSumByCases",MAX("DSD_IND") "DSD_IND",MAX("EVENT_DESCRIPTION_KEY") "EVENT_DESCRIPTION_KEY",MAX("EVENT_KEY") "EVENT_KEY",MAX("EventID") "EventID",MAX("GrossAvgShipCost") "GrossAvgShipCost",MAX("GrossShipCost") "GrossShipCost",MAX("GrossShipQty") "GrossShipQty",MAX("GrossShipRetail") "GrossShipRetail",MAX("HistEachesStrOrdered") "HistEachesStrOrdered",MAX("HistEachesStrReceived") "HistEachesStrReceived",MAX("HistOnHandQty") "HistOnHandQty",MAX("HistOnHandWeekEnding") "HistOnHandWeekEnding",MAX("HistStrOrderedCost") "HistStrOrderedCost",MAX("ITEM_KEY") "ITEM_KEY",MAX("MaxShelfQty") "MaxShelfQty",MAX("NetShipQty") "NetShipQty",MAX("NetShipRetail") "NetShipRetail",MAX("NetShipsCost") "NetShipsCost",MAX("OOS_REASON_KEY") "OOS_REASON_KEY",MAX("PERIOD_KEY") "PERIOD_KEY",MAX("POGInd") "POGInd",MAX("POSCost") "POSCost",MAX("POSQty") "POSQty",MAX("POSSales") "POSSales",MAX("ReplenishedFlag") "ReplenishedFlag",MAX("REQUEST_DATE") "REQUEST_DATE",MAX("RETAILER_KEY") "RETAILER_KEY",MAX("SalesType") "SalesType",MAX("SICurrAvgUnitRetail") "SICurrAvgUnitRetail",MAX("SIMUMDQty") "SIMUMDQty",MAX("SIPrevAvgUnitRetail") "SIPrevAvgUnitRetail",MAX("SITotalMUMD") "SITotalMUMD",MAX("STORE_KEY") "STORE_KEY",MAX("StoreOutsQty") "StoreOutsQty",MAX("StoreSpecificCost") "StoreSpecificCost",MAX("StoreSpecificRetail") "StoreSpecificRetail",MAX("StrRCCost") "StrRCCost",MAX("TotalAdjQty") "TotalAdjQty",MAX("TotalCustomerItemReturn") "TotalCustomerItemReturn",MAX("TotalCustomerReturnRetail") "TotalCustomerReturnRetail",MAX("VENDOR_KEY") "VENDOR_KEY",MAX("WeeklyCompStoreQty") "WeeklyCompStoreQty",MAX("WeeklyCompStoreSales") "WeeklyCompStoreSales",MAX("WhseReceivedCases") "WhseReceivedCases" from  PREP_WM_RDP.DS_WM_FACT_DPSG_WALMRT_WMSSC_STORE_SALES where event_key = 1002000005160
+{'SalesType': 9, 'DC_KEY': 6098166, 'TotalCustomerItemReturn': 44, 'SIPrevAvgUnitRetail': Decimal('163.00000'), 'DDSumByCases': Decimal('0'), 'EventID': None, 'PERIOD_KEY': 20180502, 'StoreSpecificRetail': Decimal('163.00000'), 'ReplenishedFlag': 1, 'GrossShipQty': 800, 'HistOnHandQty': 2912, 'STORE_KEY': 6181984, 'HistEachesStrReceived': None, 'HistEachesStrOrdered': None, 'VENDOR_KEY': 5222, 'TotalAdjQty': 194, 'POSCost': Decimal('4485.00000'), 'EVENT_KEY': 1002000005160, 'StrRCCost': Decimal('26.35000'), 'NetShipRetail': Decimal('1626.56000'), 'CurrentHORetail': Decimal('163.00000'), 'RETAILER_KEY': 22, 'OOS_REASON_KEY': None, 'REQUEST_DATE': datetime.datetime(2018, 5, 3, 5, 47, 23), 'POSQty': 318, 'TotalCustomerReturnRetail': 154, 'HistOnHandWeekEnding': None, 'SICurrAvgUnitRetail': Decimal('87.52000'), 'CalPosOnHand': None, 'NetShipQty': 800, 'StoreSpecificCost': Decimal('86.65000'), 'CalculatedUnitPrice': None, 'AvgValidStoreItemComb': 1, 'ITEM_KEY': 15076227, 'SITotalMUMD': Decimal('239.20000'), 'MaxShelfQty': 190, 'StoreOutsQty': 128, 'GrossShipCost': Decimal('1599.36000'), 'AvgStrDDRateOfSale': Decimal('0'), 'AvgTraitedStoreItemComb': 1, 'POGInd': 1, 'DSD_IND': 1, 'AvgReplInstock': 0, 'CalculatedCompStoreSales': Decimal('747.50000'), 'CalculatedCompStoreQty': 318, 'CurrValidStoreItemComb': 1, 'GrossAvgShipCost': Decimal('86.65000'), 'AvgInstock': 0, 'EVENT_DESCRIPTION_KEY': 5002854, 'NetShipsCost': Decimal('1599.36000'), 'GrossShipRetail': Decimal('1626.56000'), 'POSSales': Decimal('747.50000'), 'WhseReceivedCases': 2064, 'WeeklyCompStoreQty': None, 'HistStrOrderedCost': None, 'WeeklyCompStoreSales': None, 'SIMUMDQty': 641, 'CurrTraitedStoreItemComb': 1}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 1002000005161 , Table : DS_WM_FACT_DPCSUS_WMTCAT_WMCAT_GRS_WKLYFCST , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_WM_FACT_{VENDOR_KEY}_{RETAILER_KEY}_WMCAT_GRS_WKLYFCST       2721
+select MAX("BASE FORECAST") "BASE FORECAST",MAX("DC_KEY") "DC_KEY",MAX("EVENT FORECAST") "EVENT FORECAST",MAX("EVENT_KEY") "EVENT_KEY",MAX("ITEM_KEY") "ITEM_KEY",MAX("PERIOD_KEY") "PERIOD_KEY",MAX("REQUEST_DATE") "REQUEST_DATE",MAX("RETAILER_KEY") "RETAILER_KEY",MAX("STORE_KEY") "STORE_KEY",MAX("TOTAL FORECAST") "TOTAL FORECAST",MAX("VENDOR_KEY") "VENDOR_KEY" from  PREP_WM_RDP.DS_WM_FACT_DPCSUS_WMTCAT_WMCAT_GRS_WKLYFCST where event_key = 1002000005161
+{'RETAILER_KEY': 1010, 'PERIOD_KEY': 20180818, 'ITEM_KEY': 12243706, 'VENDOR_KEY': 5629, 'EVENT_KEY': 1002000005161, 'REQUEST_DATE': datetime.datetime(2018, 5, 3, 7, 3, 48), 'DC_KEY': 331907, 'EVENT FORECAST': Decimal('24.86000'), 'STORE_KEY': 6139932, 'BASE FORECAST': Decimal('2935.12000'), 'TOTAL FORECAST': Decimal('2935.12000')}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 1002000005183 , Table : DS_WM_FACT_DPSGSA_SAMS_SASSC_COMP_STORE_SALES , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_WM_FACT_{VENDOR_KEY}_{RETAILER_KEY}_SASSC_COMP_STORE_SALES       2052
+select MAX("ChangeStatus") "ChangeStatus",MAX("EVENT_KEY") "EVENT_KEY",MAX("ITEM_KEY") "ITEM_KEY",MAX("PERIOD_KEY") "PERIOD_KEY",MAX("REQUEST_DATE") "REQUEST_DATE",MAX("RETAILER_KEY") "RETAILER_KEY",MAX("STORE_KEY") "STORE_KEY",MAX("VENDOR_KEY") "VENDOR_KEY",MAX("WeeklyCOMPStoreQty") "WeeklyCOMPStoreQty",MAX("WeeklyCOMPStoreSales") "WeeklyCOMPStoreSales" from  PREP_WM_RDP.DS_WM_FACT_DPSGSA_SAMS_SASSC_COMP_STORE_SALES where event_key = 1002000005183
+{'RETAILER_KEY': 52, 'ChangeStatus': None, 'PERIOD_KEY': 20180421, 'ITEM_KEY': 14915987, 'VENDOR_KEY': 5623, 'EVENT_KEY': 1002000005183, 'WeeklyCOMPStoreQty': Decimal('5711.00000'), 'REQUEST_DATE': datetime.datetime(2018, 5, 3, 0, 57, 48), 'STORE_KEY': 5969694, 'WeeklyCOMPStoreSales': Decimal('45548.72000')}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 1002000005164 , Table : DS_WM_FACT_DPSGSA_SAMS_SASSC_STORE_CURRENT_INVENTORY , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_WM_FACT_{VENDOR_KEY}_{RETAILER_KEY}_SASSC_STORE_CURRENT_INVENTORY       2054
+select MAX("CurrentOnHandCostDollars") "CurrentOnHandCostDollars",MAX("CurrentOnHandQty") "CurrentOnHandQty",MAX("CurrentOnHandSellDollars") "CurrentOnHandSellDollars",MAX("CurrentOnOrderCostDollars") "CurrentOnOrderCostDollars",MAX("CurrentOnOrderQty") "CurrentOnOrderQty",MAX("CurrentOnOrderSellDollars") "CurrentOnOrderSellDollars",MAX("CurrentOnsiteOnhandQty") "CurrentOnsiteOnhandQty",MAX("EVENT_KEY") "EVENT_KEY",MAX("ITEM_KEY") "ITEM_KEY",MAX("ItemStatusKey") "ItemStatusKey",MAX("PERIOD_KEY") "PERIOD_KEY",MAX("REQUEST_DATE") "REQUEST_DATE",MAX("RETAILER_KEY") "RETAILER_KEY",MAX("STORE_KEY") "STORE_KEY",MAX("TotalUnitsSold") "TotalUnitsSold",MAX("VENDOR_KEY") "VENDOR_KEY" from  PREP_WM_RDP.DS_WM_FACT_DPSGSA_SAMS_SASSC_STORE_CURRENT_INVENTORY where event_key = 1002000005164
+{'VENDOR_KEY': 5623, 'PERIOD_KEY': 20180502, 'ITEM_KEY': 15094694, 'EVENT_KEY': 1002000005164, 'CurrentOnsiteOnhandQty': 3545, 'RETAILER_KEY': 52, 'CurrentOnOrderCostDollars': Decimal('33156.00000'), 'CurrentOnHandQty': 3545, 'TotalUnitsSold': 875, 'CurrentOnOrderQty': 7800, 'CurrentOnOrderSellDollars': Decimal('37764.00000'), 'REQUEST_DATE': datetime.datetime(2018, 5, 3, 3, 28, 42), 'ItemStatusKey': 7, 'STORE_KEY': 6173242, 'CurrentOnHandCostDollars': Decimal('29656.20000'), 'CurrentOnHandSellDollars': Decimal('26013.36000')}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 1002000005166 , Table : DS_WM_FACT_DPSGSA_SAMS_SASSC_STORE_SALES , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_WM_FACT_{VENDOR_KEY}_{RETAILER_KEY}_SASSC_STORE_SALES       2001
+select MAX("AdjCode") "AdjCode",MAX("AdjCodeID") "AdjCodeID",MAX("AdjCostAmount") "AdjCostAmount",MAX("AvgOnHandCostDollars") "AvgOnHandCostDollars",MAX("AvgOnHandQty") "AvgOnHandQty",MAX("AvgOnHandSellDollars") "AvgOnHandSellDollars",MAX("AvgOnOrderCostDollars") "AvgOnOrderCostDollars",MAX("AvgOnOrderQty") "AvgOnOrderQty",MAX("AvgOnOrderSellDollars") "AvgOnOrderSellDollars",MAX("AvgStrDDRateOfSale") "AvgStrDDRateOfSale",MAX("AvgUnitInvSell") "AvgUnitInvSell",MAX("AvgUnitRecCost") "AvgUnitRecCost",MAX("AvgUnitRecSell") "AvgUnitRecSell",MAX("AvgUnitSalesCost") "AvgUnitSalesCost",MAX("AvgUnitSalesSell") "AvgUnitSalesSell",MAX("CalculatedCOMPClubQty") "CalculatedCOMPClubQty",MAX("CalculatedCOMPClubSales") "CalculatedCOMPClubSales",MAX("ClaimsOnhandQty") "ClaimsOnhandQty",MAX("ClubRCQty") "ClubRCQty",MAX("ClubSpecificCost") "ClubSpecificCost",MAX("ClubSpecificRetail") "ClubSpecificRetail",MAX("ClubVCQty") "ClubVCQty",MAX("COMPClubQty") "COMPClubQty",MAX("COMPClubSales") "COMPClubSales",MAX("CustDefQty") "CustDefQty",MAX("EVENT_KEY") "EVENT_KEY",MAX("InvMarkupPct") "InvMarkupPct",MAX("ITEM_KEY") "ITEM_KEY",MAX("ItemEffectiveDateByClub") "ItemEffectiveDateByClub",MAX("ItemStatusByClub") "ItemStatusByClub",MAX("ItemStatusKey") "ItemStatusKey",MAX("OOS_REASON_KEY") "OOS_REASON_KEY",MAX("PERIOD_KEY") "PERIOD_KEY",MAX("RecCost") "RecCost",MAX("RecMarkupPct") "RecMarkupPct",MAX("RecSell") "RecSell",MAX("REQUEST_DATE") "REQUEST_DATE",MAX("REQUEST_DATE_DAILY") "REQUEST_DATE_DAILY",MAX("RETAILER_KEY") "RETAILER_KEY",MAX("STORE_KEY") "STORE_KEY",MAX("SubvendorId") "SubvendorId",MAX("TotalCostDollars") "TotalCostDollars",MAX("TotalSellDollars") "TotalSellDollars",MAX("TotalUnitSold") "TotalUnitSold",MAX("UnitsReceivedQuantity") "UnitsReceivedQuantity",MAX("VENDOR_KEY") "VENDOR_KEY",MAX("WHPKCost") "WHPKCost",MAX("WkAdjQty") "WkAdjQty" from  PREP_WM_RDP.DS_WM_FACT_DPSGSA_SAMS_SASSC_STORE_SALES where event_key = 1002000005166
+{'CalculatedCOMPClubSales': Decimal('11270.08000'), 'ClaimsOnhandQty': 7, 'AvgUnitInvSell': Decimal('28.38000'), 'COMPClubQty': 1718, 'AvgUnitSalesCost': None, 'TotalCostDollars': Decimal('10840.58000'), 'UnitsReceivedQuantity': 1700, 'SubvendorId': '1', 'AvgOnOrderCostDollars': Decimal('33156.00000'), 'ITEM_KEY': 15094694, 'TotalSellDollars': Decimal('11270.08000'), 'STORE_KEY': 6173242, 'AvgOnHandSellDollars': Decimal('26488.80000'), 'VENDOR_KEY': 5623, 'COMPClubSales': Decimal('11270.08000'), 'REQUEST_DATE_DAILY': None, 'EVENT_KEY': 1002000005166, 'AdjCodeID': 12, 'AvgOnHandQty': 3905, 'InvMarkupPct': Decimal('1.00000'), 'RETAILER_KEY': 52, 'OOS_REASON_KEY': None, 'ItemStatusByClub': 'S', 'RecMarkupPct': Decimal('1.00000'), 'REQUEST_DATE': datetime.datetime(2018, 5, 3, 3, 30, 3), 'CustDefQty': None, 'AvgOnHandCostDollars': Decimal('29656.20000'), 'WHPKCost': Decimal('25.63000'), 'PERIOD_KEY': 20180428, 'AvgOnOrderSellDollars': Decimal('37764.00000'), 'ClubSpecificCost': Decimal('25.63000'), 'TotalUnitSold': 1718, 'ClubSpecificRetail': Decimal('28.38000'), 'AvgStrDDRateOfSale': None, 'ItemEffectiveDateByClub': '12-31-2017', 'ItemStatusKey': 7, 'AdjCostAmount': Decimal('186.34000'), 'CalculatedCOMPClubQty': 1718, 'AvgOnOrderQty': 7800, 'AdjCode': 'XF', 'ClubRCQty': None, 'AvgUnitRecSell': Decimal('28.38000'), 'RecSell': None, 'RecCost': None, 'WkAdjQty': 89, 'ClubVCQty': None, 'AvgUnitSalesSell': None, 'AvgUnitRecCost': Decimal('25.63000')}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 1002000005165 , Table : DS_WM_FACT_DPSGSA_SAMS_SASSC_STORE_SALES_DAILY , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_WM_FACT_{VENDOR_KEY}_{RETAILER_KEY}_SASSC_STORE_SALES_DAILY       2011
+select MAX("AdjCode") "AdjCode",MAX("AdjCodeID") "AdjCodeID",MAX("AvgOnHandCostDollars") "AvgOnHandCostDollars",MAX("AvgOnHandQty") "AvgOnHandQty",MAX("AvgOnHandSellDollars") "AvgOnHandSellDollars",MAX("AvgOnOrderCostDollars") "AvgOnOrderCostDollars",MAX("AvgOnOrderQty") "AvgOnOrderQty",MAX("AvgOnOrderSellDollars") "AvgOnOrderSellDollars",MAX("CalculatedCOMPClubQty") "CalculatedCOMPClubQty",MAX("CalculatedCOMPClubSales") "CalculatedCOMPClubSales",MAX("EVENT_KEY") "EVENT_KEY",MAX("FriQty") "FriQty",MAX("ITEM_KEY") "ITEM_KEY",MAX("ItemStatusByClub") "ItemStatusByClub",MAX("ItemStatusKey") "ItemStatusKey",MAX("MonQty") "MonQty",MAX("PERIOD_KEY") "PERIOD_KEY",MAX("REQUEST_DATE") "REQUEST_DATE",MAX("RETAILER_KEY") "RETAILER_KEY",MAX("SatQty") "SatQty",MAX("STORE_KEY") "STORE_KEY",MAX("SunQty") "SunQty",MAX("ThurQty") "ThurQty",MAX("TotalCostDollars") "TotalCostDollars",MAX("TotalFriCost") "TotalFriCost",MAX("TotalFriSales") "TotalFriSales",MAX("TotalMonCost") "TotalMonCost",MAX("TotalMonSales") "TotalMonSales",MAX("TotalSatCost") "TotalSatCost",MAX("TotalSatSales") "TotalSatSales",MAX("TotalSellDollars") "TotalSellDollars",MAX("TotalSunCost") "TotalSunCost",MAX("TotalSunSales") "TotalSunSales",MAX("TotalThurCost") "TotalThurCost",MAX("TotalThurSales") "TotalThurSales",MAX("TotalTueCost") "TotalTueCost",MAX("TotalTueSales") "TotalTueSales",MAX("TotalUnitSold") "TotalUnitSold",MAX("TotalWedCost") "TotalWedCost",MAX("TotalWedSales") "TotalWedSales",MAX("TueQty") "TueQty",MAX("VENDOR_KEY") "VENDOR_KEY",MAX("WedQty") "WedQty" from  PREP_WM_RDP.DS_WM_FACT_DPSGSA_SAMS_SASSC_STORE_SALES_DAILY where event_key = 1002000005165
+{'AvgOnHandCostDollars': Decimal('24640.55000'), 'TotalSunCost': Decimal('1190.00000'), 'VENDOR_KEY': 5623, 'PERIOD_KEY': 20180502, 'ITEM_KEY': 15094694, 'TotalSatCost': Decimal('2418.05000'), 'TotalUnitSold': 700, 'CalculatedCOMPClubSales': Decimal('11270.08000'), 'TotalWedSales': Decimal('2318.40000'), 'REQUEST_DATE': datetime.datetime(2018, 5, 3, 3, 36, 5), 'MonQty': 339, 'SatQty': 426, 'TotalTueCost': Decimal('2838.00000'), 'TueQty': 335, 'TotalTueSales': Decimal('3197.70000'), 'TotalCostDollars': Decimal('4641.00000'), 'TotalSunSales': Decimal('1358.64000'), 'AvgOnOrderCostDollars': Decimal('27936.00000'), 'AvgOnOrderSellDollars': Decimal('31536.00000'), 'TotalSellDollars': Decimal('5045.04000'), 'ItemStatusKey': 7, 'STORE_KEY': 5969694, 'AvgOnHandSellDollars': Decimal('26488.80000'), 'TotalFriSales': Decimal('4592.00000'), 'TotalMonCost': Decimal('4641.00000'), 'CalculatedCOMPClubQty': 1718, 'SunQty': 228, 'AvgOnOrderQty': 7200, 'TotalMonSales': Decimal('5045.04000'), 'AdjCode': 'XF', 'EVENT_KEY': 1002000005165, 'TotalSatSales': Decimal('2463.94000'), 'AdjCodeID': 12, 'AvgOnHandQty': 3905, 'WedQty': 480, 'ThurQty': 550, 'TotalFriCost': Decimal('4417.00000'), 'RETAILER_KEY': 52, 'TotalThurCost': Decimal('3717.90000'), 'TotalWedCost': Decimal('2150.06000'), 'ItemStatusByClub': 'unknown', 'TotalThurSales': Decimal('3947.40000'), 'FriQty': 700}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 1002000005162 , Table : DS_WM_FACT_DPSG_WALMRT_WMSSC_GRS_WKLYFCST , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_WM_FACT_{VENDOR_KEY}_{RETAILER_KEY}_WMSSC_GRS_WKLYFCST       2711
+select MAX("BASE FORECAST") "BASE FORECAST",MAX("DC_KEY") "DC_KEY",MAX("EVENT FORECAST") "EVENT FORECAST",MAX("EVENT_KEY") "EVENT_KEY",MAX("ITEM_KEY") "ITEM_KEY",MAX("PERIOD_KEY") "PERIOD_KEY",MAX("REQUEST_DATE") "REQUEST_DATE",MAX("RETAILER_KEY") "RETAILER_KEY",MAX("STORE_KEY") "STORE_KEY",MAX("TOTAL FORECAST") "TOTAL FORECAST",MAX("VENDOR_KEY") "VENDOR_KEY" from  PREP_WM_RDP.DS_WM_FACT_DPSG_WALMRT_WMSSC_GRS_WKLYFCST where event_key = 1002000005162
+{'RETAILER_KEY': 22, 'PERIOD_KEY': 20180818, 'ITEM_KEY': 14113173, 'VENDOR_KEY': 5222, 'EVENT_KEY': 1002000005162, 'REQUEST_DATE': datetime.datetime(2018, 5, 3, 7, 30, 25), 'DC_KEY': 331907, 'EVENT FORECAST': Decimal('308.61000'), 'STORE_KEY': 6181984, 'BASE FORECAST': Decimal('2935.12000'), 'TOTAL FORECAST': Decimal('2935.12000')}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 1002000005188 , Table : DS_WM_FACT_DPSG_WALMRT_WMSSC_ITEM_REPLENISHMENT , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_WM_FACT_{VENDOR_KEY}_{RETAILER_KEY}_WMSSC_ITEM_REPLENISHMENT       382
+select MAX("CurrReplInstock") "CurrReplInstock",MAX("CurrValidStoreItemComb") "CurrValidStoreItemComb",MAX("EVENT_KEY") "EVENT_KEY",MAX("ITEM_KEY") "ITEM_KEY",MAX("PERIOD_KEY") "PERIOD_KEY",MAX("REQUEST_DATE") "REQUEST_DATE",MAX("RETAILER_KEY") "RETAILER_KEY",MAX("VENDOR_KEY") "VENDOR_KEY" from  PREP_WM_RDP.DS_WM_FACT_DPSG_WALMRT_WMSSC_ITEM_REPLENISHMENT where event_key = 1002000005188
+{'CurrReplInstock': Decimal('100.00000'), 'PERIOD_KEY': 20180503, 'ITEM_KEY': 14113173, 'VENDOR_KEY': 5222, 'EVENT_KEY': 1002000005188, 'REQUEST_DATE': datetime.datetime(2018, 5, 4, 0, 34, 3), 'RETAILER_KEY': 22, 'CurrValidStoreItemComb': 4685}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0_ROW_DS_COUNT]Event_key - 1002000005189 , Table DS_WM_FACT_DPSG_WALMRT_WMSSC_QA_STORE_SALES_DAILY , File_set : TARGET_SPD_SLS_MIQ_Extract  : Count 0 
+[ROW_DS_COUNT]Event_key : 1002000005187 , Table : DS_WM_FACT_DPSG_WALMRT_WMSSC_DOTCOM_SALES , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_WM_FACT_{VENDOR_KEY}_{RETAILER_KEY}_WMSSC_DOTCOM_SALES       522
+select MAX("EVENT_KEY") "EVENT_KEY",MAX("ITEM_KEY") "ITEM_KEY",MAX("PERIOD_KEY") "PERIOD_KEY",MAX("REQUEST_DATE") "REQUEST_DATE",MAX("RETAILER_KEY") "RETAILER_KEY",MAX("TotalNetRetailSales") "TotalNetRetailSales",MAX("TotalNetUnitSales") "TotalNetUnitSales",MAX("VENDOR_KEY") "VENDOR_KEY",MAX("VendorNbr") "VendorNbr" from  PREP_WM_RDP.DS_WM_FACT_DPSG_WALMRT_WMSSC_DOTCOM_SALES where event_key = 1002000005187
+{'VendorNbr': 472993, 'RETAILER_KEY': 22, 'PERIOD_KEY': 20180502, 'ITEM_KEY': 13647577, 'VENDOR_KEY': 5222, 'REQUEST_DATE': datetime.datetime(2018, 5, 4, 0, 42, 51), 'TotalNetUnitSales': 69, 'EVENT_KEY': 1002000005187, 'TotalNetRetailSales': Decimal('289.80000')}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0_ROW_DS_COUNT]Event_key - 1002000005190 , Table DS_WM_FACT_DPSG_WALMRT_WMSSC_QA_STORE_SALES_WEEKLY , File_set : TARGET_SPD_SLS_MIQ_Extract  : Count 0 
+[ROW_DS_COUNT]Event_key : 1002000005191 , Table : DS_WM_FACT_DPSG_WALMRT_WMSSC_COMP_STORE_SALES , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_WM_FACT_{VENDOR_KEY}_{RETAILER_KEY}_WMSSC_COMP_STORE_SALES       292
+select MAX("ChangeStatus") "ChangeStatus",MAX("EVENT_KEY") "EVENT_KEY",MAX("PERIOD_KEY") "PERIOD_KEY",MAX("POSSales") "POSSales",MAX("REQUEST_DATE") "REQUEST_DATE",MAX("RETAILER_KEY") "RETAILER_KEY",MAX("STORE_KEY") "STORE_KEY",MAX("VENDOR_KEY") "VENDOR_KEY",MAX("WeeklyCOMPStoreSales") "WeeklyCOMPStoreSales" from  PREP_WM_RDP.DS_WM_FACT_DPSG_WALMRT_WMSSC_COMP_STORE_SALES where event_key = 1002000005191
+{'RETAILER_KEY': 22, 'ChangeStatus': None, 'PERIOD_KEY': 20180428, 'VENDOR_KEY': 5222, 'REQUEST_DATE': datetime.datetime(2018, 5, 4, 0, 31, 35), 'EVENT_KEY': 1002000005191, 'STORE_KEY': 6155160, 'POSSales': Decimal('33184.63000'), 'WeeklyCOMPStoreSales': Decimal('33184.63000')}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 1002000005192 , Table : DS_WM_FACT_DPSG_WALMRT_WMSSC_DOTCOM_SALES , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_WM_FACT_{VENDOR_KEY}_{RETAILER_KEY}_WMSSC_DOTCOM_SALES       522
+select MAX("EVENT_KEY") "EVENT_KEY",MAX("ITEM_KEY") "ITEM_KEY",MAX("PERIOD_KEY") "PERIOD_KEY",MAX("REQUEST_DATE") "REQUEST_DATE",MAX("RETAILER_KEY") "RETAILER_KEY",MAX("TotalNetRetailSales") "TotalNetRetailSales",MAX("TotalNetUnitSales") "TotalNetUnitSales",MAX("VENDOR_KEY") "VENDOR_KEY",MAX("VendorNbr") "VendorNbr" from  PREP_WM_RDP.DS_WM_FACT_DPSG_WALMRT_WMSSC_DOTCOM_SALES where event_key = 1002000005192
+{'VendorNbr': 479702, 'RETAILER_KEY': 22, 'PERIOD_KEY': 20180502, 'ITEM_KEY': 14403527, 'VENDOR_KEY': 5222, 'REQUEST_DATE': datetime.datetime(2018, 5, 4, 0, 44, 28), 'TotalNetUnitSales': 43, 'EVENT_KEY': 1002000005192, 'TotalNetRetailSales': Decimal('510.60000')}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 1002000005194 , Table : DS_WM_FACT_DPSG_WALMRT_WMSSC_QA_STORE_SALES_WEEKLY , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_WM_FACT_{VENDOR_KEY}_{RETAILER_KEY}_WMSSC_QA_STORE_SALES_WEEKLY       532
+select MAX("EVENT_KEY") "EVENT_KEY",MAX("ITEM_KEY") "ITEM_KEY",MAX("PERIOD_KEY") "PERIOD_KEY",MAX("POSQty") "POSQty",MAX("POSSales") "POSSales",MAX("REQUEST_DATE") "REQUEST_DATE",MAX("RETAILER_KEY") "RETAILER_KEY",MAX("VENDOR_KEY") "VENDOR_KEY",MAX("WeeklyCompQty") "WeeklyCompQty",MAX("WeeklyCompSales") "WeeklyCompSales" from  PREP_WM_RDP.DS_WM_FACT_DPSG_WALMRT_WMSSC_QA_STORE_SALES_WEEKLY where event_key = 1002000005194
+{'RETAILER_KEY': 22, 'PERIOD_KEY': 20180421, 'ITEM_KEY': 14496130, 'VENDOR_KEY': 5222, 'EVENT_KEY': 1002000005194, 'POSQty': None, 'WeeklyCompQty': None, 'WeeklyCompSales': Decimal('2268282.78000'), 'REQUEST_DATE': datetime.datetime(2018, 5, 4, 0, 37, 8), 'POSSales': Decimal('2268660.30000')}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0_ROW_DS_COUNT]Event_key - 1002000005193 , Table DS_WM_FACT_DPSG_WALMRT_WMSSC_QA_STORE_SALES_DAILY , File_set : TARGET_SPD_SLS_MIQ_Extract  : Count 0 
+[ROW_DS_COUNT]Event_key : 1002000005195 , Table : DS_WM_FACT_DPSG_WALMRT_WMSSC_COMP_STORE_SALES , File_set : TARGET_SPD_SLS_MIQ_Extract 
+DS_WM_FACT_{VENDOR_KEY}_{RETAILER_KEY}_WMSSC_COMP_STORE_SALES       292
+select MAX("ChangeStatus") "ChangeStatus",MAX("EVENT_KEY") "EVENT_KEY",MAX("PERIOD_KEY") "PERIOD_KEY",MAX("POSSales") "POSSales",MAX("REQUEST_DATE") "REQUEST_DATE",MAX("RETAILER_KEY") "RETAILER_KEY",MAX("STORE_KEY") "STORE_KEY",MAX("VENDOR_KEY") "VENDOR_KEY",MAX("WeeklyCOMPStoreSales") "WeeklyCOMPStoreSales" from  PREP_WM_RDP.DS_WM_FACT_DPSG_WALMRT_WMSSC_COMP_STORE_SALES where event_key = 1002000005195
+{'RETAILER_KEY': 22, 'ChangeStatus': None, 'PERIOD_KEY': 20180428, 'VENDOR_KEY': 5222, 'REQUEST_DATE': datetime.datetime(2018, 5, 4, 0, 37, 23), 'EVENT_KEY': 1002000005195, 'STORE_KEY': 6139934, 'POSSales': Decimal('2408.62000'), 'WeeklyCOMPStoreSales': Decimal('2408.62000')}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+RDP_ID : PREP_PEPSICO_RDP   RDP_SERVER PREZ2CDB2\DB1  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+The count of event_key   : 8 
+[0_ROW_DS_COUNT]Event_key - 3002000006223 , Table DS_WM_FACT_PEPSI_WALMRT_WMSSC_STORE_SALES , File_set : TARGET_SPD_SLS_MIQ_Extract  : Count 0 
+[0_ROW_DS_COUNT]Event_key - 3002000006222 , Table DS_WM_FACT_PEPSI_WALMRT_WMSSC_STORE_SALES , File_set : TARGET_SPD_SLS_MIQ_Extract  : Count 0 
+[0_ROW_DS_COUNT]Event_key - 3002000006222 , Table DS_WM_FACT_PEPSI_WALMRT_WMSSC_STORE_SALES , File_set : TARGET_SPD_SLS_MIQ_Extract  : Count 0 
+[0_ROW_DS_COUNT]Event_key - 3002000006220 , Table DS_WM_FACT_PEPSI_WALMRT_WMSSC_STORE_CURRENT_INVENTORY , File_set : TARGET_SPD_SLS_MIQ_Extract  : Count 0 
+[0_ROW_DS_COUNT]Event_key - 3002000006221 , Table DS_WM_FACT_PEPSI_WALMRT_WMSSC_STORE_CURRENT_INVENTORY , File_set : TARGET_SPD_SLS_MIQ_Extract  : Count 0 
+[0_ROW_DS_COUNT]Event_key - 3002000006220 , Table DS_WM_FACT_PEPSI_WALMRT_WMSSC_STORE_CURRENT_INVENTORY , File_set : TARGET_SPD_SLS_MIQ_Extract  : Count 0 
+[0_ROW_DS_COUNT]Event_key - 3002000006221 , Table DS_WM_FACT_PEPSI_WALMRT_WMSSC_STORE_CURRENT_INVENTORY , File_set : TARGET_SPD_SLS_MIQ_Extract  : Count 0 
+[0_ROW_DS_COUNT]Event_key - 3002000006225 , Table DS_WM_FACT_PEPSI_WALMRT_WMSSC_STORE_SALES , File_set : TARGET_SPD_SLS_MIQ_Extract  : Count 0 
+[0_ROW_DS_COUNT]Event_key - 3002000006224 , Table DS_WM_FACT_PEPSI_WALMRT_WMSSC_STORE_SALES , File_set : TARGET_SPD_SLS_MIQ_Extract  : Count 0 
+[0_ROW_DS_COUNT]Event_key - 3002000006226 , Table DS_WM_FACT_PEPSI_WALMRT_WMSSC_STORE_SALES , File_set : TARGET_SPD_SLS_MIQ_Extract  : Count 0 
+[0_ROW_DS_COUNT]Event_key - 3002000006227 , Table DS_WM_FACT_PEPSI_WALMRT_WMSSC_STORE_SALES , File_set : TARGET_SPD_SLS_MIQ_Extract  : Count 0 
+
+RDP_ID : PREP_BOOTS_RDP   RDP_SERVER PREZ2CDB2\DB1  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+The count of event_key   : 21 
+[ROW_DS_COUNT]Event_key : 3002000001435 , Table : DS_STORE_FACT , File_set : FS_Boots_StoreShelfCapacity 
+DS_STORE_FACT       17
+select MAX("AMOUNT") "AMOUNT",MAX("AMOUNTTYPE_KEY") "AMOUNTTYPE_KEY",MAX("EVENT_KEY") "EVENT_KEY",MAX("ITEM_KEY") "ITEM_KEY",MAX("PERIOD_KEY") "PERIOD_KEY",MAX("RETAILER_KEY") "RETAILER_KEY",MAX("STORE_KEY") "STORE_KEY",MAX("UNITS") "UNITS",MAX("VENDOR_KEY") "VENDOR_KEY" from  PREP_BOOTS_RDP.DS_STORE_FACT where event_key = 3002000001435
+{'AMOUNTTYPE_KEY': 502, 'PERIOD_KEY': 20180502, 'ITEM_KEY': 14921334, 'VENDOR_KEY': 5835, 'EVENT_KEY': 3002000001435, 'STORE_KEY': 6188365, 'UNITS': Decimal('20180502.0000'), 'AMOUNT': Decimal('0'), 'RETAILER_KEY': 5099}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 3002000001436 , Table : DS_DC_FACT , File_set : FS_Boots_DCFact_On_Order 
+DS_DC_FACT       18
+select MAX("AMOUNT") "AMOUNT",MAX("AMOUNTTYPE_KEY") "AMOUNTTYPE_KEY",MAX("DC_KEY") "DC_KEY",MAX("EVENT_KEY") "EVENT_KEY",MAX("ITEM_KEY") "ITEM_KEY",MAX("PERIOD_KEY") "PERIOD_KEY",MAX("RETAILER_KEY") "RETAILER_KEY",MAX("UNITS") "UNITS",MAX("VENDOR_KEY") "VENDOR_KEY" from  PREP_BOOTS_RDP.DS_DC_FACT where event_key = 3002000001436
+{'AMOUNTTYPE_KEY': 45, 'PERIOD_KEY': 20180502, 'ITEM_KEY': 14921334, 'VENDOR_KEY': 5835, 'EVENT_KEY': 3002000001436, 'DC_KEY': 5438387, 'UNITS': Decimal('160000.0000'), 'AMOUNT': Decimal('0'), 'RETAILER_KEY': 5100}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0_ROW_DS_COUNT]Event_key - 3002000001437 , Table DS_STORE_FACT , File_set : FS_Boots_Ctgry_StoreShelfCapacity : Count 0 
+[0_ROW_DS_COUNT]Event_key - 3002000001438 , Table DS_DC_FACT , File_set : FS_Boots_Ctgry_DCFact_On_Order : Count 0 
+[ROW_DS_COUNT]Event_key : 3002000001440 , Table : DS_PROMO_DIM , File_set : FS_Boots_StorePromoDim 
+DS_PROMO_DIM       44
+select MAX("EndDateOfLastPromotion") "EndDateOfLastPromotion",MAX("EVENT_KEY") "EVENT_KEY",MAX("Promo_ID") "Promo_ID",MAX("PromotionDescription") "PromotionDescription",MAX("StartDateOfLastPromotion") "StartDateOfLastPromotion",MAX("Window_INT") "Window_INT" from  PREP_BOOTS_RDP.DS_PROMO_DIM where event_key = 3002000001440
+{'Promo_ID': 99966, 'EndDateOfLastPromotion': 20200406, 'EVENT_KEY': 3002000001440, 'PromotionDescription': "Tommy's Charity", 'Window_INT': 1, 'StartDateOfLastPromotion': 20180502}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 3002000001441 , Table : DS_STORE_FACT , File_set : FS_Boots_StorePromo 
+DS_STORE_FACT       17
+select MAX("AMOUNT") "AMOUNT",MAX("AMOUNTTYPE_KEY") "AMOUNTTYPE_KEY",MAX("EVENT_KEY") "EVENT_KEY",MAX("ITEM_KEY") "ITEM_KEY",MAX("PERIOD_KEY") "PERIOD_KEY",MAX("RETAILER_KEY") "RETAILER_KEY",MAX("STORE_KEY") "STORE_KEY",MAX("UNITS") "UNITS",MAX("VENDOR_KEY") "VENDOR_KEY" from  PREP_BOOTS_RDP.DS_STORE_FACT where event_key = 3002000001441
+{'AMOUNTTYPE_KEY': 876, 'PERIOD_KEY': 20180502, 'ITEM_KEY': 14889831, 'VENDOR_KEY': 5835, 'EVENT_KEY': 3002000001441, 'STORE_KEY': 6131604, 'UNITS': Decimal('20181231.0000'), 'AMOUNT': Decimal('0'), 'RETAILER_KEY': 5099}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 3002000001442 , Table : DS_PROMO_FACT , File_set : FS_Boots_StorePromoFact 
+DS_PROMO_FACT       47
+select MAX("EVENT_KEY") "EVENT_KEY",MAX("ITEM_KEY") "ITEM_KEY",MAX("PERIOD_KEY") "PERIOD_KEY",MAX("PROMO_ID") "PROMO_ID",MAX("RETAILER_KEY") "RETAILER_KEY",MAX("STORE_KEY") "STORE_KEY",MAX("SUBVENDOR_ID") "SUBVENDOR_ID",MAX("VENDOR_KEY") "VENDOR_KEY",MAX("WINDOW_INT") "WINDOW_INT" from  PREP_BOOTS_RDP.DS_PROMO_FACT where event_key = 3002000001442
+{'RETAILER_KEY': 5099, 'PERIOD_KEY': 20180524, 'ITEM_KEY': 14889829, 'VENDOR_KEY': 5835, 'PROMO_ID': 99966, 'SUBVENDOR_ID': '0999997', 'WINDOW_INT': 1, 'EVENT_KEY': 3002000001442, 'STORE_KEY': 6131604}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0_ROW_DS_COUNT]Event_key - 3002000001443 , Table DS_STORE_FACT , File_set : FS_Boots_Ctgry_StorePromo : Count 0 
+[0_ROW_DS_COUNT]Event_key - 3002000001444 , Table DS_PROMO_FACT , File_set : FS_Boots_Ctgry_StorePromoFact : Count 0 
+[ROW_DS_COUNT]Event_key : 3002000001445 , Table : DS_DC_FACT , File_set : FS_Boots_DCFact_Inventory 
+DS_DC_FACT       18
+select MAX("AMOUNT") "AMOUNT",MAX("AMOUNTTYPE_KEY") "AMOUNTTYPE_KEY",MAX("DC_KEY") "DC_KEY",MAX("EVENT_KEY") "EVENT_KEY",MAX("ITEM_KEY") "ITEM_KEY",MAX("PERIOD_KEY") "PERIOD_KEY",MAX("RETAILER_KEY") "RETAILER_KEY",MAX("UNITS") "UNITS",MAX("VENDOR_KEY") "VENDOR_KEY" from  PREP_BOOTS_RDP.DS_DC_FACT where event_key = 3002000001445
+{'AMOUNTTYPE_KEY': 44, 'PERIOD_KEY': 20180503, 'ITEM_KEY': 15164919, 'VENDOR_KEY': 5835, 'EVENT_KEY': 3002000001445, 'DC_KEY': 5438387, 'UNITS': Decimal('341183.0000'), 'AMOUNT': Decimal('0'), 'RETAILER_KEY': 5100}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0_ROW_DS_COUNT]Event_key - 3002000001446 , Table DS_DC_FACT , File_set : FS_Boots_Ctgry_DCFact_Inventory : Count 0 
+[ROW_DS_COUNT]Event_key : 3002000001447 , Table : DS_STORE_FACT , File_set : FS_Boots_StoreFact_Inventory 
+DS_STORE_FACT       17
+select MAX("AMOUNT") "AMOUNT",MAX("AMOUNTTYPE_KEY") "AMOUNTTYPE_KEY",MAX("EVENT_KEY") "EVENT_KEY",MAX("ITEM_KEY") "ITEM_KEY",MAX("PERIOD_KEY") "PERIOD_KEY",MAX("RETAILER_KEY") "RETAILER_KEY",MAX("STORE_KEY") "STORE_KEY",MAX("UNITS") "UNITS",MAX("VENDOR_KEY") "VENDOR_KEY" from  PREP_BOOTS_RDP.DS_STORE_FACT where event_key = 3002000001447
+{'AMOUNTTYPE_KEY': 573, 'PERIOD_KEY': 20180503, 'ITEM_KEY': 15164932, 'VENDOR_KEY': 5835, 'EVENT_KEY': 3002000001447, 'STORE_KEY': 6154773, 'UNITS': Decimal('5703.0000'), 'AMOUNT': Decimal('0'), 'RETAILER_KEY': 5099}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0_ROW_DS_COUNT]Event_key - 3002000001448 , Table DS_STORE_FACT , File_set : FS_Boots_Ctgry_StoreFact_Inventory : Count 0 
+[ROW_DS_COUNT]Event_key : 3002000001449 , Table : DS_STORE_FACT , File_set : FS_Boots_StoreFact_Sales 
+DS_STORE_FACT       17
+select MAX("AMOUNT") "AMOUNT",MAX("AMOUNTTYPE_KEY") "AMOUNTTYPE_KEY",MAX("EVENT_KEY") "EVENT_KEY",MAX("ITEM_KEY") "ITEM_KEY",MAX("PERIOD_KEY") "PERIOD_KEY",MAX("RETAILER_KEY") "RETAILER_KEY",MAX("STORE_KEY") "STORE_KEY",MAX("UNITS") "UNITS",MAX("VENDOR_KEY") "VENDOR_KEY" from  PREP_BOOTS_RDP.DS_STORE_FACT where event_key = 3002000001449
+{'AMOUNTTYPE_KEY': 3, 'PERIOD_KEY': 20180503, 'ITEM_KEY': 15164909, 'VENDOR_KEY': 5835, 'EVENT_KEY': 3002000001449, 'STORE_KEY': 6131604, 'UNITS': Decimal('1203.0000'), 'AMOUNT': Decimal('11177.8900'), 'RETAILER_KEY': 5099}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 3002000001450 , Table : DS_STORE_FACT , File_set : FS_Boots_StoreSalesRes 
+DS_STORE_FACT       17
+select MAX("AMOUNT") "AMOUNT",MAX("AMOUNTTYPE_KEY") "AMOUNTTYPE_KEY",MAX("EVENT_KEY") "EVENT_KEY",MAX("ITEM_KEY") "ITEM_KEY",MAX("PERIOD_KEY") "PERIOD_KEY",MAX("RETAILER_KEY") "RETAILER_KEY",MAX("STORE_KEY") "STORE_KEY",MAX("UNITS") "UNITS",MAX("VENDOR_KEY") "VENDOR_KEY" from  PREP_BOOTS_RDP.DS_STORE_FACT where event_key = 3002000001450
+{'AMOUNTTYPE_KEY': 3, 'PERIOD_KEY': 20180427, 'ITEM_KEY': 15164908, 'VENDOR_KEY': 5835, 'EVENT_KEY': 3002000001450, 'STORE_KEY': 6131604, 'UNITS': Decimal('1054.0000'), 'AMOUNT': Decimal('23803.0000'), 'RETAILER_KEY': 5099}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 3002000001451 , Table : DS_STORE_FACT , File_set : FS_Boots_StoreShelfCapacity 
+DS_STORE_FACT       17
+select MAX("AMOUNT") "AMOUNT",MAX("AMOUNTTYPE_KEY") "AMOUNTTYPE_KEY",MAX("EVENT_KEY") "EVENT_KEY",MAX("ITEM_KEY") "ITEM_KEY",MAX("PERIOD_KEY") "PERIOD_KEY",MAX("RETAILER_KEY") "RETAILER_KEY",MAX("STORE_KEY") "STORE_KEY",MAX("UNITS") "UNITS",MAX("VENDOR_KEY") "VENDOR_KEY" from  PREP_BOOTS_RDP.DS_STORE_FACT where event_key = 3002000001451
+{'AMOUNTTYPE_KEY': 502, 'PERIOD_KEY': 20180503, 'ITEM_KEY': 15164912, 'VENDOR_KEY': 5835, 'EVENT_KEY': 3002000001451, 'STORE_KEY': 6188365, 'UNITS': Decimal('20180503.0000'), 'AMOUNT': Decimal('0'), 'RETAILER_KEY': 5099}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ROW_DS_COUNT]Event_key : 3002000001452 , Table : DS_DC_FACT , File_set : FS_Boots_DCFact_On_Order 
+DS_DC_FACT       18
+select MAX("AMOUNT") "AMOUNT",MAX("AMOUNTTYPE_KEY") "AMOUNTTYPE_KEY",MAX("DC_KEY") "DC_KEY",MAX("EVENT_KEY") "EVENT_KEY",MAX("ITEM_KEY") "ITEM_KEY",MAX("PERIOD_KEY") "PERIOD_KEY",MAX("RETAILER_KEY") "RETAILER_KEY",MAX("UNITS") "UNITS",MAX("VENDOR_KEY") "VENDOR_KEY" from  PREP_BOOTS_RDP.DS_DC_FACT where event_key = 3002000001452
+{'AMOUNTTYPE_KEY': 45, 'PERIOD_KEY': 20180503, 'ITEM_KEY': 15164912, 'VENDOR_KEY': 5835, 'EVENT_KEY': 3002000001452, 'DC_KEY': 5438387, 'UNITS': Decimal('265000.0000'), 'AMOUNT': Decimal('0'), 'RETAILER_KEY': 5100}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0_ROW_DS_COUNT]Event_key - 3002000001453 , Table DS_STORE_FACT , File_set : FS_Boots_Ctgry_StoreFact_Sales : Count 0 
+[0_ROW_DS_COUNT]Event_key - 3002000001454 , Table DS_STORE_FACT , File_set : FS_Boots_Ctgry_StoreSalesRes : Count 0 
+[0_ROW_DS_COUNT]Event_key - 3002000001455 , Table DS_STORE_FACT , File_set : FS_Boots_Ctgry_StoreShelfCapacity : Count 0 
+[0_ROW_DS_COUNT]Event_key - 3002000001456 , Table DS_DC_FACT , File_set : FS_Boots_Ctgry_DCFact_On_Order : Count 0 
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+ 
+    </td>
+    <td align = 'center'> 
+        <a href = "" title = "">
+            <img src=".\data\img.png" height =20 width=20 border=0>
+        </a>
+    </td>
+</tr>
+
+<tr id='total_row'>
+    <td colspan='2'>Total</td>
+    <td>2</td>
+    <td>2</td>
+    <td>0</td>
+    <td>0</td>
+    <td colspan='2'> </td>
+</tr>
+</table>
+
+<div id='ending'> </div>
+ 
+</body>
+</html>

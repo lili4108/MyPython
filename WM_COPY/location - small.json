@@ -1,0 +1,22 @@
+{
+  "\\\\PRODV1ARLNK8\\d\\RSI\\IncomingData\\PepsiCo\\UAT_PepsiCo_WMCAT_SaltySnacks": "\\\\prez2cnas1\\nxgpreprodsourceazure\\SourceFiles\\PREP_WM_RDP\\PepsiCo\\WMCAT_SaltySnacks\\SaltySnacks_PepsiCo",
+ "\\\\wal1wnnas1.colo.retailsolutions.com\\Engine_Z\\Walmart\\PEPSICO_RDP\\SC_SALES_SUPPLYCHAIN_US_PEPSICO": "\\\\prez2cnas1\\nxgpreprodsourceazure\\SourceFiles\\PREP_WM_RDP\\PepsiCo\\WMSAMS\\SAMS_PepsiCo",
+ "\\\\wal1wnnas1.colo.retailsolutions.com\\Engine_Z\\Walmart\\PEPSICO_RDP\\SC_CAT_SALTYSNACKS_US_PEPSICO": "\\\\prez2cnas1\\nxgpreprodsourceazure\\SourceFiles\\PREP_WM_RDP\\PepsiCo\\WMSAMS_SaltySnacks\\SAMS_SaltySnacks_PepsiCo",
+ "\\\\PRODV1ARLNK2\\d\\RSi\\IncomingData\\WeeklyDC\\US_Cat":"\\\\prez2cnas1\\nxgpreprodsourceazure\\SourceFiles\\PREP_WM_RDP\\PepsiCo\\WeeklyDC\\US_Cat",
+ "\\\\PRODV1ARLNK2\\d\\RSi\\IncomingData\\WeeklyDC\\US_Sams":"\\\\prez2cnas1\\nxgpreprodsourceazure\\SourceFiles\\PREP_WM_RDP\\PepsiCo\\WeeklyDC\\US_Sams",
+ "\\\\PRODV1ARLNK2\\d\\RSi\\IncomingData\\WeeklyDC\\US_SSC":"\\\\prez2cnas1\\nxgpreprodsourceazure\\SourceFiles\\PREP_WM_RDP\\PepsiCo\\WeeklyDC\\US_SSC",
+ "\\\\PRODV1ARLNK8\\d\\RSI\\IncomingData\\PepsiCo\\UAT_PepsiCo_US_SSC": "\\\\prez2cnas1\\nxgpreprodsourceazure\\SourceFiles\\PREP_WM_RDP\\PepsiCo\\WMSSC\\WALMRT_PepsiCo",
+"\\\\PRODV1ARLNK8\\d\\RSI\\IncomingData\\PepsiCo\\WMCAT_PSM\\PSM_PepsiCo":"\\\\prez2cnas1\\nxgpreprodsourceazure\\SourceFiles\\PREP_WM_RDP\\PepsiCo\\WMCAT_PSM\\PSM_PepsiCo",
+"\\\\PRODV1ARLNK8\\d\\RSI\\IncomingData\\PepsiCo\\WMCAT_HealthySnacks\\HealthySnacks_PepsiCo":"\\\\prez2cnas1\\nxgpreprodsourceazure\\SourceFiles\\PREP_WM_RDP\\PepsiCo\\WMCAT_HealthySnacks\\HealthySnacks_PepsiCo",
+"\\\\wal1wnnas1.colo.retailsolutions.com\\Engine_Z\\Walmart\\NATURESBOUNTY_RDP\\WM_CAT_VITAMINS_US_NATURESBOUNTY":"\\\\prez2cnas1\\nxgpreprodsourceazure\\SourceFiles\\PREP_WM_RDP\\Natures Bounty Vitamins\\WMTCAT_NBTYVI",
+ "\\\\10.172.4.165\\ftp_internal\\RDP_WALMART\\WALMRT_PepsiCo":"\\\\prez2cnas1\\nxgpreprodsourceazure\\SourceFiles\\PREP_WM_RDP\\PepsiCo\\WMDSD\\WMDSD"
+}
+
+
+{
+ "\\\\PRODV1ARLNK2\\d\\RSi\\IncomingData\\WeeklyDC\\US_SSC":"\\\\prez2cnas1\\nxgpreprodsourceazure\\SourceFiles\\PREP_WM_RDP\\PepsiCo\\WeeklyDC\\US_SSC",
+ "\\\\wal1wnnas1.colo.retailsolutions.com\\Engine_Z\\Walmart\\PEPSICO_RDP\\SaltySnacks_PepsiCo": "\\\\prez2cnas1\\nxgpreprodsourceazure\\SourceFiles\\PREP_WM_RDP\\PepsiCo\\WMCAT_SaltySnacks\\SaltySnacks_PepsiCo",
+ "\\\\wal1wnnas1.colo.retailsolutions.com\\Engine_Z\\Walmart\\PEPSICO_RDP\\WM_SALES_SUPPLYCHAIN_US_PEPSICO": "\\\\prez2cnas1\\nxgpreprodsourceazure\\SourceFiles\\PREP_WM_RDP\\PepsiCo\\WMSSC\\WALMRT_PepsiCo",
+ "\\\\wal1wnnas1.colo.retailsolutions.com\\Engine_Z\\Walmart\\PEPSICO_RDP\\HealthySnacks_PepsiCo":"\\\\prez2cnas1\\nxgpreprodsourceazure\\SourceFiles\\PREP_WM_RDP\\PepsiCo\\WMCAT_HealthySnacks\\HealthySnacks_PepsiCo",
+ "\\\\10.172.4.165\\ftp_internal\\RDP_WALMART\\WALMRT_PepsiCo":"\\\\prez2cnas1\\nxgpreprodsourceazure\\SourceFiles\\PREP_WM_RDP\\PepsiCo\\WMDSD\\WMDSD"
+}

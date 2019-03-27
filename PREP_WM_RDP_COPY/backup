@@ -1,0 +1,14 @@
+{
+ "\\\\wal1wnnas1.colo.retailsolutions.com\\Engine_Z\\Walmart\\DPSG_RDP\\DPSG\\SC_SALES_SUPPLYCHAIN_US_DPSG":"\\\\prez2cnas1\\nxgpreprodsourceazure\\SourceFiles\\PREP_WM_RDP\\DPSG\\WMSAMS\\SAMS_DPSG",
+ "\\\\PRODV1ARLNK2\\d\\RSi\\IncomingData\\WeeklyDC\\US_Cat":"\\\\prez2cnas1\\nxgpreprodsourceazure\\SourceFiles\\PREP_WM_RDP\\WeeklyDC\\US_Cat",
+ "\\\\PRODV1ARLNK2\\d\\RSi\\IncomingData\\WeeklyDC\\US_Sams":"\\\\prez2cnas1\\nxgpreprodsourceazure\\SourceFiles\\PREP_WM_RDP\\WeeklyDC\\US_Sams",
+ "\\\\PRODV1ARLNK2\\d\\RSi\\IncomingData\\WeeklyDC\\US_SSC":"\\\\prez2cnas1\\nxgpreprodsourceazure\\SourceFiles\\PREP_WM_RDP\\WeeklyDC\\US_SSC",
+ "\\\\wal1wnnas1.colo.retailsolutions.com\\Engine_Z\\Walmart\\DPSG_RDP\\DPSG\\WM_CAT_CSD_US_DPSG":"\\\\prez2cnas1\\nxgpreprodsourceazure\\SourceFiles\\PREP_WM_RDP\\DPSG\\WMCAT_CSD\\CAT_CSD_DPSG",
+ "\\\\wal1wnnas1.colo.retailsolutions.com\\Engine_Z\\Walmart\\DPSG_RDP\\DPSG\\WM_SALES_SUPPLYCHAIN_US_DPSG":"\\\\prez2cnas1\\nxgpreprodsourceazure\\SourceFiles\\PREP_WM_RDP\\DPSG\\WMSSC\\WALMRT_DPSG",
+"\\\\wal1wnnas1.colo.retailsolutions.com\\Engine_Z\\Walmart\\HALEWOOD_RDP\\WM_SALES_SUPPLYCHAIN_UK_HALEWOOD":"\\\\prez2cnas1\\nxgpreprodsourceazure\\SourceFiles\\PREP_HALEWOOD_RDP\\ASDA_Halewood",
+ "\\\\wal1wnnas1.colo.retailsolutions.com\\Engine_Z\\Walmart\\MARS_RDP\\WM_SALES_SUPPLYCHAIN_BR_MARS":"\\\\prez2cnas1\\nxgpreprodsourceazure\\SourceFiles\\PREP_MARS_RDP\\WMTBR_MARSBR",
+ "\\\\wal1wnnas1.colo.retailsolutions.com\\Engine_Z\\Walmart\\MARS_RDP\\WM_SALES_SUPPLYCHAIN_MX_MARS":"\\\\prez2cnas1\\nxgpreprodsourceazure\\SourceFiles\\PREP_MARS_RDP\\WMTMX_MARSMX"
+}
+
+
+

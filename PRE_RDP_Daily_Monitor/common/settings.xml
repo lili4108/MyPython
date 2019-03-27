@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Environments>
+  <Environment name="RCT"></Environment>
+  
+  <Connection EnvironmentName ="RCT">
+      <ConfigDB>
+        <Driver>SQL+Server+Native+Client+10.0</Driver>
+        <Server>PREZ2CDB2\DB1</Server>
+        <IP></IP>
+        <DatabaseInstance></DatabaseInstance>
+        <InitialCatalog>PREP_WM_RDP</InitialCatalog>
+        <Port>1433</Port>
+        <TrustedConnection>Yes</TrustedConnection>
+        <UserID></UserID>
+        <Password Encrypted="True"></Password>
+        </ConfigDB>
+    </Connection>
+</Environments>
