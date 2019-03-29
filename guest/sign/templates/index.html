@@ -4,11 +4,12 @@
  </head>
  <body>
   <h1>Sign Page</h1>
-  <form method = "post">
+  <form method = "post"  action = "/login_action/">
    <input name= "username" type = "text" placeholder = "username" ><br>
    <br>
    <input name= "password" type = "password" placeholder = "username"><br>
    <br>
+   {{error}}<br>
    <button id = "btn" type = "submit">Login</button>
    {% csrf_token %}
   </form>
