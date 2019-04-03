@@ -20,6 +20,7 @@ from sign import views
 urlpatterns = [
     path('admin/', admin.site.urls),
 	path('index/',views.index),
+    path('accounts/login/',views.index),
     path('login_action/', views.login_action),
     path('event_manage/', views.event_manage),
 ]
