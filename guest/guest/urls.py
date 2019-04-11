@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from sign import views
+from django.conf.urls import url,include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -23,4 +24,5 @@ urlpatterns = [
     path('accounts/login/',views.index),
     path('login_action/', views.login_action),
     path('event_manage/', views.event_manage),
+    path('api/', include('sign.urls')),
 ]
